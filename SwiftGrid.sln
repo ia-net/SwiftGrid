@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftGrid", "SwiftGrid\SwiftGrid.csproj", "{F22E3D33-94BB-4526-8F8C-D759865B8D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftGrid.Demo", "SwiftGrid.Demo\SwiftGrid.Demo.csproj", "{56CFE491-65F4-41B9-B437-7FCA2B857E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22E3D33-94BB-4526-8F8C-D759865B8D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22E3D33-94BB-4526-8F8C-D759865B8D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22E3D33-94BB-4526-8F8C-D759865B8D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22E3D33-94BB-4526-8F8C-D759865B8D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CFE491-65F4-41B9-B437-7FCA2B857E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CFE491-65F4-41B9-B437-7FCA2B857E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CFE491-65F4-41B9-B437-7FCA2B857E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CFE491-65F4-41B9-B437-7FCA2B857E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D997403-6A89-4D0F-ACB8-F57C2D52BAC3}
+	EndGlobalSection
+EndGlobal

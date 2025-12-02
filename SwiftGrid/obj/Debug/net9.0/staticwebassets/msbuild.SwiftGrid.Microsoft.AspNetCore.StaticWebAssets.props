@@ -1,0 +1,1284 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>background.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x2rx4ajns0</Fingerprint>
+      <Integrity>WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>378</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 05:20:20 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>exampleJsInterop.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6pqz8bsss0</Fingerprint>
+      <Integrity>FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1+76qQ8B4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>247</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 05:20:20 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>js/swiftgrid.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4lulyojzlv</Fingerprint>
+      <Integrity>GEC4GZwcH99tUK/tI7LBxcnJUTvkESSJyk3XhmDP3AY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7161</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 07:12:41 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a3yw2zezsd</Fingerprint>
+      <Integrity>aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>32606</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f7no8s2ma3</Fingerprint>
+      <Integrity>eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R+fWBFjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>47937</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>89lnnk4hat</Fingerprint>
+      <Integrity>pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>28359</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>in1d62m85p</Fingerprint>
+      <Integrity>nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>46844</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap3.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vyu5xcw92z</Fingerprint>
+      <Integrity>+SLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>37424</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap3.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7hyk13ovkl</Fingerprint>
+      <Integrity>i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>54478</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap3.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>phd2i89iz6</Fingerprint>
+      <Integrity>zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>32199</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap3.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>628zgk7vux</Fingerprint>
+      <Integrity>ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>52817</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap4.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hrxyw7rg27</Fingerprint>
+      <Integrity>bSsAhvj6k+ZKnWT057H72NTTpZVIDu6grDcevjgpOpM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>45138</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap4.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lojrc5k0l1</Fingerprint>
+      <Integrity>ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>64726</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap4.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>62u9qypdy7</Fingerprint>
+      <Integrity>bvJKN/ZEgp5dLjEhajg2Y+YxO8kZz+xTIJxGwtEAn2k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>39188</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap4.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u1z3ew3vwl</Fingerprint>
+      <Integrity>zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>62795</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap5.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0dg1t047v4</Fingerprint>
+      <Integrity>FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>45524</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap5.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a7zt6659yc</Fingerprint>
+      <Integrity>doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>65298</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap5.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3zvx4t6bmw</Fingerprint>
+      <Integrity>H1gQqBIR3L9enXuoNfFASj+QdGSEQIAloT7c4FXjNzc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>39385</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bootstrap5.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f7u2ewbyyy</Fingerprint>
+      <Integrity>a4MhEID+lhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>63298</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bulma.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>59rhdfw3zu</Fingerprint>
+      <Integrity>OS2B96rQE35I3uhQ4KNu9+GQxMoKi+6bWpi6y52AjNs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>37160</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bulma.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c85esv5yi6</Fingerprint>
+      <Integrity>BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s+c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>54270</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bulma.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uqw9cvqrit</Fingerprint>
+      <Integrity>BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>32036</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_bulma.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3jqnri109d</Fingerprint>
+      <Integrity>D3kAwSy88oR589xdvvvg8HvF+Ja88zh4g4d5AD5j9+U=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>52800</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_materialize.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2jd1xlh596</Fingerprint>
+      <Integrity>QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>38277</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_materialize.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>joxdrd3pg4</Fingerprint>
+      <Integrity>PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>55541</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_materialize.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x3eaaiati5</Fingerprint>
+      <Integrity>E+gOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>32902</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_materialize.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5okz51ad47</Fingerprint>
+      <Integrity>ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>54000</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_midnight.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m90oeikbuu</Fingerprint>
+      <Integrity>ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>35154</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_midnight.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>at7kzs44e9</Fingerprint>
+      <Integrity>jpcAZWHC77dncIOf8vlUS+B1oCQrk7i628IKkUqMmq8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>51447</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_midnight.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1n1bk1pyho</Fingerprint>
+      <Integrity>DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>30358</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_midnight.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3z2hwkpr99</Fingerprint>
+      <Integrity>sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>50104</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_modern.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x2cwr114lg</Fingerprint>
+      <Integrity>KbTiZ/qXuTlPa66BpQ+GwD0MDj4edm3vz+ZOtfjj8XQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>36835</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_modern.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rv2bk8xbgw</Fingerprint>
+      <Integrity>V2d7iJ+07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>53653</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_modern.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>088u75pjtg</Fingerprint>
+      <Integrity>IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>32068</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_modern.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dxr2anvka3</Fingerprint>
+      <Integrity>4e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>52352</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_semanticui.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7uu2ro53ur</Fingerprint>
+      <Integrity>YYz67t1Et/LowZrRrXSNsxZS0Tbi+/mbmnxmodYq/vg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>49976</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_semanticui.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dmdw0d8vpc</Fingerprint>
+      <Integrity>9aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>71288</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_semanticui.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nvtcvvmgj2</Fingerprint>
+      <Integrity>vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>38234</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_semanticui.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ecgitb36w0</Fingerprint>
+      <Integrity>wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>67687</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_simple.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jwxssmhe5f</Fingerprint>
+      <Integrity>o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>33819</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_simple.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hggmoeeypd</Fingerprint>
+      <Integrity>L5M/GqzD+JCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>49605</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_simple.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aggp97flxk</Fingerprint>
+      <Integrity>inQx/4b6aqApQ7cEcN93+nCU5+rJ8kILZ4DGlwxzRes=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>29377</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_simple.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>15u2e8uhp1</Fingerprint>
+      <Integrity>FRNBKqPOYh9tfNm94lIXKg3k+1adyAKRVht6McimJjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>48403</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6foaj2cd80</Fingerprint>
+      <Integrity>ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>36072</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aiqkpddc1f</Fingerprint>
+      <Integrity>zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>52849</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rlfqrbra35</Fingerprint>
+      <Integrity>gfd3+SuRQWnY1ozFFUMncGeIOv46fY7PqGWldF+qw4M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>31223</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qwen81qicg</Fingerprint>
+      <Integrity>Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r+Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>51503</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site_dark.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>q2qk39o0vy</Fingerprint>
+      <Integrity>/hf0QoutmqyaxEB6leJ1vtMo+btso33c32A0ucg6OX4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>41230</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site_dark.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xwsydqjoqy</Fingerprint>
+      <Integrity>4ctAu1kRyrU+Psf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>60278</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site_dark.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>530aizlnaa</Fingerprint>
+      <Integrity>8eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>35464</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/css/tabulator_site_dark.min.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ybzqzf26un</Fingerprint>
+      <Integrity>XnTRT/9wwSlCPXKQQ2g6Q6CYVY5+gjFAuU8/CA8wkag=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>58563</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/jquery_wrapper.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8hud1fnyqj</Fingerprint>
+      <Integrity>jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1695</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>joc10nryed</Fingerprint>
+      <Integrity>jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>758116</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ly7utdzy37</Fingerprint>
+      <Integrity>zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4142756</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7kw1y4mo0d</Fingerprint>
+      <Integrity>6VInLDsq+k67YM7124y+nLqrqlK1DDzT0imTylIVpv8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>442820</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator.min.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wz50kdjj5c</Fingerprint>
+      <Integrity>XPbMLMFqEg4AyIi+wBLNOadQ/ua4PN4WHm+kzPFRlNs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3510630</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ph95sbzsgy</Fingerprint>
+      <Integrity>TZdcWQaYTJsQa9rd6k4a6V/+AEtH5E0UfkLlHm5ACLM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>732760</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.mjs</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>415ao1ihx9</Fingerprint>
+      <Integrity>CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>732761</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u3tsweljcc</Fingerprint>
+      <Integrity>WqrEgMnOiSd+KrGC7TbZhal2MDNA83G/RF0i66Dju2c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4067617</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qpzfw82in2</Fingerprint>
+      <Integrity>cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb+ckUCY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>444145</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.min.mjs</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y3xhcvnotr</Fingerprint>
+      <Integrity>ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>444146</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.min.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vp94y0nosh</Fingerprint>
+      <Integrity>M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3518252</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.min.mjs.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9llfc1fqai</Fingerprint>
+      <Integrity>DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3518253</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SwiftGrid</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SwiftGrid</BasePath>
+      <RelativePath>lib/tabulator/js/tabulator_esm.mjs.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bdykz9qqzp</Fingerprint>
+      <Integrity>AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4067618</FileLength>
+      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

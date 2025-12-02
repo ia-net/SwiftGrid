@@ -1,0 +1,30 @@
+﻿@using global::SwiftGrid.Entities
+@typeparam TItem
+
+@code {
+    [CascadingParameter]
+    public SwiftGrid<TItem> Owner { get; set; } = default!;
+
+    [Parameter] public string Field { get; set; } = default!;
+    [Parameter] public string Title { get; set; } = default!;
+    [Parameter] public bool Sortable { get; set; } = false;
+    [Parameter] public bool Visible { get; set; } = true;
+    [Parameter] public string? Formatter { get; set; }
+    [Parameter] public int? Width { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (Owner is null)
+            throw new InvalidOperationException("SwiftGridColumn must be used inside a SwiftGrid.");
+
+        Owner.RegisterColumn(new SwiftGridColumnDefinition
+        {
+            Field = Field,
+            Title = Title,
+            Sortable = Sortable,
+            Visible = Visible,
+            Formatter = Formatter,
+            Width = Width
+        });
+    }
+}

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\SwiftGrid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56CFE491-65F4-41B9-B437-7FCA2B857E25}|SwiftGrid.Demo\\SwiftGrid.Demo.csproj|c:\\users\\user\\source\\repos\\swiftgrid\\swiftgrid.demo\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56CFE491-65F4-41B9-B437-7FCA2B857E25}|SwiftGrid.Demo\\SwiftGrid.Demo.csproj|solutionrelative:swiftgrid.demo\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56CFE491-65F4-41B9-B437-7FCA2B857E25}|SwiftGrid.Demo\\SwiftGrid.Demo.csproj|c:\\users\\user\\source\\repos\\swiftgrid\\swiftgrid.demo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56CFE491-65F4-41B9-B437-7FCA2B857E25}|SwiftGrid.Demo\\SwiftGrid.Demo.csproj|solutionrelative:swiftgrid.demo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F22E3D33-94BB-4526-8F8C-D759865B8D7C}|SwiftGrid\\SwiftGrid.csproj|c:\\users\\user\\source\\repos\\swiftgrid\\swiftgrid\\components\\swiftgrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F22E3D33-94BB-4526-8F8C-D759865B8D7C}|SwiftGrid\\SwiftGrid.csproj|solutionrelative:swiftgrid\\components\\swiftgrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F22E3D33-94BB-4526-8F8C-D759865B8D7C}|SwiftGrid\\SwiftGrid.csproj|c:\\users\\user\\source\\repos\\swiftgrid\\swiftgrid\\components\\swiftgridcolumn.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F22E3D33-94BB-4526-8F8C-D759865B8D7C}|SwiftGrid\\SwiftGrid.csproj|solutionrelative:swiftgrid\\components\\swiftgridcolumn.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SwiftGrid.razor",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\Components\\SwiftGrid.razor",
+              "RelativeDocumentMoniker": "SwiftGrid\\Components\\SwiftGrid.razor",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\Components\\SwiftGrid.razor",
+              "RelativeToolTip": "SwiftGrid\\Components\\SwiftGrid.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:21:41.584Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SwiftGridColumn.razor",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\Components\\SwiftGridColumn.razor",
+              "RelativeDocumentMoniker": "SwiftGrid\\Components\\SwiftGridColumn.razor",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\Components\\SwiftGridColumn.razor",
+              "RelativeToolTip": "SwiftGrid\\Components\\SwiftGridColumn.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:22:18.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SwiftGrid.Demo\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "SwiftGrid.Demo\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:39:29.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "SwiftGrid.Demo\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "SwiftGrid.Demo\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:47:14.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

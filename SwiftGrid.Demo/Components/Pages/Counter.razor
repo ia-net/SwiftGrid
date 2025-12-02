@@ -1,0 +1,60 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@using SwiftGrid.Components
+@using SwiftGrid.Entities
+
+<h3>SwiftGrid / Tabulator Demo</h3>
+
+<p>행 개수: @People.Count</p>
+
+<SwiftGrid TItem="Person"
+           Data="@People"
+           Options="@GridOptions"
+           OnRowClicked="RowClicked">
+
+    <SwiftGridColumn TItem="Person" Field="Id" Title="ID" Sortable="true" Width="80" />
+    <SwiftGridColumn TItem="Person" Field="Name" Title="이름" Sortable="true" />
+    <SwiftGridColumn TItem="Person" Field="Age" Title="나이" Sortable="true" />
+    <SwiftGridColumn TItem="Person" Field="Email" Title="Email" />
+</SwiftGrid>
+
+@if (SelectedPerson is not null)
+{
+    <p>
+        선택된 행: @SelectedPerson.Id / @SelectedPerson.Name (@SelectedPerson.Age)
+    </p>
+}
+
+@code {
+    private List<Person> People = new()
+    {
+        new Person { Id = 1, Name = "홍길동", Age = 24, Email = "hong@test.com" },
+        new Person { Id = 2, Name = "김철수", Age = 31, Email = "kim@test.com" },
+        new Person { Id = 3, Name = "이영희", Age = 28, Email = "lee@test.com" }
+    };
+
+    private SwiftGridOptions GridOptions = new()
+    {
+        Layout = "fitColumns",
+        Height = "400px",
+        Selectable = 1
+    };
+
+    private Person? SelectedPerson;
+
+    private Task RowClicked(Person person)
+    {
+        SelectedPerson = person;
+        StateHasChanged();
+        Console.WriteLine($"Row clicked: {person.Id} / {person.Name}");
+        return Task.CompletedTask;
+    }
+
+    public class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = "";
+        public int Age { get; set; }
+        public string Email { get; set; } = "";
+    }
+}

@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\staticwebassets.build.json

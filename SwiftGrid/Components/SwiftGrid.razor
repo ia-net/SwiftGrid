@@ -1,0 +1,79 @@
+﻿@typeparam TItem
+@using Microsoft.JSInterop
+@using System.Text.Json
+@using global::SwiftGrid.Entities
+
+<CascadingValue Value="this">
+    <div @ref="_tableRef">
+        @ChildContent
+    </div>
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public IEnumerable<TItem> Data { get; set; } = Array.Empty<TItem>();
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public SwiftGridOptions Options { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<TItem> OnRowClicked { get; set; }
+
+    [Inject] IJSRuntime JS { get; set; } = default!;
+
+    private readonly List<SwiftGridColumnDefinition> Columns = new();
+    private DotNetObjectReference<SwiftGrid<TItem>>? _dotNetRef;
+    private ElementReference _tableRef;
+    private bool _initialized;
+    private bool _columnsRegistered;
+    private IEnumerable<TItem>? _previousData;
+
+    internal void RegisterColumn(SwiftGridColumnDefinition column)
+    {
+        Columns.Add(column);
+        _columnsRegistered = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!_initialized && _columnsRegistered && Columns.Count > 0)
+        {
+            _previousData = Data;
+            await InitializeTableAsync();
+        }
+        else if (_initialized && !ReferenceEquals(_previousData, Data))
+        {
+            _previousData = Data;
+            await UpdateDataAsync();
+        }
+    }
+
+    private async Task InitializeTableAsync()
+    {
+        _dotNetRef = DotNetObjectReference.Create(this);
+        await JS.InvokeVoidAsync("swiftGrid.initTable", _tableRef, _dotNetRef, Options, Data, Columns);
+        _initialized = true;
+    }
+
+    private async Task UpdateDataAsync()
+    {
+        await JS.InvokeVoidAsync("swiftGrid.setData", _tableRef, Data);
+    }
+
+    [JSInvokable]
+    public Task HandleRowClicked(System.Text.Json.JsonElement row)
+    {
+        var item = row.Deserialize<TItem>();
+        return item != null ? OnRowClicked.InvokeAsync(item) : Task.CompletedTask;
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_initialized)
+            await JS.InvokeVoidAsync("swiftGrid.destroyTable", _tableRef);
+        _dotNetRef?.Dispose();
+    }
+}
