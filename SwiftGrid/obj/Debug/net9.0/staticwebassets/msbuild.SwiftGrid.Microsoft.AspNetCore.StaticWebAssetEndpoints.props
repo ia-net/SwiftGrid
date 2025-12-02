@@ -4,769 +4,769 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 05:20:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/background.x2rx4ajns0.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x2rx4ajns0"},{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="},{"Name":"label","Value":"_content/SwiftGrid/background.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 05:20:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/exampleJsInterop.6pqz8bsss0.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6pqz8bsss0"},{"Name":"integrity","Value":"sha256-FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4="},{"Name":"label","Value":"_content/SwiftGrid/exampleJsInterop.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 05:20:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/exampleJsInterop.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 05:20:20 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.4lulyojzlv.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4lulyojzlv"},{"Name":"integrity","Value":"sha256-GEC4GZwcH99tUK/tI7LBxcnJUTvkESSJyk3XhmDP3AY="},{"Name":"label","Value":"_content/SwiftGrid/js/swiftgrid.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7161"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GEC4GZwcH99tUK/tI7LBxcnJUTvkESSJyk3XhmDP3AY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 07:12:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GEC4GZwcH99tUK/tI7LBxcnJUTvkESSJyk3XhmDP3AY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7161"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GEC4GZwcH99tUK/tI7LBxcnJUTvkESSJyk3XhmDP3AY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 07:12:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aFFe3Axkd3yl0M8FL7l2mVkmlq0OKo6b91bz7b2h2rE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38734"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aFFe3Axkd3yl0M8FL7l2mVkmlq0OKo6b91bz7b2h2rE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 12:21:33 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.a3yw2zezsd.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.kt3dej25qe.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kt3dej25qe"},{"Name":"integrity","Value":"sha256-aFFe3Axkd3yl0M8FL7l2mVkmlq0OKo6b91bz7b2h2rE="},{"Name":"label","Value":"_content/SwiftGrid/js/swiftgrid.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38734"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aFFe3Axkd3yl0M8FL7l2mVkmlq0OKo6b91bz7b2h2rE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 12:21:33 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.b1rkrn6bzm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a3yw2zezsd"},{"Name":"integrity","Value":"sha256-aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32606"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b1rkrn6bzm"},{"Name":"integrity","Value":"sha256-35zp5FzYhFZtwYD2H09RK/qyKJ\u002BJOZ32hUWIhe\u002B\u002BdGA="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33962"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002235zp5FzYhFZtwYD2H09RK/qyKJ\u002BJOZ32hUWIhe\u002B\u002BdGA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32606"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-35zp5FzYhFZtwYD2H09RK/qyKJ\u002BJOZ32hUWIhe\u002B\u002BdGA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"33962"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002235zp5FzYhFZtwYD2H09RK/qyKJ\u002BJOZ32hUWIhe\u002B\u002BdGA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.css.f7no8s2ma3.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f7no8s2ma3"},{"Name":"integrity","Value":"sha256-eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47937"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47937"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"47937"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.min.89lnnk4hat.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"89lnnk4hat"},{"Name":"integrity","Value":"sha256-pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28359"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"47937"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022eyO2ARLwo3EToCDWtF/WiDiVafGGgumz8H0R\u002BfWBFjo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28359"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mmBmaisShNRjLYYjVgmxSE\u002ByXymMFMYWwjaKJ74KEgA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mmBmaisShNRjLYYjVgmxSE\u002ByXymMFMYWwjaKJ74KEgA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.min.css.in1d62m85p.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"in1d62m85p"},{"Name":"integrity","Value":"sha256-nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"46844"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"46844"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"46844"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"46844"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022nrfOUZsDScgq6C/o5DivNzHJHaLtu0I3igx9NWLULDI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.min.qsh26hrpjy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qsh26hrpjy"},{"Name":"integrity","Value":"sha256-mmBmaisShNRjLYYjVgmxSE\u002ByXymMFMYWwjaKJ74KEgA="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mmBmaisShNRjLYYjVgmxSE\u002ByXymMFMYWwjaKJ74KEgA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BSLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"37424"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BSLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xUkOKtKricbey1Ce0L8d0Y4v/nReJzQQAKK68p3xk0I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38993"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xUkOKtKricbey1Ce0L8d0Y4v/nReJzQQAKK68p3xk0I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css.7hyk13ovkl.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7hyk13ovkl"},{"Name":"integrity","Value":"sha256-i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54478"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54478"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54478"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54478"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022i7gD1KK5zxUH7Xe7L/XRhaId8HUOxaOQxABEDptudNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32199"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-p/pEVPQLSZILJ3HcexgPgi\u002B0omilQ91ADma0HffjSXQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32200"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p/pEVPQLSZILJ3HcexgPgi\u002B0omilQ91ADma0HffjSXQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css.628zgk7vux.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"628zgk7vux"},{"Name":"integrity","Value":"sha256-ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52817"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52817"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52817"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52817"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ctziy07hLx2wNtAzRRMmqlM1BOs5r2qH55O9lU2yJHU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.phd2i89iz6.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.vqibfua6xc.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"phd2i89iz6"},{"Name":"integrity","Value":"sha256-zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32199"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vqibfua6xc"},{"Name":"integrity","Value":"sha256-p/pEVPQLSZILJ3HcexgPgi\u002B0omilQ91ADma0HffjSXQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32200"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p/pEVPQLSZILJ3HcexgPgi\u002B0omilQ91ADma0HffjSXQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.vyu5xcw92z.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.rwyaverfuc.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vyu5xcw92z"},{"Name":"integrity","Value":"sha256-\u002BSLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37424"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BSLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rwyaverfuc"},{"Name":"integrity","Value":"sha256-xUkOKtKricbey1Ce0L8d0Y4v/nReJzQQAKK68p3xk0I="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap3.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38993"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xUkOKtKricbey1Ce0L8d0Y4v/nReJzQQAKK68p3xk0I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.8sd2ee1463.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8sd2ee1463"},{"Name":"integrity","Value":"sha256-SIg3hmYdFNA\u002BqswhDKojj4ER6VcQCqipzXg5y1UAZj0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"46977"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SIg3hmYdFNA\u002BqswhDKojj4ER6VcQCqipzXg5y1UAZj0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bSsAhvj6k\u002BZKnWT057H72NTTpZVIDu6grDcevjgpOpM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"45138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bSsAhvj6k\u002BZKnWT057H72NTTpZVIDu6grDcevjgpOpM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SIg3hmYdFNA\u002BqswhDKojj4ER6VcQCqipzXg5y1UAZj0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"46977"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SIg3hmYdFNA\u002BqswhDKojj4ER6VcQCqipzXg5y1UAZj0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css.lojrc5k0l1.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lojrc5k0l1"},{"Name":"integrity","Value":"sha256-ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"64726"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"64726"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"64726"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.hrxyw7rg27.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrxyw7rg27"},{"Name":"integrity","Value":"sha256-bSsAhvj6k\u002BZKnWT057H72NTTpZVIDu6grDcevjgpOpM="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"45138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bSsAhvj6k\u002BZKnWT057H72NTTpZVIDu6grDcevjgpOpM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.62u9qypdy7.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"62u9qypdy7"},{"Name":"integrity","Value":"sha256-bvJKN/ZEgp5dLjEhajg2Y\u002BYxO8kZz\u002BxTIJxGwtEAn2k="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39188"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bvJKN/ZEgp5dLjEhajg2Y\u002BYxO8kZz\u002BxTIJxGwtEAn2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"64726"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZZyizVzYYekl1vT1d2CILnz/dzBtXmSxxExAWSAHHv8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bvJKN/ZEgp5dLjEhajg2Y\u002BYxO8kZz\u002BxTIJxGwtEAn2k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39188"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bvJKN/ZEgp5dLjEhajg2Y\u002BYxO8kZz\u002BxTIJxGwtEAn2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4EsoGwJRyIUm4089JdD2uHUJNruvsrJ9HCIO03I5lUk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39189"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224EsoGwJRyIUm4089JdD2uHUJNruvsrJ9HCIO03I5lUk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"62795"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"62795"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css.u1z3ew3vwl.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u1z3ew3vwl"},{"Name":"integrity","Value":"sha256-zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"62795"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"62795"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zu1GctbALJCUS97rO5RUIwT/vJswTbs2zJkBSvlubw0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.0dg1t047v4.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.sl5qtwjjtg.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sl5qtwjjtg"},{"Name":"integrity","Value":"sha256-4EsoGwJRyIUm4089JdD2uHUJNruvsrJ9HCIO03I5lUk="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap4.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39189"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224EsoGwJRyIUm4089JdD2uHUJNruvsrJ9HCIO03I5lUk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.a22905udtk.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0dg1t047v4"},{"Name":"integrity","Value":"sha256-FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"45524"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a22905udtk"},{"Name":"integrity","Value":"sha256-ssYlpEXZYClaK8kYEFl9kgEKbMPIS4RqG3OVmFhSrYA="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47390"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ssYlpEXZYClaK8kYEFl9kgEKbMPIS4RqG3OVmFhSrYA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"45524"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ssYlpEXZYClaK8kYEFl9kgEKbMPIS4RqG3OVmFhSrYA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"47390"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ssYlpEXZYClaK8kYEFl9kgEKbMPIS4RqG3OVmFhSrYA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css.a7zt6659yc.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a7zt6659yc"},{"Name":"integrity","Value":"sha256-doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"65298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"65298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"65298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.3zvx4t6bmw.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3zvx4t6bmw"},{"Name":"integrity","Value":"sha256-H1gQqBIR3L9enXuoNfFASj\u002BQdGSEQIAloT7c4FXjNzc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39385"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H1gQqBIR3L9enXuoNfFASj\u002BQdGSEQIAloT7c4FXjNzc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"65298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022doWs6XmmfwpJYm6wdJMeOYOnJdCtvUGD/fhLGJDHsxo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H1gQqBIR3L9enXuoNfFASj\u002BQdGSEQIAloT7c4FXjNzc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39385"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H1gQqBIR3L9enXuoNfFASj\u002BQdGSEQIAloT7c4FXjNzc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-W9xlCT5G9Fd6jx6tJtrz4rwLI7A5/fmgj5S0njr3a4Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39386"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022W9xlCT5G9Fd6jx6tJtrz4rwLI7A5/fmgj5S0njr3a4Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css.f7u2ewbyyy.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f7u2ewbyyy"},{"Name":"integrity","Value":"sha256-a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"63298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"63298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"63298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"63298"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022a4MhEID\u002BlhJ1pCd/ayPDUW6HQ9HeOzYWrER5tJDtJZQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.59rhdfw3zu.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.j20o2l1soz.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"59rhdfw3zu"},{"Name":"integrity","Value":"sha256-OS2B96rQE35I3uhQ4KNu9\u002BGQxMoKi\u002B6bWpi6y52AjNs="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37160"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OS2B96rQE35I3uhQ4KNu9\u002BGQxMoKi\u002B6bWpi6y52AjNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j20o2l1soz"},{"Name":"integrity","Value":"sha256-W9xlCT5G9Fd6jx6tJtrz4rwLI7A5/fmgj5S0njr3a4Y="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bootstrap5.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39386"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022W9xlCT5G9Fd6jx6tJtrz4rwLI7A5/fmgj5S0njr3a4Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OS2B96rQE35I3uhQ4KNu9\u002BGQxMoKi\u002B6bWpi6y52AjNs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"37160"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OS2B96rQE35I3uhQ4KNu9\u002BGQxMoKi\u002B6bWpi6y52AjNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BeVp3hYpEhit1mfbzqjKbTASJRwvbkM80veDCfjbASo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38705"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BeVp3hYpEhit1mfbzqjKbTASJRwvbkM80veDCfjbASo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css.c85esv5yi6.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c85esv5yi6"},{"Name":"integrity","Value":"sha256-BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54270"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54270"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54270"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54270"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022BKZ0883MgHve6Jh27OEQsSCz5mouZCsMRXFJ3Yc6s\u002Bc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.3pdhjw78av.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3pdhjw78av"},{"Name":"integrity","Value":"sha256-ab1Wky7ABbfXtn3hVgox\u002BnB/WVsWxhLA99DEdIfPZg0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32037"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ab1Wky7ABbfXtn3hVgox\u002BnB/WVsWxhLA99DEdIfPZg0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32036"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ab1Wky7ABbfXtn3hVgox\u002BnB/WVsWxhLA99DEdIfPZg0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32037"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ab1Wky7ABbfXtn3hVgox\u002BnB/WVsWxhLA99DEdIfPZg0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css.3jqnri109d.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3jqnri109d"},{"Name":"integrity","Value":"sha256-D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52800"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52800"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52800"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52800"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022D3kAwSy88oR589xdvvvg8HvF\u002BJa88zh4g4d5AD5j9\u002BU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.uqw9cvqrit.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.vawmlq3nux.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqw9cvqrit"},{"Name":"integrity","Value":"sha256-BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32036"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vawmlq3nux"},{"Name":"integrity","Value":"sha256-\u002BeVp3hYpEhit1mfbzqjKbTASJRwvbkM80veDCfjbASo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_bulma.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38705"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BeVp3hYpEhit1mfbzqjKbTASJRwvbkM80veDCfjbASo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.2jd1xlh596.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.2lr4nq4y3z.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2jd1xlh596"},{"Name":"integrity","Value":"sha256-QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38277"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2lr4nq4y3z"},{"Name":"integrity","Value":"sha256-pkOlTThdxzs4DQZePCya21WHn/1oTcXFvZevPyV\u002BsY8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39853"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pkOlTThdxzs4DQZePCya21WHn/1oTcXFvZevPyV\u002BsY8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38277"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pkOlTThdxzs4DQZePCya21WHn/1oTcXFvZevPyV\u002BsY8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39853"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pkOlTThdxzs4DQZePCya21WHn/1oTcXFvZevPyV\u002BsY8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css.joxdrd3pg4.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"joxdrd3pg4"},{"Name":"integrity","Value":"sha256-PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55541"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55541"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"55541"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"55541"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022PVXmUP5XIoWz2h9uvbzhjylRYyFGKMkFS2db7yixOXQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E\u002BgOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E\u002BgOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eNNca6dbFthtM/1CfQk1CphI6yEkPx19k/UVHFEAZzM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32903"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eNNca6dbFthtM/1CfQk1CphI6yEkPx19k/UVHFEAZzM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css.5okz51ad47.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5okz51ad47"},{"Name":"integrity","Value":"sha256-ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54000"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54000"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54000"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54000"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ZfyjmUnS5jIAwTe1u5Ydj7bkI1F6g9RC1sCehjLfREo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.x3eaaiati5.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.gmdaoi9ls8.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x3eaaiati5"},{"Name":"integrity","Value":"sha256-E\u002BgOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E\u002BgOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gmdaoi9ls8"},{"Name":"integrity","Value":"sha256-eNNca6dbFthtM/1CfQk1CphI6yEkPx19k/UVHFEAZzM="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_materialize.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32903"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eNNca6dbFthtM/1CfQk1CphI6yEkPx19k/UVHFEAZzM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35154"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-40lA7sH75ZLK1nAwapwDxq2qzhHaVR1mfLHmnRAK5Vw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36628"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002240lA7sH75ZLK1nAwapwDxq2qzhHaVR1mfLHmnRAK5Vw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css.at7kzs44e9.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"at7kzs44e9"},{"Name":"integrity","Value":"sha256-jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"51447"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"51447"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"51447"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"51447"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022jpcAZWHC77dncIOf8vlUS\u002BB1oCQrk7i628IKkUqMmq8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.m90oeikbuu.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m90oeikbuu"},{"Name":"integrity","Value":"sha256-ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35154"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.1n1bk1pyho.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.5ga24l75wg.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1n1bk1pyho"},{"Name":"integrity","Value":"sha256-DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30358"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ga24l75wg"},{"Name":"integrity","Value":"sha256-ZUmY2F4xnvdGf8C/\u002Bt3pJ/49J8B17acMev6d9w\u002B3CiA="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30359"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZUmY2F4xnvdGf8C/\u002Bt3pJ/49J8B17acMev6d9w\u002B3CiA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"30358"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZUmY2F4xnvdGf8C/\u002Bt3pJ/49J8B17acMev6d9w\u002B3CiA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"30359"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZUmY2F4xnvdGf8C/\u002Bt3pJ/49J8B17acMev6d9w\u002B3CiA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css.3z2hwkpr99.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3z2hwkpr99"},{"Name":"integrity","Value":"sha256-sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50104"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50104"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"50104"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"50104"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022sZakdPx1mkaaZuVMsnLwtHzcNAxHSsby6Cwn9yhd1G4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.plxoms3gzv.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"plxoms3gzv"},{"Name":"integrity","Value":"sha256-40lA7sH75ZLK1nAwapwDxq2qzhHaVR1mfLHmnRAK5Vw="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_midnight.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36628"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002240lA7sH75ZLK1nAwapwDxq2qzhHaVR1mfLHmnRAK5Vw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KbTiZ/qXuTlPa66BpQ\u002BGwD0MDj4edm3vz\u002BZOtfjj8XQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36835"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KbTiZ/qXuTlPa66BpQ\u002BGwD0MDj4edm3vz\u002BZOtfjj8XQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qeq5uCuFRFuJxYqPANLot\u002BB7GyxIxQJ8Hiq1sZlDnB8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38368"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Qeq5uCuFRFuJxYqPANLot\u002BB7GyxIxQJ8Hiq1sZlDnB8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"53653"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"53653"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css.rv2bk8xbgw.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rv2bk8xbgw"},{"Name":"integrity","Value":"sha256-V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53653"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.088u75pjtg.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"088u75pjtg"},{"Name":"integrity","Value":"sha256-IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32068"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53653"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022V2d7iJ\u002B07416JG9t4zLVJMj5le9wFWR3m4PLJAK1lCg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32068"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fsq5mkqjFxAnS9Rm2QQ4PbI5pHFqdhpggG\u002Bz5QGP\u002BiU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"32069"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fsq5mkqjFxAnS9Rm2QQ4PbI5pHFqdhpggG\u002Bz5QGP\u002BiU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css.dxr2anvka3.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dxr2anvka3"},{"Name":"integrity","Value":"sha256-4e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52352"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52352"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52352"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52352"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224e8MnJheJqVLNiOCyhqkeOr6VsRieYxh5k50baJpL8g=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.x2cwr114lg.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.mqot8s36rc.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mqot8s36rc"},{"Name":"integrity","Value":"sha256-fsq5mkqjFxAnS9Rm2QQ4PbI5pHFqdhpggG\u002Bz5QGP\u002BiU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32069"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fsq5mkqjFxAnS9Rm2QQ4PbI5pHFqdhpggG\u002Bz5QGP\u002BiU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_modern.v8o8d31z9m.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x2cwr114lg"},{"Name":"integrity","Value":"sha256-KbTiZ/qXuTlPa66BpQ\u002BGwD0MDj4edm3vz\u002BZOtfjj8XQ="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36835"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KbTiZ/qXuTlPa66BpQ\u002BGwD0MDj4edm3vz\u002BZOtfjj8XQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.7uu2ro53ur.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7uu2ro53ur"},{"Name":"integrity","Value":"sha256-YYz67t1Et/LowZrRrXSNsxZS0Tbi\u002B/mbmnxmodYq/vg="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49976"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YYz67t1Et/LowZrRrXSNsxZS0Tbi\u002B/mbmnxmodYq/vg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v8o8d31z9m"},{"Name":"integrity","Value":"sha256-Qeq5uCuFRFuJxYqPANLot\u002BB7GyxIxQJ8Hiq1sZlDnB8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_modern.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38368"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Qeq5uCuFRFuJxYqPANLot\u002BB7GyxIxQJ8Hiq1sZlDnB8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YYz67t1Et/LowZrRrXSNsxZS0Tbi\u002B/mbmnxmodYq/vg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"49976"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YYz67t1Et/LowZrRrXSNsxZS0Tbi\u002B/mbmnxmodYq/vg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qtE4hcseuZhkRHHziq1HfRvA\u002BALNwYwPdKDXqAoKNrE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52169"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qtE4hcseuZhkRHHziq1HfRvA\u002BALNwYwPdKDXqAoKNrE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css.dmdw0d8vpc.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dmdw0d8vpc"},{"Name":"integrity","Value":"sha256-9aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"71288"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00229aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"71288"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00229aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"71288"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00229aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"71288"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00229aAsK12uMLQNht7El5WUPfhAsbU1QL4A9QiJVPrkPfE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.ez7tkkml4x.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ez7tkkml4x"},{"Name":"integrity","Value":"sha256-qtE4hcseuZhkRHHziq1HfRvA\u002BALNwYwPdKDXqAoKNrE="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52169"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qtE4hcseuZhkRHHziq1HfRvA\u002BALNwYwPdKDXqAoKNrE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38234"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qX/Uxc85DKOk80gdKd61JDtCYQt5/MFYFkA1KEqqNTc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38235"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qX/Uxc85DKOk80gdKd61JDtCYQt5/MFYFkA1KEqqNTc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css.ecgitb36w0.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ecgitb36w0"},{"Name":"integrity","Value":"sha256-wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"67687"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"67687"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"67687"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"67687"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022wuMzP3jEZQDf/kOyvdbTlF24RWn2xJRUFO0ubSlJ62o=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.nvtcvvmgj2.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.veo3eptdye.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nvtcvvmgj2"},{"Name":"integrity","Value":"sha256-vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38234"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"veo3eptdye"},{"Name":"integrity","Value":"sha256-qX/Uxc85DKOk80gdKd61JDtCYQt5/MFYFkA1KEqqNTc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_semanticui.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38235"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qX/Uxc85DKOk80gdKd61JDtCYQt5/MFYFkA1KEqqNTc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"33819"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TJyd7y1L2X7mBt4AvNSuY4W\u002BJB2LAuNGbB1yoX0kpBc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35232"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022TJyd7y1L2X7mBt4AvNSuY4W\u002BJB2LAuNGbB1yoX0kpBc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css.hggmoeeypd.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hggmoeeypd"},{"Name":"integrity","Value":"sha256-L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49605"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49605"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"49605"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"49605"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022L5M/GqzD\u002BJCv00xO3Ml56YpYydqFIwNZgQNA1b9VUSI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.jwxssmhe5f.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.cur7v7yfi4.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jwxssmhe5f"},{"Name":"integrity","Value":"sha256-o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33819"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cur7v7yfi4"},{"Name":"integrity","Value":"sha256-TJyd7y1L2X7mBt4AvNSuY4W\u002BJB2LAuNGbB1yoX0kpBc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35232"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022TJyd7y1L2X7mBt4AvNSuY4W\u002BJB2LAuNGbB1yoX0kpBc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.aggp97flxk.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.8a9q2xpoeu.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aggp97flxk"},{"Name":"integrity","Value":"sha256-inQx/4b6aqApQ7cEcN93\u002BnCU5\u002BrJ8kILZ4DGlwxzRes="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29377"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022inQx/4b6aqApQ7cEcN93\u002BnCU5\u002BrJ8kILZ4DGlwxzRes=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8a9q2xpoeu"},{"Name":"integrity","Value":"sha256-gFgWMhJz9a2EfaNRLpJWQbypNR5iDF/EqwQrTrGz2T8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29378"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gFgWMhJz9a2EfaNRLpJWQbypNR5iDF/EqwQrTrGz2T8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-inQx/4b6aqApQ7cEcN93\u002BnCU5\u002BrJ8kILZ4DGlwxzRes="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29377"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022inQx/4b6aqApQ7cEcN93\u002BnCU5\u002BrJ8kILZ4DGlwxzRes=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gFgWMhJz9a2EfaNRLpJWQbypNR5iDF/EqwQrTrGz2T8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29378"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gFgWMhJz9a2EfaNRLpJWQbypNR5iDF/EqwQrTrGz2T8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css.15u2e8uhp1.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"15u2e8uhp1"},{"Name":"integrity","Value":"sha256-FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48403"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48403"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_simple.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"48403"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"48403"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022FRNBKqPOYh9tfNm94lIXKg3k\u002B1adyAKRVht6McimJjo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.6foaj2cd80.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.5dhkuwed64.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6foaj2cd80"},{"Name":"integrity","Value":"sha256-ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36072"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5dhkuwed64"},{"Name":"integrity","Value":"sha256-6RL2\u002By9toTkdap68FttIXfCafQbIaKM6SPr\u002Ba\u002Bk138E="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37584"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226RL2\u002By9toTkdap68FttIXfCafQbIaKM6SPr\u002Ba\u002Bk138E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36072"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6RL2\u002By9toTkdap68FttIXfCafQbIaKM6SPr\u002Ba\u002Bk138E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"37584"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226RL2\u002By9toTkdap68FttIXfCafQbIaKM6SPr\u002Ba\u002Bk138E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.css.aiqkpddc1f.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aiqkpddc1f"},{"Name":"integrity","Value":"sha256-zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52849"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52849"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52849"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"52849"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zl/KzfzSS6iokbLx3A1WQsxRkoxgXFTsV/ICC8t2QGc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gfd3\u002BSuRQWnY1ozFFUMncGeIOv46fY7PqGWldF\u002Bqw4M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"31223"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gfd3\u002BSuRQWnY1ozFFUMncGeIOv46fY7PqGWldF\u002Bqw4M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-laJ6eA0VhBPwU1a7A3v1aUDvkG2yirJ8Y1Z3ZizUT84="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"31224"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022laJ6eA0VhBPwU1a7A3v1aUDvkG2yirJ8Y1Z3ZizUT84=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"51503"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"51503"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css.qwen81qicg.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qwen81qicg"},{"Name":"integrity","Value":"sha256-Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"51503"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"51503"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Onc87ZdqFCpVhZowOwqwuvNOwXzfJwurtQ7jLI12r\u002BY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.rlfqrbra35.css">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.vvrxm7slql.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rlfqrbra35"},{"Name":"integrity","Value":"sha256-gfd3\u002BSuRQWnY1ozFFUMncGeIOv46fY7PqGWldF\u002Bqw4M="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31223"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gfd3\u002BSuRQWnY1ozFFUMncGeIOv46fY7PqGWldF\u002Bqw4M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vvrxm7slql"},{"Name":"integrity","Value":"sha256-laJ6eA0VhBPwU1a7A3v1aUDvkG2yirJ8Y1Z3ZizUT84="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31224"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022laJ6eA0VhBPwU1a7A3v1aUDvkG2yirJ8Y1Z3ZizUT84=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.1ze79j6npz.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1ze79j6npz"},{"Name":"integrity","Value":"sha256-jTztWaqiODotC17ptDacpAxNeUPIhMs//8R72vLtsCA="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"42961"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jTztWaqiODotC17ptDacpAxNeUPIhMs//8R72vLtsCA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/hf0QoutmqyaxEB6leJ1vtMo\u002Bbtso33c32A0ucg6OX4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"41230"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/hf0QoutmqyaxEB6leJ1vtMo\u002Bbtso33c32A0ucg6OX4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jTztWaqiODotC17ptDacpAxNeUPIhMs//8R72vLtsCA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"42961"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jTztWaqiODotC17ptDacpAxNeUPIhMs//8R72vLtsCA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"60278"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"60278"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css.xwsydqjoqy.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xwsydqjoqy"},{"Name":"integrity","Value":"sha256-4ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"60278"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.530aizlnaa.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"530aizlnaa"},{"Name":"integrity","Value":"sha256-8eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35464"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"60278"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00224ctAu1kRyrU\u002BPsf1rJ6MoLvC3cX/mp2S5fH9WWRKuK4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35464"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Esp31STlOU1pwnt6\u002B9PG8kUgL64yaN48/hj24\u002Bb7YE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35465"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228Esp31STlOU1pwnt6\u002B9PG8kUgL64yaN48/hj24\u002Bb7YE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"58563"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"58563"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css.ybzqzf26un.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ybzqzf26un"},{"Name":"integrity","Value":"sha256-XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"58563"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"58563"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XnTRT/9wwSlCPXKQQ2g6Q6CYVY5\u002BgjFAuU8/CA8wkag=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.q2qk39o0vy.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.g4dypnyxlc.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q2qk39o0vy"},{"Name":"integrity","Value":"sha256-/hf0QoutmqyaxEB6leJ1vtMo\u002Bbtso33c32A0ucg6OX4="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"41230"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/hf0QoutmqyaxEB6leJ1vtMo\u002Bbtso33c32A0ucg6OX4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g4dypnyxlc"},{"Name":"integrity","Value":"sha256-8Esp31STlOU1pwnt6\u002B9PG8kUgL64yaN48/hj24\u002Bb7YE="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/css/tabulator_site_dark.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35465"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228Esp31STlOU1pwnt6\u002B9PG8kUgL64yaN48/hj24\u002Bb7YE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/jquery_wrapper.8hud1fnyqj.js">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/jquery_wrapper.exwn6eezfv.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8hud1fnyqj"},{"Name":"integrity","Value":"sha256-jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/jquery_wrapper.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1695"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"exwn6eezfv"},{"Name":"integrity","Value":"sha256-jpsvp/IwLHq\u002Bgxv7r7J0OT\u002BXekg\u002B7fbDCb0h7NZ\u002BZ7Y="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/jquery_wrapper.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1758"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jpsvp/IwLHq\u002Bgxv7r7J0OT\u002BXekg\u002B7fbDCb0h7NZ\u002BZ7Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/jquery_wrapper.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1695"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jpsvp/IwLHq\u002Bgxv7r7J0OT\u002BXekg\u002B7fbDCb0h7NZ\u002BZ7Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1758"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jpsvp/IwLHq\u002Bgxv7r7J0OT\u002BXekg\u002B7fbDCb0h7NZ\u002BZ7Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.joc10nryed.js">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.0nfxp4iau8.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"joc10nryed"},{"Name":"integrity","Value":"sha256-jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"758116"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0nfxp4iau8"},{"Name":"integrity","Value":"sha256-bLZ\u002BZ4puGOwslHe0zRxKntLTsEjX4E6LWBPKlhDoGA8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"786589"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022bLZ\u002BZ4puGOwslHe0zRxKntLTsEjX4E6LWBPKlhDoGA8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"758116"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bLZ\u002BZ4puGOwslHe0zRxKntLTsEjX4E6LWBPKlhDoGA8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"786589"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022bLZ\u002BZ4puGOwslHe0zRxKntLTsEjX4E6LWBPKlhDoGA8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.js.ly7utdzy37.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ly7utdzy37"},{"Name":"integrity","Value":"sha256-zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.js.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4142756"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4142756"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.js.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4142756"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.min.7kw1y4mo0d.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7kw1y4mo0d"},{"Name":"integrity","Value":"sha256-6VInLDsq\u002Bk67YM7124y\u002BnLqrqlK1DDzT0imTylIVpv8="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"442820"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226VInLDsq\u002Bk67YM7124y\u002BnLqrqlK1DDzT0imTylIVpv8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4142756"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022zcTpe/7vVOd2DrcskX1nyQ0t4LHnGjz6Ope3nwPW1MI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6VInLDsq\u002Bk67YM7124y\u002BnLqrqlK1DDzT0imTylIVpv8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"442820"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226VInLDsq\u002Bk67YM7124y\u002BnLqrqlK1DDzT0imTylIVpv8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ofT1JiNsNLIcTPFKCAOucBYVbc5Ov/otCJ9VhuUHA4I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"442823"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ofT1JiNsNLIcTPFKCAOucBYVbc5Ov/otCJ9VhuUHA4I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.min.js.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3510630"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3510630"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.min.js.wz50kdjj5c.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wz50kdjj5c"},{"Name":"integrity","Value":"sha256-XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.min.js.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3510630"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3510630"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022XPbMLMFqEg4AyIi\u002BwBLNOadQ/ua4PN4WHm\u002BkzPFRlNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.415ao1ihx9.mjs">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator.min.lnl8l4x0i2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"415ao1ihx9"},{"Name":"integrity","Value":"sha256-CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"732761"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lnl8l4x0i2"},{"Name":"integrity","Value":"sha256-ofT1JiNsNLIcTPFKCAOucBYVbc5Ov/otCJ9VhuUHA4I="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"442823"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ofT1JiNsNLIcTPFKCAOucBYVbc5Ov/otCJ9VhuUHA4I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TZdcWQaYTJsQa9rd6k4a6V/\u002BAEtH5E0UfkLlHm5ACLM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"732760"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022TZdcWQaYTJsQa9rd6k4a6V/\u002BAEtH5E0UfkLlHm5ACLM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WKqLN0gEytSJ/W93rSGC1fx0ZUsC3CnIItHPr3vhUX0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"761275"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022WKqLN0gEytSJ/W93rSGC1fx0ZUsC3CnIItHPr3vhUX0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4067617"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4067617"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js.u3tsweljcc.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u3tsweljcc"},{"Name":"integrity","Value":"sha256-WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4067617"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4067617"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022WqrEgMnOiSd\u002BKrGC7TbZhal2MDNA83G/RF0i66Dju2c=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.kpd5h0dwtl.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kpd5h0dwtl"},{"Name":"integrity","Value":"sha256-WKqLN0gEytSJ/W93rSGC1fx0ZUsC3CnIItHPr3vhUX0="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"761275"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022WKqLN0gEytSJ/W93rSGC1fx0ZUsC3CnIItHPr3vhUX0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mbh8yueq2k.mjs">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mbh8yueq2k"},{"Name":"integrity","Value":"sha256-sgOEh/pHuuYiwIrhEMpaoM5tZQxk0DnhnC8AU0J5zl4="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"761276"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sgOEh/pHuuYiwIrhEMpaoM5tZQxk0DnhnC8AU0J5zl4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.d05xua3iyj.mjs">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d05xua3iyj"},{"Name":"integrity","Value":"sha256-Y3JxJ62Es/3dnEaubYSKbG/kmdmsD4eYqLtN//No5b4="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444149"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Y3JxJ62Es/3dnEaubYSKbG/kmdmsD4eYqLtN//No5b4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb\u002BckUCY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"444145"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb\u002BckUCY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vjWyi4vwvqSqtJ74cJz4F3vaYibcPj4KMXdynKomBzw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"444148"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vjWyi4vwvqSqtJ74cJz4F3vaYibcPj4KMXdynKomBzw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3518252"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3518252"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js.vp94y0nosh.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vp94y0nosh"},{"Name":"integrity","Value":"sha256-M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3518252"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3518252"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022M9yqux6n9hM2HRpKEYvh9tHOfH6Oncv/uodqnjyKvnc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"444146"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Y3JxJ62Es/3dnEaubYSKbG/kmdmsD4eYqLtN//No5b4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"444149"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Y3JxJ62Es/3dnEaubYSKbG/kmdmsD4eYqLtN//No5b4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs.9llfc1fqai.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9llfc1fqai"},{"Name":"integrity","Value":"sha256-DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3518253"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3518253"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3518253"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3518253"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022DbufGb7RaR1zWXXm06t0LDk1xTmCNJEFWSwD7orq3Zk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.qpzfw82in2.js">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.quvcyvytyl.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qpzfw82in2"},{"Name":"integrity","Value":"sha256-cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb\u002BckUCY="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444145"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb\u002BckUCY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.y3xhcvnotr.mjs">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y3xhcvnotr"},{"Name":"integrity","Value":"sha256-ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.mjs"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444146"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"quvcyvytyl"},{"Name":"integrity","Value":"sha256-vjWyi4vwvqSqtJ74cJz4F3vaYibcPj4KMXdynKomBzw="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444148"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vjWyi4vwvqSqtJ74cJz4F3vaYibcPj4KMXdynKomBzw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"732761"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sgOEh/pHuuYiwIrhEMpaoM5tZQxk0DnhnC8AU0J5zl4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"761276"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sgOEh/pHuuYiwIrhEMpaoM5tZQxk0DnhnC8AU0J5zl4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs.bdykz9qqzp.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bdykz9qqzp"},{"Name":"integrity","Value":"sha256-AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4067618"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4067618"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.mjs.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4067618"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/js/tabulator_esm.ph95sbzsgy.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ph95sbzsgy"},{"Name":"integrity","Value":"sha256-TZdcWQaYTJsQa9rd6k4a6V/\u002BAEtH5E0UfkLlHm5ACLM="},{"Name":"label","Value":"_content/SwiftGrid/lib/tabulator/js/tabulator_esm.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"732760"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022TZdcWQaYTJsQa9rd6k4a6V/\u002BAEtH5E0UfkLlHm5ACLM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 10:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4067618"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022AS4vb5uxgrHZugeDDyfxcJWUCixoSVNrHO0WsH8asWU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 09:59:53 GMT"},{"Name":"Vary","Value":"Accept-Encoding"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

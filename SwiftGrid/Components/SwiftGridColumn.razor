@@ -2,29 +2,127 @@
 @typeparam TItem
 
 @code {
+    #region Parameters
+
+    /// <summary>
+    /// 부모 SwiftGrid 컴포넌트 참조 (Cascading Parameter)
+    /// </summary>
     [CascadingParameter]
     public SwiftGrid<TItem> Owner { get; set; } = default!;
 
-    [Parameter] public string Field { get; set; } = default!;
-    [Parameter] public string Title { get; set; } = default!;
-    [Parameter] public bool Sortable { get; set; } = false;
-    [Parameter] public bool Visible { get; set; } = true;
-    [Parameter] public string? Formatter { get; set; }
-    [Parameter] public int? Width { get; set; }
+    /// <summary>
+    /// 컬럼에 바인딩할 데이터 필드명
+    /// </summary>
+    [Parameter]
+    [EditorRequired]
+    public string Field { get; set; } = default!;
 
+    /// <summary>
+    /// 컬럼 헤더에 표시할 제목
+    /// </summary>
+    [Parameter]
+    [EditorRequired]
+    public string Title { get; set; } = default!;
+
+    /// <summary>
+    /// 정렬 가능 여부
+    /// </summary>
+    [Parameter]
+    public bool Sortable { get; set; } = false;
+
+    /// <summary>
+    /// 컬럼 표시 여부
+    /// </summary>
+    [Parameter]
+    public bool Visible { get; set; } = true;
+
+    /// <summary>
+    /// 데이터 포맷터 (Tabulator 포맷터 이름)
+    /// </summary>
+    [Parameter]
+    public string? Formatter { get; set; }
+
+        /// <summary>
+        /// 컬럼 너비 (픽셀 단위)
+        /// </summary>
+        [Parameter]
+        public int? Width { get; set; }
+
+        /// <summary>
+        /// 헤더 필터 활성화 여부
+        /// true로 설정하면 해당 컬럼의 헤더에 필터 입력 필드가 표시됩니다.
+        /// "input", "number", "select" 등의 타입을 문자열로 지정할 수도 있습니다.
+        /// </summary>
+        [Parameter]
+        public object? HeaderFilter { get; set; } = null;
+
+        /// <summary>
+        /// 헤더 필터 placeholder 텍스트
+        /// </summary>
+        [Parameter]
+        public string? HeaderFilterPlaceholder { get; set; } = null;
+
+        /// <summary>
+        /// 헤더 필터 파라미터 (select 타입의 경우 values 등)
+        /// </summary>
+        [Parameter]
+        public object? HeaderFilterParams { get; set; } = null;
+
+        /// <summary>
+        /// 셀 편집 가능 여부
+        /// true로 설정하면 해당 컬럼의 셀을 클릭하여 편집할 수 있습니다.
+        /// </summary>
+        [Parameter]
+        public bool? Editable { get; set; } = null;
+
+        /// <summary>
+        /// 셀 편집기 타입
+        /// "input", "textarea", "number", "select", "date" 등
+        /// </summary>
+        [Parameter]
+        public string? Editor { get; set; } = null;
+
+        /// <summary>
+        /// 셀 편집기 파라미터
+        /// </summary>
+        [Parameter]
+        public object? EditorParams { get; set; } = null;
+
+        #endregion
+
+    #region Lifecycle Methods
+
+    /// <summary>
+    /// 컴포넌트 초기화 시 컬럼 정의를 부모 그리드에 등록합니다.
+    /// </summary>
     protected override void OnInitialized()
     {
-        if (Owner is null)
-            throw new InvalidOperationException("SwiftGridColumn must be used inside a SwiftGrid.");
+        if (Owner == null)
+        {
+            throw new InvalidOperationException(
+                $"{nameof(SwiftGridColumn<TItem>)} must be used inside a {nameof(SwiftGrid<TItem>)}. " +
+                $"Wrap the column definitions in a {nameof(SwiftGrid<TItem>)} component."
+            );
+        }
 
-        Owner.RegisterColumn(new SwiftGridColumnDefinition
+        var columnDefinition = new SwiftGridColumnDefinition
         {
             Field = Field,
             Title = Title,
             Sortable = Sortable,
             Visible = Visible,
             Formatter = Formatter,
-            Width = Width
-        });
+            Width = Width,
+            HeaderFilter = HeaderFilter,
+            HeaderFilterPlaceholder = HeaderFilterPlaceholder,
+            HeaderFilterParams = HeaderFilterParams,
+            Editable = Editable,
+            Editor = Editor,
+            EditorParams = EditorParams
+        };
+
+        Owner.RegisterColumn(columnDefinition);
     }
+
+    #endregion
 }

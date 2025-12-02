@@ -1,4 +1,4 @@
-/* _content/SwiftGrid.Demo/Components/Layout/MainLayout.razor.rz.scp.css */
+/* /Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-snlvb4dygo] {
     position: relative;
     display: flex;
@@ -97,7 +97,7 @@ main[b-snlvb4dygo] {
         right: 0.75rem;
         top: 0.5rem;
     }
-/* _content/SwiftGrid.Demo/Components/Layout/NavMenu.razor.rz.scp.css */
+/* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-ic7sswxbe8] {
     appearance: none;
     cursor: pointer;
