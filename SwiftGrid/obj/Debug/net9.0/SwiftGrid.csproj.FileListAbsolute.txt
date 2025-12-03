@@ -89,7 +89,6 @@ C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\SwiftGrid.dll
 C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\refint\SwiftGrid.dll
 C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\SwiftGrid.pdb
 C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\ref\SwiftGrid.dll
-C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\compressed\7sbty6tw2l-4lulyojzlv.gz
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\bin\Debug\net9.0\SwiftGrid.staticwebassets.runtime.json
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\bin\Debug\net9.0\SwiftGrid.staticwebassets.endpoints.json
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\bin\Debug\net9.0\SwiftGrid.deps.json
@@ -184,3 +183,5 @@ C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\obj\Debug\net9.0\refint\Sw
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\obj\Debug\net9.0\SwiftGrid.pdb
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\obj\Debug\net9.0\ref\SwiftGrid.dll
 C:\Users\eunseok\Documents\GitHub\SwiftGrid\SwiftGrid\obj\Debug\net9.0\compressed\s862zfgovg-{0}-kt3dej25qe-kt3dej25qe.gz
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\SwiftGrid.sourcelink.json
+C:\Users\user\source\repos\SwiftGrid\SwiftGrid\obj\Debug\net9.0\compressed\7sbty6tw2l-duqtnshnmz.gz

@@ -624,6 +624,30 @@
 
     #endregion
 
+    #region Row Management Methods
+
+    /// <summary>
+    /// 행을 삭제합니다.
+    /// </summary>
+    /// <param name="rowFilter">삭제할 행 필터 (인덱스, ID, 배열, 또는 데이터 객체)</param>
+    /// <exception cref="InvalidOperationException">그리드가 초기화되지 않은 경우</exception>
+    public async Task DeleteRowAsync(object rowFilter)
+    {
+        EnsureInitialized();
+
+        try
+        {
+            await JS.InvokeVoidAsync("swiftGrid.deleteRow", _tableRef, rowFilter);
+        }
+        catch (JSException ex)
+        {
+            Console.Error.WriteLine($"SwiftGrid: Failed to delete row - {ex.Message}");
+            throw new InvalidOperationException("Failed to delete row. Make sure Tabulator is properly initialized.", ex);
+        }
+    }
+
+    #endregion
+
     #region IDisposable Implementation
 
     /// <summary>

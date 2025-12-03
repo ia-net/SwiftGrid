@@ -73,7 +73,8 @@ new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
         History = true, // Undo/Redo 활성화
         Clipboard = true, // 클립보드 복사 활성화
         EnableRowSelectionCheckbox = true, // 체크박스를 통한 행 선택 활성화
-        RowSelectionRange = "visible" // 전체 선택 체크박스 클릭 시 선택 범위
+        RowSelectionRange = "active", // 전체 선택 체크박스 클릭 시 선택 범위
+        EnableRowContextMenu = true, // 행 컨텍스트 메뉴 활성화 
     };
 
     private Person? SelectedPerson;

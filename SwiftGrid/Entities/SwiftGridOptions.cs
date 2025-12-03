@@ -106,6 +106,13 @@
         public string? RowSelectionRange { get; set; } = "active";
 
         /// <summary>
+        /// 행 컨텍스트 메뉴 활성화 여부
+        /// true: 기본 컨텍스트 메뉴 활성화 (행 삭제, 클립보드 복사)
+        /// false: 비활성화 (기본값)
+        /// </summary>
+        public bool EnableRowContextMenu { get; set; } = false;
+
+        /// <summary>
         /// 옵션의 유효성을 검사합니다.
         /// </summary>
         /// <exception cref="ArgumentException">유효하지 않은 옵션 값인 경우</exception>

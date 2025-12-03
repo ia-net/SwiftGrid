@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwiftGrid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b42141222ca2e18804e1fdcbff354012e00ee46b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc15b3ad1c1f4fdd2381c2ae8b285e1450b593ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwiftGrid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwiftGrid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
