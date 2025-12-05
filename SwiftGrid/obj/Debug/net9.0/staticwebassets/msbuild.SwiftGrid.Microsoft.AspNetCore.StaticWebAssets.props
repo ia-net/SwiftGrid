@@ -17,7 +17,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>378</FileLength>
-      <LastWriteTime>Tue, 02 Dec 2025 05:20:20 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))">
@@ -37,7 +37,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>247</FileLength>
-      <LastWriteTime>Tue, 02 Dec 2025 05:20:20 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>epby9nauil</Fingerprint>
-      <Integrity>Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY=</Integrity>
+      <Fingerprint>d0zvem9si5</Fingerprint>
+      <Integrity>/ThUjlGX5M51E/3l9RkF+q2erL4bQuCUjYOS+lM3AlI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>44145</FileLength>
-      <LastWriteTime>Fri, 05 Dec 2025 05:46:20 GMT</LastWriteTime>
+      <FileLength>30499</FileLength>
+      <LastWriteTime>Fri, 05 Dec 2025 12:20:31 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))">
@@ -72,12 +72,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a3yw2zezsd</Fingerprint>
-      <Integrity>aj0rnxTLKUD77kPNGbnjJGW6Cwy4kX3KFNYdAffIEj8=</Integrity>
+      <Fingerprint>b1rkrn6bzm</Fingerprint>
+      <Integrity>35zp5FzYhFZtwYD2H09RK/qyKJ+JOZ32hUWIhe++dGA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>32606</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>33962</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))">
@@ -97,7 +97,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>47937</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))">
@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>89lnnk4hat</Fingerprint>
-      <Integrity>pG2AUZRMdFyuinl2tPudk9iU0gh2pFIcxPbwNc/vUuo=</Integrity>
+      <Fingerprint>qsh26hrpjy</Fingerprint>
+      <Integrity>mmBmaisShNRjLYYjVgmxSE+yXymMFMYWwjaKJ74KEgA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>28359</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>28360</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))">
@@ -137,7 +137,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>46844</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))">
@@ -152,12 +152,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vyu5xcw92z</Fingerprint>
-      <Integrity>+SLu1sDW96zSpLDbcZ0M2XAOwb2kJYXZvJCOp01ZQIs=</Integrity>
+      <Fingerprint>rwyaverfuc</Fingerprint>
+      <Integrity>xUkOKtKricbey1Ce0L8d0Y4v/nReJzQQAKK68p3xk0I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>37424</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>38993</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))">
@@ -177,7 +177,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>54478</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))">
@@ -192,12 +192,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>phd2i89iz6</Fingerprint>
-      <Integrity>zTLX6Fj7Oa9UhCo7MXTRSJwg5f5We4k2fzXIBUJZKpg=</Integrity>
+      <Fingerprint>vqibfua6xc</Fingerprint>
+      <Integrity>p/pEVPQLSZILJ3HcexgPgi+0omilQ91ADma0HffjSXQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>32199</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>32200</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))">
@@ -217,7 +217,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>52817</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap3.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))">
@@ -232,12 +232,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hrxyw7rg27</Fingerprint>
-      <Integrity>bSsAhvj6k+ZKnWT057H72NTTpZVIDu6grDcevjgpOpM=</Integrity>
+      <Fingerprint>8sd2ee1463</Fingerprint>
+      <Integrity>SIg3hmYdFNA+qswhDKojj4ER6VcQCqipzXg5y1UAZj0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>45138</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>46977</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))">
@@ -257,7 +257,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>64726</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))">
@@ -272,12 +272,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>62u9qypdy7</Fingerprint>
-      <Integrity>bvJKN/ZEgp5dLjEhajg2Y+YxO8kZz+xTIJxGwtEAn2k=</Integrity>
+      <Fingerprint>sl5qtwjjtg</Fingerprint>
+      <Integrity>4EsoGwJRyIUm4089JdD2uHUJNruvsrJ9HCIO03I5lUk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>39188</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>39189</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))">
@@ -297,7 +297,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>62795</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap4.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))">
@@ -312,12 +312,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0dg1t047v4</Fingerprint>
-      <Integrity>FEYX65JywJxPNZt9D8usF0VFzJN5kYihKqrNgmrK2l0=</Integrity>
+      <Fingerprint>a22905udtk</Fingerprint>
+      <Integrity>ssYlpEXZYClaK8kYEFl9kgEKbMPIS4RqG3OVmFhSrYA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>45524</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>47390</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))">
@@ -337,7 +337,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>65298</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))">
@@ -352,12 +352,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3zvx4t6bmw</Fingerprint>
-      <Integrity>H1gQqBIR3L9enXuoNfFASj+QdGSEQIAloT7c4FXjNzc=</Integrity>
+      <Fingerprint>j20o2l1soz</Fingerprint>
+      <Integrity>W9xlCT5G9Fd6jx6tJtrz4rwLI7A5/fmgj5S0njr3a4Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>39385</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>39386</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))">
@@ -377,7 +377,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>63298</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bootstrap5.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))">
@@ -392,12 +392,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>59rhdfw3zu</Fingerprint>
-      <Integrity>OS2B96rQE35I3uhQ4KNu9+GQxMoKi+6bWpi6y52AjNs=</Integrity>
+      <Fingerprint>vawmlq3nux</Fingerprint>
+      <Integrity>+eVp3hYpEhit1mfbzqjKbTASJRwvbkM80veDCfjbASo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>37160</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>38705</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))">
@@ -417,7 +417,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>54270</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))">
@@ -432,12 +432,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uqw9cvqrit</Fingerprint>
-      <Integrity>BtZCOlRTafoWnK6k9gdzX/yngVZ/IPHuRTYcitf1QgQ=</Integrity>
+      <Fingerprint>3pdhjw78av</Fingerprint>
+      <Integrity>ab1Wky7ABbfXtn3hVgox+nB/WVsWxhLA99DEdIfPZg0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>32036</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>32037</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))">
@@ -457,7 +457,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>52800</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_bulma.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))">
@@ -472,12 +472,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2jd1xlh596</Fingerprint>
-      <Integrity>QoBZjwFiDMqRtR7bRJCDD8G4r09dCotK3L3vCaBttzU=</Integrity>
+      <Fingerprint>2lr4nq4y3z</Fingerprint>
+      <Integrity>pkOlTThdxzs4DQZePCya21WHn/1oTcXFvZevPyV+sY8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>38277</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>39853</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))">
@@ -497,7 +497,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>55541</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))">
@@ -512,12 +512,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>x3eaaiati5</Fingerprint>
-      <Integrity>E+gOOTT3iCHhkXkV35iFmwEyRqznP7vOv4XOnbQjWnc=</Integrity>
+      <Fingerprint>gmdaoi9ls8</Fingerprint>
+      <Integrity>eNNca6dbFthtM/1CfQk1CphI6yEkPx19k/UVHFEAZzM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>32902</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>32903</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))">
@@ -537,7 +537,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>54000</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_materialize.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))">
@@ -552,12 +552,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>m90oeikbuu</Fingerprint>
-      <Integrity>ppLYZz3VfZfTW07iBLl8gyq/1IEnNuik/93T1a5MvQ0=</Integrity>
+      <Fingerprint>plxoms3gzv</Fingerprint>
+      <Integrity>40lA7sH75ZLK1nAwapwDxq2qzhHaVR1mfLHmnRAK5Vw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>35154</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>36628</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))">
@@ -577,7 +577,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>51447</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))">
@@ -592,12 +592,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1n1bk1pyho</Fingerprint>
-      <Integrity>DSUhIreWPLwm13bB7SAtDIwoq4UXKOvo5rCQ1A4JHaE=</Integrity>
+      <Fingerprint>5ga24l75wg</Fingerprint>
+      <Integrity>ZUmY2F4xnvdGf8C/+t3pJ/49J8B17acMev6d9w+3CiA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>30358</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>30359</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))">
@@ -617,7 +617,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>50104</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_midnight.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))">
@@ -632,12 +632,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>x2cwr114lg</Fingerprint>
-      <Integrity>KbTiZ/qXuTlPa66BpQ+GwD0MDj4edm3vz+ZOtfjj8XQ=</Integrity>
+      <Fingerprint>v8o8d31z9m</Fingerprint>
+      <Integrity>Qeq5uCuFRFuJxYqPANLot+B7GyxIxQJ8Hiq1sZlDnB8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>36835</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>38368</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))">
@@ -657,7 +657,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>53653</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))">
@@ -672,12 +672,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>088u75pjtg</Fingerprint>
-      <Integrity>IHBy4Ttmp60AwPsW8KlxI0MmIibT3jc5TRU6kw4gBaQ=</Integrity>
+      <Fingerprint>mqot8s36rc</Fingerprint>
+      <Integrity>fsq5mkqjFxAnS9Rm2QQ4PbI5pHFqdhpggG+z5QGP+iU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>32068</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>32069</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))">
@@ -697,7 +697,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>52352</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_modern.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))">
@@ -712,12 +712,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7uu2ro53ur</Fingerprint>
-      <Integrity>YYz67t1Et/LowZrRrXSNsxZS0Tbi+/mbmnxmodYq/vg=</Integrity>
+      <Fingerprint>ez7tkkml4x</Fingerprint>
+      <Integrity>qtE4hcseuZhkRHHziq1HfRvA+ALNwYwPdKDXqAoKNrE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>49976</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>52169</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))">
@@ -737,7 +737,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>71288</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))">
@@ -752,12 +752,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nvtcvvmgj2</Fingerprint>
-      <Integrity>vSIonpSbdDKTwnEOiRhumZln75n/MkVBWLrhpSJKOao=</Integrity>
+      <Fingerprint>veo3eptdye</Fingerprint>
+      <Integrity>qX/Uxc85DKOk80gdKd61JDtCYQt5/MFYFkA1KEqqNTc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>38234</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>38235</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))">
@@ -777,7 +777,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>67687</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_semanticui.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))">
@@ -792,12 +792,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jwxssmhe5f</Fingerprint>
-      <Integrity>o96Uvzr2w/EWG4C6E5L4SyGdqafwikGcoyj6/M77VQM=</Integrity>
+      <Fingerprint>cur7v7yfi4</Fingerprint>
+      <Integrity>TJyd7y1L2X7mBt4AvNSuY4W+JB2LAuNGbB1yoX0kpBc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>33819</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>35232</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))">
@@ -817,7 +817,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>49605</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))">
@@ -832,12 +832,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>aggp97flxk</Fingerprint>
-      <Integrity>inQx/4b6aqApQ7cEcN93+nCU5+rJ8kILZ4DGlwxzRes=</Integrity>
+      <Fingerprint>8a9q2xpoeu</Fingerprint>
+      <Integrity>gFgWMhJz9a2EfaNRLpJWQbypNR5iDF/EqwQrTrGz2T8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>29377</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>29378</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))">
@@ -857,7 +857,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>48403</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_simple.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))">
@@ -872,12 +872,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6foaj2cd80</Fingerprint>
-      <Integrity>ItVZbPqQsWAv4KQvQxjiXVYzoZC5GkmCR0bdRlyfnGg=</Integrity>
+      <Fingerprint>5dhkuwed64</Fingerprint>
+      <Integrity>6RL2+y9toTkdap68FttIXfCafQbIaKM6SPr+a+k138E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>36072</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>37584</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))">
@@ -897,7 +897,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>52849</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))">
@@ -912,12 +912,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rlfqrbra35</Fingerprint>
-      <Integrity>gfd3+SuRQWnY1ozFFUMncGeIOv46fY7PqGWldF+qw4M=</Integrity>
+      <Fingerprint>vvrxm7slql</Fingerprint>
+      <Integrity>laJ6eA0VhBPwU1a7A3v1aUDvkG2yirJ8Y1Z3ZizUT84=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>31223</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>31224</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))">
@@ -937,7 +937,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>51503</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))">
@@ -952,12 +952,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q2qk39o0vy</Fingerprint>
-      <Integrity>/hf0QoutmqyaxEB6leJ1vtMo+btso33c32A0ucg6OX4=</Integrity>
+      <Fingerprint>1ze79j6npz</Fingerprint>
+      <Integrity>jTztWaqiODotC17ptDacpAxNeUPIhMs//8R72vLtsCA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>41230</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>42961</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))">
@@ -977,7 +977,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>60278</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))">
@@ -992,12 +992,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>530aizlnaa</Fingerprint>
-      <Integrity>8eyu2AuMkoMVZztHwRPFLMmty51ljfS/10oodmeKjEc=</Integrity>
+      <Fingerprint>g4dypnyxlc</Fingerprint>
+      <Integrity>8Esp31STlOU1pwnt6+9PG8kUgL64yaN48/hj24+b7YE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>35464</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>35465</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))">
@@ -1017,7 +1017,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>58563</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator_site_dark.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))">
@@ -1032,12 +1032,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8hud1fnyqj</Fingerprint>
-      <Integrity>jAhICuXBKoQHmwwiKP5acvjRyAvhwhFy7USe38sjjVE=</Integrity>
+      <Fingerprint>exwn6eezfv</Fingerprint>
+      <Integrity>jpsvp/IwLHq+gxv7r7J0OT+Xekg+7fbDCb0h7NZ+Z7Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>1695</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>1758</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\jquery_wrapper.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))">
@@ -1052,12 +1052,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>joc10nryed</Fingerprint>
-      <Integrity>jR2NG560cUmkBDnr/8LIGmg39s/coiwxGUdREcU1OGs=</Integrity>
+      <Fingerprint>0nfxp4iau8</Fingerprint>
+      <Integrity>bLZ+Z4puGOwslHe0zRxKntLTsEjX4E6LWBPKlhDoGA8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>758116</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>786589</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))">
@@ -1077,7 +1077,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>4142756</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.js.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))">
@@ -1092,12 +1092,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7kw1y4mo0d</Fingerprint>
-      <Integrity>6VInLDsq+k67YM7124y+nLqrqlK1DDzT0imTylIVpv8=</Integrity>
+      <Fingerprint>lnl8l4x0i2</Fingerprint>
+      <Integrity>ofT1JiNsNLIcTPFKCAOucBYVbc5Ov/otCJ9VhuUHA4I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>442820</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>442823</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))">
@@ -1117,7 +1117,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>3510630</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator.min.js.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))">
@@ -1132,12 +1132,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ph95sbzsgy</Fingerprint>
-      <Integrity>TZdcWQaYTJsQa9rd6k4a6V/+AEtH5E0UfkLlHm5ACLM=</Integrity>
+      <Fingerprint>kpd5h0dwtl</Fingerprint>
+      <Integrity>WKqLN0gEytSJ/W93rSGC1fx0ZUsC3CnIItHPr3vhUX0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>732760</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>761275</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))">
@@ -1152,12 +1152,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>415ao1ihx9</Fingerprint>
-      <Integrity>CKxwHzf8OgqpWjpwv5jvdJV4HjR95rwbTK03PmyCHeo=</Integrity>
+      <Fingerprint>mbh8yueq2k</Fingerprint>
+      <Integrity>sgOEh/pHuuYiwIrhEMpaoM5tZQxk0DnhnC8AU0J5zl4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>732761</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>761276</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))">
@@ -1177,7 +1177,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>4067617</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.js.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))">
@@ -1192,12 +1192,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qpzfw82in2</Fingerprint>
-      <Integrity>cr0tkD6YCb/UEScBPgw3CeVXzP2mYvlLQ37Mb+ckUCY=</Integrity>
+      <Fingerprint>quvcyvytyl</Fingerprint>
+      <Integrity>vjWyi4vwvqSqtJ74cJz4F3vaYibcPj4KMXdynKomBzw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>444145</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>444148</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))">
@@ -1212,12 +1212,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>y3xhcvnotr</Fingerprint>
-      <Integrity>ImY8zB2HYRj1rBE9FNIbwgtpspFPKQkz//Tr8N43CAU=</Integrity>
+      <Fingerprint>d05xua3iyj</Fingerprint>
+      <Integrity>Y3JxJ62Es/3dnEaubYSKbG/kmdmsD4eYqLtN//No5b4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>444146</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <FileLength>444149</FileLength>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))">
@@ -1237,7 +1237,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>3518252</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.js.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))">
@@ -1257,7 +1257,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>3518253</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.min.mjs.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))">
@@ -1277,7 +1277,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>4067618</FileLength>
-      <LastWriteTime>Sat, 05 Jul 2025 10:49:39 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Dec 2025 09:59:53 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\js\tabulator_esm.mjs.map'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

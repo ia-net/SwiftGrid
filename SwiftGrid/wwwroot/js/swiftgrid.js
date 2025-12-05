@@ -1,145 +1,78 @@
-﻿// SwiftGrid JavaScript Module
-// SwiftGrid - Blazor wrapper for Tabulator
-// Version: 1.0.0
+﻿// SwiftGrid - Blazor wrapper for Tabulator
 window.swiftGrid = (function () {
   "use strict";
 
-  // ============================================
   // Constants
-  // ============================================
-
   const MODULE_NAME = "SwiftGrid";
   const DEFAULT_LAYOUT = "fitColumns";
   const DEFAULT_PAGINATION_MODE = "local";
   const DEFAULT_PAGINATION_COUNTER = "rows";
-  const SUPPORTED_DOWNLOAD_TYPES = ["csv", "json", "xlsx", "pdf", "html"];
-
-  // 체크박스 컬럼 설정
   const CHECKBOX_COLUMN_WIDTH = 50;
   const CHECKBOX_COLUMN_ALIGN = "center";
   const CHECKBOX_COLUMN_VERT_ALIGN = "middle";
-
-  // 클립보드 설정
   const DEFAULT_CLIPBOARD_ROW_RANGE = "selected";
   const FALLBACK_CLIPBOARD_ROW_RANGE = "active";
   const CLIPBOARD_RESTORE_DELAY = 100;
-
-  // 검색 설정
   const DEFAULT_FILTER_TYPE = "like";
   const SEARCH_CASE_SENSITIVE = false;
-
-  // 이벤트 키 코드
   const KEY_CODE_C = 67;
-
-  // 쿼리 상태 업데이트 지연 시간 (ms)
   const QUERY_CHANGE_NOTIFICATION_DELAY = 50;
   const INITIAL_QUERY_NOTIFICATION_DELAY = 100;
-
-  // 기본 페이지네이션 값
   const DEFAULT_PAGE = 1;
   const DEFAULT_PAGE_SIZE = 10;
 
-  // 필터 타입 매핑 (Tabulator -> SwiftGrid)
   const FILTER_TYPE_MAP = {
-    "=": "eq",
-    "==": "eq",
-    "!=": "neq",
-    "!==": "neq",
-    "like": "like",
-    "regex": "like",
-    ">": "gt",
-    ">=": "gte",
-    "<": "lt",
-    "<=": "lte",
-    "in": "in",
-    "nin": "nin",
+    "=": "eq", "==": "eq", "!=": "neq", "!==": "neq",
+    "like": "like", "regex": "like",
+    ">": "gt", ">=": "gte", "<": "lt", "<=": "lte",
+    "in": "in", "nin": "nin",
   };
 
-  // ============================================
-  // Module State
-  // ============================================
+  const PROCESSED_COLUMN_PROPERTIES = new Set([
+    "field", "title", "sortable", "visible", "width", "formatter",
+    "headerfilter", "headerfilterplaceholder", "headerfilterparams",
+    "editable", "editor", "editorparams",
+  ]);
 
+  // Module State
   const tables = new Map();
 
-  // ============================================
   // Utility Functions
-  // ============================================
 
-  /**
-   * 로그 레벨에 따라 콘솔에 메시지를 출력합니다.
-   * @param {string} level - 로그 레벨 ('error', 'warn', 'info', 'debug')
-   * @param {string} message - 로그 메시지
-   * @param {any} [data] - 추가 데이터
-   */
+  /** 로그 출력 */
   function log(level, message, data) {
-    if (!console || typeof console[level] !== "function") {
-      return;
-    }
-
+    if (!console || typeof console[level] !== "function") return;
     const prefix = `[${MODULE_NAME}]`;
-    const fullMessage = `${prefix} ${message}`;
-
     if (data !== undefined) {
-      console[level](fullMessage, data);
+      console[level](`${prefix} ${message}`, data);
     } else {
-      console[level](fullMessage);
+      console[level](`${prefix} ${message}`);
     }
   }
 
-  /**
-   * 요소의 고유 키를 가져옵니다.
-   * @param {Element|string} element - DOM 요소 또는 요소 참조
-   * @returns {string|Element|null} 요소의 ID 또는 요소 자체
-   */
+  /** 요소의 고유 키 가져오기 */
   function getKey(element) {
-    if (!element) {
-      return null;
-    }
+    if (!element) return null;
     return element.id || element;
   }
 
-  /**
-   * C# 객체의 속성을 camelCase로 변환합니다.
-   * PascalCase와 camelCase 모두 지원합니다.
-   * @param {any} obj - 변환할 객체
-   * @param {string} camelKey - camelCase 키
-   * @param {string} pascalKey - PascalCase 키
-   * @param {any} defaultValue - 기본값
-   * @returns {any} 변환된 값
-   */
+  /** C# 객체 속성 가져오기 (PascalCase/camelCase 지원) */
   function getProperty(obj, camelKey, pascalKey, defaultValue) {
     if (obj?.[camelKey] !== undefined) return obj[camelKey];
     if (obj?.[pascalKey] !== undefined) return obj[pascalKey];
     return defaultValue;
   }
 
-  /**
-   * 테이블 인스턴스를 안전하게 조회합니다.
-   * @param {Element|string} element - 테이블 DOM 요소
-   * @returns {{table: Tabulator, key: string}|null} 테이블 인스턴스와 키, 없으면 null
-   */
+  /** 테이블 인스턴스 조회 */
   function getTable(element) {
     const key = getKey(element);
-    if (!key) {
-      return null;
-    }
-
+    if (!key) return null;
     const table = tables.get(key);
-    if (!table) {
-      return null;
-    }
-
+    if (!table) return null;
     return { table, key };
   }
 
-  /**
-   * 테이블 조회 및 유효성 검사를 수행합니다.
-   * @param {Element|string} element - 테이블 DOM 요소
-   * @param {string} operation - 수행할 작업 이름 (에러 메시지용)
-   * @param {string} [requiredMethod] - 필요한 메서드 이름
-   * @returns {{table: Tabulator, key: string}|null} 테이블 인스턴스와 키
-   * @throws {Error} 테이블을 찾을 수 없거나 필요한 메서드가 없는 경우
-   */
+  /** 테이블 조회 및 유효성 검사 */
   function getTableWithValidation(element, operation, requiredMethod) {
     const result = getTable(element);
     if (!result) {
@@ -147,35 +80,21 @@ window.swiftGrid = (function () {
       log("warn", `Table with key '${key}' not found. Cannot ${operation}.`);
       throw new Error(`Table not found for key: ${key}`);
     }
-
     if (requiredMethod && typeof result.table[requiredMethod] !== "function") {
       const errorMsg = `${requiredMethod} method not available. Make sure the required Tabulator module is loaded.`;
       log("error", errorMsg);
       throw new Error(errorMsg);
     }
-
     return result;
   }
 
-  /**
-   * 필드명을 camelCase로 정규화합니다.
-   * @param {string} field - 원본 필드명
-   * @returns {string} 정규화된 필드명
-   */
+  /** 필드명을 camelCase로 정규화 */
   function normalizeFieldName(field) {
-    if (!field || typeof field !== "string") {
-      return field;
-    }
+    if (!field || typeof field !== "string") return field;
     return field.charAt(0).toLowerCase() + field.slice(1);
   }
 
-  /**
-   * 컬럼 속성을 안전하게 설정합니다.
-   * @param {object} target - 대상 객체
-   * @param {string} key - 속성 키
-   * @param {any} value - 속성 값
-   * @param {any} defaultValue - 기본값 (null이 아닌 경우에만 설정)
-   */
+  /** 속성을 안전하게 설정 */
   function setPropertyIfNotNull(target, key, value, defaultValue = null) {
     if (value !== null && value !== undefined) {
       target[key] = value;
@@ -184,35 +103,30 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
-  // Column Conversion Functions
-  // ============================================
-
-  /**
-   * 컬럼 정의를 Tabulator 형식으로 변환합니다.
-   * @param {Array} columns - C#에서 전달된 컬럼 정의 배열
-   * @returns {Array} Tabulator 컬럼 정의 배열
-   */
-  function convertColumns(columns) {
-    if (!columns?.length) {
-      return [];
+  /** DotNet 호출을 안전하게 실행하는 헬퍼 */
+  function safeInvokeDotNet(dotNetRef, methodName, data, errorMessage) {
+    if (!dotNetRef) {
+      log("warn", `DotNetRef is null, cannot invoke ${methodName}`);
+      return;
     }
+    if (typeof dotNetRef.invokeMethodAsync !== "function") {
+      log("warn", `DotNetRef.invokeMethodAsync is not a function. Cannot invoke ${methodName}`);
+      return;
+    }
+    try {
+      dotNetRef.invokeMethodAsync(methodName, data).catch((err) => {
+        log("error", errorMessage || `Error invoking ${methodName}`, err);
+      });
+    } catch (error) {
+      log("error", errorMessage || `Error in ${methodName}`, error);
+    }
+  }
 
-    // 처리된 속성 목록 (중복 복사 방지)
-    const PROCESSED_PROPERTIES = new Set([
-      "field",
-      "title",
-      "sortable",
-      "visible",
-      "width",
-      "formatter",
-      "headerfilter",
-      "headerfilterplaceholder",
-      "headerfilterparams",
-      "editable",
-      "editor",
-      "editorparams",
-    ]);
+  // Column Conversion Functions
+
+  /** 컬럼 정의를 Tabulator 형식으로 변환 */
+  function convertColumns(columns) {
+    if (!columns?.length) return [];
 
     return columns.map((col) => {
       const sortable = getProperty(col, "sortable", "Sortable", false);
@@ -226,62 +140,42 @@ window.swiftGrid = (function () {
         visible: visible,
       };
 
-      // 너비 설정
-      const width = getProperty(col, "width", "Width", null);
-      setPropertyIfNotNull(tabCol, "width", width);
+      setPropertyIfNotNull(tabCol, "width", getProperty(col, "width", "Width", null));
+      setPropertyIfNotNull(tabCol, "formatter", getProperty(col, "formatter", "Formatter", null));
 
-      // 포맷터 설정
-      const formatter = getProperty(col, "formatter", "Formatter", null);
-      setPropertyIfNotNull(tabCol, "formatter", formatter);
-
-      // 헤더 필터 옵션 설정
-      const headerFilter = getProperty(
-        col,
-        "headerFilter",
-        "HeaderFilter",
-        null
-      );
+      const headerFilter = getProperty(col, "headerFilter", "HeaderFilter", null);
       if (headerFilter !== null && headerFilter !== undefined) {
         tabCol.headerFilter = headerFilter === true ? "input" : headerFilter;
       }
 
-      const headerFilterPlaceholder = getProperty(
-        col,
-        "headerFilterPlaceholder",
-        "HeaderFilterPlaceholder",
-        null
-      );
-      setPropertyIfNotNull(tabCol, "headerFilterPlaceholder", headerFilterPlaceholder);
+      setPropertyIfNotNull(tabCol, "headerFilterPlaceholder", 
+        getProperty(col, "headerFilterPlaceholder", "HeaderFilterPlaceholder", null));
+      setPropertyIfNotNull(tabCol, "headerFilterParams", 
+        getProperty(col, "headerFilterParams", "HeaderFilterParams", null));
 
-      const headerFilterParams = getProperty(
-        col,
-        "headerFilterParams",
-        "HeaderFilterParams",
-        null
-      );
-      setPropertyIfNotNull(tabCol, "headerFilterParams", headerFilterParams);
-
-      // 편집 옵션 설정
       const editable = getProperty(col, "editable", "Editable", null);
       if (editable !== null && editable !== undefined) {
         tabCol.editable = editable === true ? true : editable;
       }
 
-      const editor = getProperty(col, "editor", "Editor", null);
-      setPropertyIfNotNull(tabCol, "editor", editor);
+      setPropertyIfNotNull(tabCol, "editor", getProperty(col, "editor", "Editor", null));
+      setPropertyIfNotNull(tabCol, "editorParams", 
+        getProperty(col, "editorParams", "EditorParams", null));
 
-      const editorParams = getProperty(
-        col,
-        "editorParams",
-        "EditorParams",
-        null
-      );
-      setPropertyIfNotNull(tabCol, "editorParams", editorParams);
+      // Tabulator가 인식하는 추가 속성만 복사 (데이터 객체 속성 제외)
+      const TABULATOR_COLUMN_PROPERTIES = new Set([
+        "field", "title", "headerSort", "visible", "width", "formatter",
+        "headerFilter", "headerFilterPlaceholder", "headerFilterParams",
+        "editable", "editor", "editorParams", "hozAlign", "vertAlign",
+        "headerHozAlign", "headerVertAlign", "frozen", "resizable",
+        "cellClick", "formatterParams", "titleFormatter", "titleFormatterParams"
+      ]);
 
-      // 추가 속성 동적 복사 (처리되지 않은 속성만)
       Object.keys(col).forEach((key) => {
         const lowerKey = key.toLowerCase();
-        if (!PROCESSED_PROPERTIES.has(lowerKey) && !tabCol.hasOwnProperty(key)) {
+        if (!PROCESSED_COLUMN_PROPERTIES.has(lowerKey) && 
+            !tabCol.hasOwnProperty(key) &&
+            TABULATOR_COLUMN_PROPERTIES.has(lowerKey)) {
           tabCol[key] = col[key];
         }
       });
@@ -290,35 +184,19 @@ window.swiftGrid = (function () {
     });
   }
 
-  /**
-   * 체크박스 컬럼 정의를 생성합니다.
-   * @param {string} rowRange - 행 선택 범위
-   * @returns {object} 체크박스 컬럼 정의
-   */
+  /** 체크박스 컬럼 정의 생성 */
   function createCheckboxColumn(rowRange) {
     return {
       formatter: "rowSelection",
       titleFormatter: "rowSelection",
-      formatterParams: {
-        rowRange: rowRange,
-      },
-      titleFormatterParams: {
-        rowRange: rowRange,
-      },
+      formatterParams: { rowRange: rowRange },
+      titleFormatterParams: { rowRange: rowRange },
       cellClick: function (e, cell) {
-        // 체크박스 자체를 클릭한 경우는 이미 처리되므로 무시
-        if (
-          e.target &&
-          (e.target.type === "checkbox" ||
-            e.target.closest('input[type="checkbox"]'))
-        ) {
+        if (e.target && (e.target.type === "checkbox" || e.target.closest('input[type="checkbox"]'))) {
           return;
         }
-        // 셀의 다른 부분을 클릭한 경우 행 선택 토글
         const row = cell.getRow();
-        if (row) {
-          row.toggleSelect();
-        }
+        if (row) row.toggleSelect();
       },
       headerSort: false,
       hozAlign: CHECKBOX_COLUMN_ALIGN,
@@ -331,139 +209,70 @@ window.swiftGrid = (function () {
     };
   }
 
-  // ============================================
   // Options Conversion Functions
-  // ============================================
 
-  /**
-   * 페이지네이션 옵션을 변환합니다.
-   * @param {object} options - C# 옵션 객체
-   * @param {object} tabOptions - Tabulator 옵션 객체 (수정됨)
-   */
+  /** 페이지네이션 옵션 변환 */
   function convertPaginationOptions(options, tabOptions) {
     const pagination = getProperty(options, "pagination", "Pagination", false);
-    if (!pagination) {
-      return;
-    }
+    if (!pagination) return;
 
-    tabOptions.pagination =
-      pagination === true ? DEFAULT_PAGINATION_MODE : pagination;
+    tabOptions.pagination = pagination === true ? DEFAULT_PAGINATION_MODE : pagination;
 
-    const paginationSize = getProperty(
-      options,
-      "paginationSize",
-      "PaginationSize",
-      null
-    );
-    setPropertyIfNotNull(tabOptions, "paginationSize", paginationSize);
+    setPropertyIfNotNull(tabOptions, "paginationSize", 
+      getProperty(options, "paginationSize", "PaginationSize", null));
+    setPropertyIfNotNull(tabOptions, "paginationMode", 
+      getProperty(options, "paginationMode", "PaginationMode", null));
 
-    const paginationMode = getProperty(
-      options,
-      "paginationMode",
-      "PaginationMode",
-      null
-    );
-    setPropertyIfNotNull(tabOptions, "paginationMode", paginationMode);
-
-    // paginationCounter 처리
-    const paginationCounter = getProperty(
-      options,
-      "paginationCounter",
-      "PaginationCounter",
-      null
-    );
+    const paginationCounter = getProperty(options, "paginationCounter", "PaginationCounter", null);
     if (paginationCounter !== null && paginationCounter !== false) {
-      tabOptions.paginationCounter =
-        paginationCounter === true
-          ? DEFAULT_PAGINATION_COUNTER
-          : paginationCounter;
+      tabOptions.paginationCounter = paginationCounter === true 
+        ? DEFAULT_PAGINATION_COUNTER 
+        : paginationCounter;
     } else if (paginationCounter === false) {
       tabOptions.paginationCounter = false;
     }
 
-    const paginationSizeSelector = getProperty(
-      options,
-      "paginationSizeSelector",
-      "PaginationSizeSelector",
-      null
-    );
-    setPropertyIfNotNull(tabOptions, "paginationSizeSelector", paginationSizeSelector);
-
-    const paginationButtonCount = getProperty(
-      options,
-      "paginationButtonCount",
-      "PaginationButtonCount",
-      null
-    );
-    setPropertyIfNotNull(tabOptions, "paginationButtonCount", paginationButtonCount);
+    setPropertyIfNotNull(tabOptions, "paginationSizeSelector", 
+      getProperty(options, "paginationSizeSelector", "PaginationSizeSelector", null));
+    setPropertyIfNotNull(tabOptions, "paginationButtonCount", 
+      getProperty(options, "paginationButtonCount", "PaginationButtonCount", null));
   }
 
-  /**
-   * 행 클릭 이벤트 핸들러를 생성합니다.
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   * @returns {Function} 행 클릭 이벤트 핸들러
-   */
+  /** 행 클릭 이벤트 핸들러 생성 */
   function createRowClickHandler(dotNetRef) {
     return function (e, row) {
-      if (!dotNetRef) {
-        return;
-      }
-
+      if (!dotNetRef) return;
       try {
         const rowData = row.getData();
-        dotNetRef
-          .invokeMethodAsync("HandleRowClicked", rowData)
-          .catch((err) => {
-            log("error", "Error invoking row click callback", err);
-          });
+        safeInvokeDotNet(dotNetRef, "HandleRowClicked", rowData, "Error invoking row click callback");
       } catch (error) {
         log("error", "Error in row click handler", error);
       }
     };
   }
 
-  /**
-   * 셀 편집 완료 이벤트 핸들러를 생성합니다.
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   * @returns {Function} 셀 편집 완료 이벤트 핸들러
-   */
+  /** 셀 편집 완료 이벤트 핸들러 생성 */
   function createCellEditedHandler(dotNetRef) {
     return function (cell) {
-      if (!dotNetRef) {
-        return;
-      }
-
+      if (!dotNetRef) return;
       try {
-        const cellComponent =
-          typeof cell.getComponent === "function"
-            ? cell.getComponent()
-            : cell;
-
+        const cellComponent = typeof cell.getComponent === "function" ? cell.getComponent() : cell;
         const cellData = {
           field: cellComponent.getField(),
           value: cellComponent.getValue(),
-          oldValue:
-            typeof cellComponent.getOldValue === "function"
-              ? cellComponent.getOldValue()
-              : null,
+          oldValue: typeof cellComponent.getOldValue === "function" 
+            ? cellComponent.getOldValue() 
+            : null,
           row: cellComponent.getRow().getData(),
         };
-
-        dotNetRef
-          .invokeMethodAsync("HandleCellEdited", cellData)
-          .catch((err) => {
-            log("error", "Error invoking cell edited callback", err);
-          });
+        safeInvokeDotNet(dotNetRef, "HandleCellEdited", cellData, "Error invoking cell edited callback");
       } catch (error) {
         log("error", "Error in cell edited handler", error);
       }
     };
   }
 
-  /**
-   * 기본 행 컨텍스트 메뉴를 생성합니다.
-   * @returns {Array} 컨텍스트 메뉴 항목 배열
-   */
+  /** 기본 행 컨텍스트 메뉴 생성 */
   function createDefaultRowContextMenu() {
     return [
       {
@@ -489,9 +298,7 @@ window.swiftGrid = (function () {
           }
         },
       },
-      {
-        separator: true,
-      },
+      { separator: true },
       {
         label: "삭제",
         action: function (e, row) {
@@ -505,12 +312,7 @@ window.swiftGrid = (function () {
     ];
   }
 
-  /**
-   * C# 옵션 객체를 Tabulator 형식으로 변환합니다.
-   * @param {any} options - C#에서 전달된 옵션 객체
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   * @returns {object} Tabulator 옵션 객체
-   */
+  /** C# 옵션 객체를 Tabulator 형식으로 변환 */
   function convertOptions(options, dotNetRef) {
     const tabOptions = {
       layout: getProperty(options, "layout", "Layout", DEFAULT_LAYOUT),
@@ -519,47 +321,24 @@ window.swiftGrid = (function () {
       rowClick: createRowClickHandler(dotNetRef),
     };
 
-    // 페이지네이션 옵션 추가
     convertPaginationOptions(options, tabOptions);
 
-    // 히스토리(undo/redo) 옵션 추가
-    const history = getProperty(options, "history", "History", false);
-    setPropertyIfNotNull(tabOptions, "history", history);
+    setPropertyIfNotNull(tabOptions, "history", getProperty(options, "history", "History", false));
+    setPropertyIfNotNull(tabOptions, "editTriggerEvent", 
+      getProperty(options, "editTriggerEvent", "EditTriggerEvent", null));
+    setPropertyIfNotNull(tabOptions, "clipboard", 
+      getProperty(options, "clipboard", "Clipboard", null));
 
-    // 편집 트리거 이벤트 옵션 추가
-    const editTriggerEvent = getProperty(
-      options,
-      "editTriggerEvent",
-      "EditTriggerEvent",
-      null
-    );
-    setPropertyIfNotNull(tabOptions, "editTriggerEvent", editTriggerEvent);
+    const clipboardCopyRowRange = getProperty(options, "clipboardCopyRowRange", 
+      "ClipboardCopyRowRange", DEFAULT_CLIPBOARD_ROW_RANGE);
+    tabOptions.clipboardCopyRowRange = clipboardCopyRowRange || DEFAULT_CLIPBOARD_ROW_RANGE;
 
-    // 클립보드 옵션 추가
-    const clipboard = getProperty(options, "clipboard", "Clipboard", null);
-    setPropertyIfNotNull(tabOptions, "clipboard", clipboard);
-
-    const clipboardCopyRowRange = getProperty(
-      options,
-      "clipboardCopyRowRange",
-      "ClipboardCopyRowRange",
-      DEFAULT_CLIPBOARD_ROW_RANGE
-    );
-    tabOptions.clipboardCopyRowRange =
-      clipboardCopyRowRange || DEFAULT_CLIPBOARD_ROW_RANGE;
-
-    // 행 컨텍스트 메뉴 옵션 추가
-    const enableRowContextMenu = getProperty(
-      options,
-      "enableRowContextMenu",
-      "EnableRowContextMenu",
-      false
-    );
+    const enableRowContextMenu = getProperty(options, "enableRowContextMenu", 
+      "EnableRowContextMenu", false);
     if (enableRowContextMenu) {
       tabOptions.rowContextMenu = createDefaultRowContextMenu();
     }
 
-    // 셀 편집 완료 이벤트 핸들러 추가
     if (dotNetRef) {
       tabOptions.cellEdited = createCellEditedHandler(dotNetRef);
     }
@@ -567,35 +346,18 @@ window.swiftGrid = (function () {
     return tabOptions;
   }
 
-  // ============================================
   // Event Handlers
-  // ============================================
 
-  /**
-   * 클립보드 복사 이벤트 핸들러를 설정합니다.
-   * 선택된 행이 없을 때 fallback 범위를 사용합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   */
+  /** 클립보드 복사 이벤트 핸들러 설정 */
   function setupClipboardFallbackHandler(table) {
-    if (!table.modExists("clipboard") || !table.modExists("selectRow")) {
-      return;
-    }
+    if (!table.modExists("clipboard") || !table.modExists("selectRow")) return;
 
-    // 이벤트 리스너를 한 번만 등록하기 위해 함수 참조 저장
     const keydownHandler = function (e) {
-      if (
-        (e.ctrlKey || e.metaKey) &&
-        (e.key === "c" || e.keyCode === KEY_CODE_C)
-      ) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.keyCode === KEY_CODE_C)) {
         const selectedRows = table.modules.selectRow.selectedRows;
-        // 선택된 행이 없고 clipboardCopyRowRange가 "selected"로 설정되어 있으면
-        // "active"로 변경하여 현재 페이지의 행 복사
-        if (
-          (!selectedRows || selectedRows.length === 0) &&
-          table.modules.clipboard.rowRange === DEFAULT_CLIPBOARD_ROW_RANGE
-        ) {
+        if ((!selectedRows || selectedRows.length === 0) &&
+            table.modules.clipboard.rowRange === DEFAULT_CLIPBOARD_ROW_RANGE) {
           table.modules.clipboard.rowRange = FALLBACK_CLIPBOARD_ROW_RANGE;
-          // 복사 후 다시 "selected"로 복원
           setTimeout(function () {
             table.modules.clipboard.rowRange = DEFAULT_CLIPBOARD_ROW_RANGE;
           }, CLIPBOARD_RESTORE_DELAY);
@@ -606,112 +368,50 @@ window.swiftGrid = (function () {
     table.element.addEventListener("keydown", keydownHandler);
   }
 
-  /**
-   * 행 선택 변경 이벤트 핸들러를 설정합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   */
+  /** 행 선택 변경 이벤트 핸들러 설정 */
   function setupRowSelectionChangedHandler(table, dotNetRef) {
-    if (!dotNetRef) {
-      return;
-    }
+    if (!dotNetRef) return;
 
     table.on("rowSelectionChanged", function (selectedData) {
-      if (!dotNetRef) {
-        return;
-      }
-
-      try {
-        dotNetRef
-          .invokeMethodAsync(
-            "HandleRowSelectionChanged",
-            selectedData?.length || 0
-          )
-          .catch((err) => {
-            log(
-              "error",
-              "Error invoking row selection changed callback",
-              err
-            );
-          });
-      } catch (error) {
-        log("error", "Error in row selection changed handler", error);
-      }
+      if (!dotNetRef) return;
+      safeInvokeDotNet(dotNetRef, "HandleRowSelectionChanged", selectedData?.length || 0,
+        "Error invoking row selection changed callback");
     });
   }
 
-  /**
-   * 테이블의 현재 쿼리 상태를 수집합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @param {string} globalSearch - 전역 검색어 (있는 경우)
-   * @returns {object} 쿼리 상태 객체
-   */
-  /**
-   * Tabulator 필터 타입을 SwiftGrid 필터 연산자로 변환합니다.
-   * @param {string} tabulatorType - Tabulator 필터 타입
-   * @returns {string} SwiftGrid 필터 연산자
-   */
+  /** 필터 타입을 SwiftGrid 연산자로 변환 */
   function mapFilterTypeToOperator(tabulatorType) {
     return FILTER_TYPE_MAP[tabulatorType] || tabulatorType || "eq";
   }
 
-  /**
-   * 테이블의 페이지네이션 정보를 수집합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @returns {{Page: number, PageSize: number}} 페이지네이션 정보
-   */
+  /** 페이지네이션 정보 수집 */
   function getPaginationInfo(table) {
-    const result = {
-      Page: DEFAULT_PAGE,
-      PageSize: DEFAULT_PAGE_SIZE,
-    };
-
-    if (!table.modExists("page")) {
-      return result;
-    }
+    const result = { Page: DEFAULT_PAGE, PageSize: DEFAULT_PAGE_SIZE };
+    if (!table.modExists("page")) return result;
 
     const page = table.getPage();
     const pageSize = table.getPageSize();
 
-    if (page !== false && typeof page === "number") {
-      result.Page = page;
-    }
-
-    if (pageSize !== false && typeof pageSize === "number") {
-      result.PageSize = pageSize;
-    }
+    if (page !== false && typeof page === "number") result.Page = page;
+    if (pageSize !== false && typeof pageSize === "number") result.PageSize = pageSize;
 
     return result;
   }
 
-  /**
-   * 테이블의 정렬 정보를 수집합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @returns {Array<{Field: string, Dir: string}>} 정렬 정보 배열
-   */
+  /** 정렬 정보 수집 */
   function getSortInfo(table) {
     const sorters = table.getSorters();
-    if (!Array.isArray(sorters)) {
-      return [];
-    }
-
+    if (!Array.isArray(sorters)) return [];
     return sorters.map((sorter) => ({
       Field: sorter.field || "",
       Dir: sorter.dir === "desc" ? "desc" : "asc",
     }));
   }
 
-  /**
-   * 테이블의 필터 정보를 수집합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @returns {Array<{Field: string, Op: string, Value: any}>} 필터 정보 배열
-   */
+  /** 필터 정보 수집 */
   function getFilterInfo(table) {
-    const filters = table.getFilters(true); // true = 헤더 필터 포함
-    if (!Array.isArray(filters)) {
-      return [];
-    }
-
+    const filters = table.getFilters(true);
+    if (!Array.isArray(filters)) return [];
     return filters
       .filter((filter) => filter.field && filter.type !== undefined)
       .map((filter) => ({
@@ -721,98 +421,54 @@ window.swiftGrid = (function () {
       }));
   }
 
-  /**
-   * 테이블의 현재 쿼리 상태를 수집합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @param {string} globalSearch - 전역 검색어 (있는 경우)
-   * @returns {object} 쿼리 상태 객체
-   */
+  /** 쿼리 상태 수집 */
   function getQueryState(table, globalSearch) {
-    const pagination = getPaginationInfo(table);
-    const sorts = getSortInfo(table);
-    const filters = getFilterInfo(table);
-
     return {
-      Page: pagination.Page,
-      PageSize: pagination.PageSize,
-      Sorts: sorts,
-      Filters: filters,
+      Page: getPaginationInfo(table).Page,
+      PageSize: getPaginationInfo(table).PageSize,
+      Sorts: getSortInfo(table),
+      Filters: getFilterInfo(table),
       GlobalSearch: globalSearch || null,
     };
   }
 
-  /**
-   * 쿼리 상태 변경 이벤트 핸들러를 설정합니다.
-   * @param {Tabulator} table - Tabulator 테이블 인스턴스
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   * @param {object} queryState - 쿼리 상태 추적 객체 (globalSearch 저장용)
-   */
+  /** 쿼리 상태 변경 이벤트 핸들러 설정 */
   function setupQueryChangedHandler(table, dotNetRef, queryState) {
-    if (!dotNetRef) {
-      return;
-    }
+    if (!dotNetRef) return;
 
-    // 쿼리 상태를 C#으로 전달하는 함수
     const notifyQueryChanged = function () {
       if (!dotNetRef) {
         log("warn", "DotNetRef is null, cannot notify query changed");
         return;
       }
-
       try {
         const query = getQueryState(table, queryState.globalSearch);
         log("debug", "Notifying query changed", query);
-        dotNetRef
-          .invokeMethodAsync("HandleQueryChanged", query)
-          .then(() => {
-            log("debug", "Query changed notification sent successfully");
-          })
-          .catch((err) => {
-            log("error", "Error invoking query changed callback", err);
-          });
+        safeInvokeDotNet(dotNetRef, "HandleQueryChanged", query, "Error invoking query changed callback");
       } catch (error) {
         log("error", "Error in query changed handler", error);
       }
     };
 
-    // 페이지네이션 변경 감지
     if (table.modExists("page")) {
       table.on("pageLoaded", notifyQueryChanged);
       table.on("pageSizeChanged", notifyQueryChanged);
     }
 
-    // 정렬 변경 감지
     table.on("dataSorted", notifyQueryChanged);
-
-    // 필터 변경 감지
     table.on("dataFiltered", notifyQueryChanged);
     
-    // 헤더 필터 변경 감지 (실시간 업데이트)
     table.on("headerFilterChanged", function(column, value) {
-      log("debug", "Header filter changed", {
-        column: column?.getField(),
-        value: value,
-      });
-      // 약간의 지연을 두어 필터가 완전히 적용된 후 알림
+      log("debug", "Header filter changed", { column: column?.getField(), value: value });
       setTimeout(notifyQueryChanged, QUERY_CHANGE_NOTIFICATION_DELAY);
     });
 
-    // 초기 로드 시에도 한 번 쿼리 상태 전달
     setTimeout(notifyQueryChanged, INITIAL_QUERY_NOTIFICATION_DELAY);
   }
 
-  // ============================================
   // Table Initialization
-  // ============================================
 
-  /**
-   * Tabulator 테이블을 초기화합니다.
-   * @param {Element} element - 테이블을 생성할 DOM 요소
-   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
-   * @param {object} options - 그리드 옵션
-   * @param {Array} data - 테이블 데이터
-   * @param {Array} columns - 컬럼 정의
-   */
+  /** Tabulator 테이블 초기화 */
   function initTable(element, dotNetRef, options, data, columns) {
     if (!element) {
       log("error", "Invalid element provided for table initialization");
@@ -821,38 +477,22 @@ window.swiftGrid = (function () {
 
     const key = getKey(element);
     if (key && tables.has(key)) {
-      log(
-        "warn",
-        `Table with key '${key}' already exists. Destroying existing table.`
-      );
+      log("warn", `Table with key '${key}' already exists. Destroying existing table.`);
       destroyTable(element);
     }
 
     let convertedColumns = convertColumns(columns);
     const tableData = Array.isArray(data) ? data : [];
 
-    // 체크박스 선택 활성화 옵션 확인
-    const enableCheckbox = getProperty(
-      options,
-      "enableRowSelectionCheckbox",
-      "EnableRowSelectionCheckbox",
-      false
-    );
+    const enableCheckbox = getProperty(options, "enableRowSelectionCheckbox", 
+      "EnableRowSelectionCheckbox", false);
     if (enableCheckbox) {
-      const rowSelectionRange = getProperty(
-        options,
-        "rowSelectionRange",
-        "RowSelectionRange",
-        FALLBACK_CLIPBOARD_ROW_RANGE
-      );
+      const rowSelectionRange = getProperty(options, "rowSelectionRange", 
+        "RowSelectionRange", FALLBACK_CLIPBOARD_ROW_RANGE);
       const finalRange = rowSelectionRange || FALLBACK_CLIPBOARD_ROW_RANGE;
-
       const checkboxColumn = createCheckboxColumn(finalRange);
       convertedColumns = [checkboxColumn, ...convertedColumns];
-
-      log("debug", "Row selection checkbox column added", {
-        rowRange: finalRange,
-      });
+      log("debug", "Row selection checkbox column added", { rowRange: finalRange });
     }
 
     log("debug", "Initializing table", {
@@ -864,10 +504,7 @@ window.swiftGrid = (function () {
     });
 
     if (!window.Tabulator) {
-      log(
-        "error",
-        "Tabulator library is not loaded. Make sure tabulator.min.js is included before swiftgrid.js"
-      );
+      log("error", "Tabulator library is not loaded. Make sure tabulator.min.js is included before swiftgrid.js");
       throw new Error("Tabulator library is not loaded");
     }
 
@@ -879,32 +516,22 @@ window.swiftGrid = (function () {
       };
 
       const table = new Tabulator(element, tabulatorOptions);
-
-      // 쿼리 상태 추적 객체 (전역 검색어 저장용)
       const queryState = { globalSearch: null };
 
-      // 테이블이 완전히 초기화된 후 이벤트 리스너 추가
       table.on("tableBuilt", function () {
         setupClipboardFallbackHandler(table);
-        
-        // 행 선택 변경 이벤트 핸들러 등록
         if (enableCheckbox) {
           setupRowSelectionChangedHandler(table, dotNetRef);
         }
-
-        // 쿼리 상태 변경 이벤트 핸들러 등록 (tableBuilt 이후에 등록)
         setupQueryChangedHandler(table, dotNetRef, queryState);
       });
 
-      // 테이블 인스턴스와 쿼리 상태 저장
       if (key) {
         tables.set(key, table);
-        // 쿼리 상태도 함께 저장 (searchAll에서 사용)
         if (!tables.has(key + "_queryState")) {
           tables.set(key + "_queryState", queryState);
         }
       } else {
-        // ID가 없는 경우 임시 키 사용
         tables.set(element, table);
         tables.set(element + "_queryState", queryState);
       }
@@ -916,24 +543,13 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
   // Table Data Operations
-  // ============================================
 
-  /**
-   * 테이블 데이터를 업데이트합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {Array} data - 새로운 데이터
-   */
+  /** 테이블 데이터 업데이트 */
   function setData(element, data) {
     const { table, key } = getTableWithValidation(element, "update data");
-
     const tableData = Array.isArray(data) ? data : [];
-
-    log("debug", "Updating table data", {
-      key: key,
-      dataCount: tableData.length,
-    });
+    log("debug", "Updating table data", { key: key, dataCount: tableData.length });
 
     try {
       table.replaceData(tableData);
@@ -943,22 +559,14 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
   // Table Lifecycle
-  // ============================================
 
-  /**
-   * 테이블을 제거합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   */
+  /** 테이블 제거 */
   function destroyTable(element) {
     const result = getTable(element);
-    if (!result) {
-      return;
-    }
+    if (!result) return;
 
     const { table, key } = result;
-
     try {
       table.destroy();
       log("debug", "Table destroyed", { key: key });
@@ -966,28 +574,15 @@ window.swiftGrid = (function () {
       log("error", "Error destroying table", error);
     } finally {
       tables.delete(key);
-      // 쿼리 상태도 함께 삭제
       tables.delete(key + "_queryState");
     }
   }
 
-  // ============================================
   // Export Functions
-  // ============================================
 
-  /**
-   * 테이블 데이터를 파일로 다운로드합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {string} type - 다운로드 타입 (csv, json, xlsx, pdf, html)
-   * @param {string} filename - 파일명
-   * @param {object} options - 다운로드 옵션
-   */
+  /** 테이블 데이터 다운로드 */
   function download(element, type, filename, options) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "download",
-      "download"
-    );
+    const { table, key } = getTableWithValidation(element, "download", "download");
 
     try {
       const finalFilename = filename || `export.${type}`;
@@ -999,27 +594,17 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 테이블을 HTML 문자열로 반환합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {object} options - 옵션
-   * @returns {string} HTML 문자열
-   */
+  /** HTML 문자열 반환 */
   function getHtml(element, options) {
     const result = getTable(element);
     if (!result) {
-      const key = getKey(element);
-      log("warn", `Table with key '${key}' not found. Cannot get HTML.`);
+      log("warn", `Table with key '${getKey(element)}' not found. Cannot get HTML.`);
       return "";
     }
 
     const { table } = result;
-
     if (typeof table.getHtml !== "function") {
-      log(
-        "error",
-        "getHtml method not available. Make sure Tabulator export module is loaded."
-      );
+      log("error", "getHtml method not available. Make sure Tabulator export module is loaded.");
       return "";
     }
 
@@ -1031,14 +616,9 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 테이블을 인쇄합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {object} options - 인쇄 옵션
-   */
+  /** 테이블 인쇄 */
   function print(element, options) {
     const { table } = getTableWithValidation(element, "print", "print");
-
     try {
       log("debug", "Printing table", { key: getKey(element) });
       table.print(options || {});
@@ -1048,31 +628,13 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
   // Filter Functions
-  // ============================================
 
-  /**
-   * 테이블에 필터를 설정합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {string|Array|Function} filter - 필터링할 필드명, 필터 배열 또는 커스텀 필터 함수
-   * @param {string} type - 필터 타입 ("like", "=", "<", ">", "regex" 등)
-   * @param {any} value - 필터 값
-   */
+  /** 필터 설정 */
   function setFilter(element, filter, type, value) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "set filter",
-      "setFilter"
-    );
-
+    const { table, key } = getTableWithValidation(element, "set filter", "setFilter");
     try {
-      log("debug", "Setting filter", {
-        key: key,
-        filter: filter,
-        type: type,
-        value: value,
-      });
+      log("debug", "Setting filter", { key: key, filter: filter, type: type, value: value });
       table.setFilter(filter, type, value);
     } catch (error) {
       log("error", "Error setting filter", error);
@@ -1080,24 +642,15 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 모든 필터를 제거합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   */
+  /** 모든 필터 제거 */
   function clearFilter(element) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "clear filter",
-      "setFilter"
-    );
-
+    const { table, key } = getTableWithValidation(element, "clear filter", "setFilter");
     try {
       log("debug", "Clearing all filters", { key: key });
-      // Tabulator에서 모든 필터를 제거하는 방법
       if (typeof table.clearFilter === "function") {
-        table.clearFilter(true); // 헤더 필터 포함하여 모두 제거
+        table.clearFilter(true);
       } else {
-        table.setFilter(false); // 대체 방법
+        table.setFilter(false);
       }
     } catch (error) {
       log("error", "Error clearing filter", error);
@@ -1105,28 +658,15 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 모든 컬럼에서 검색을 수행합니다 (전역 검색).
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {string} searchValue - 검색할 값
-   * @param {string} filterType - 필터 타입 (기본값: "like")
-   */
+  /** 모든 컬럼에서 전역 검색 */
   function searchAll(element, searchValue, filterType) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "search",
-      "setFilter"
-    );
+    const { table, key } = getTableWithValidation(element, "search", "setFilter");
 
     try {
-      const type = filterType || DEFAULT_FILTER_TYPE;
-
-      // 쿼리 상태 객체 가져오기
       const queryStateKey = key + "_queryState";
       const queryState = tables.get(queryStateKey) || { globalSearch: null };
 
       if (!searchValue || searchValue.trim() === "") {
-        // 빈 검색어면 필터 제거
         if (typeof table.clearFilter === "function") {
           table.clearFilter(true);
         } else {
@@ -1137,15 +677,11 @@ window.swiftGrid = (function () {
         return;
       }
 
-      // 모든 컬럼에서 검색 - 커스텀 필터 함수를 사용하여 OR 조건으로 검색
       const columns = table.getColumns();
       const fieldNames = [];
-
       for (let i = 0; i < columns.length; i++) {
         const field = columns[i].getField();
-        if (field) {
-          fieldNames.push(field);
-        }
+        if (field) fieldNames.push(field);
       }
 
       if (fieldNames.length === 0) {
@@ -1153,28 +689,23 @@ window.swiftGrid = (function () {
         return;
       }
 
-      // 커스텀 필터 함수: 모든 필드에서 검색어가 포함된 행 반환
-      const searchLower = SEARCH_CASE_SENSITIVE
-        ? String(searchValue)
+      const searchLower = SEARCH_CASE_SENSITIVE 
+        ? String(searchValue) 
         : String(searchValue).toLowerCase();
 
       table.setFilter(function (data) {
-        // 모든 필드를 확인하여 하나라도 일치하면 true 반환
         for (let i = 0; i < fieldNames.length; i++) {
           const fieldValue = data[fieldNames[i]];
           if (fieldValue != null) {
-            const fieldStr = SEARCH_CASE_SENSITIVE
-              ? String(fieldValue)
+            const fieldStr = SEARCH_CASE_SENSITIVE 
+              ? String(fieldValue) 
               : String(fieldValue).toLowerCase();
-            if (fieldStr.indexOf(searchLower) !== -1) {
-              return true;
-            }
+            if (fieldStr.indexOf(searchLower) !== -1) return true;
           }
         }
         return false;
       });
 
-      // 전역 검색어 저장
       queryState.globalSearch = searchValue;
       if (!tables.has(queryStateKey)) {
         tables.set(queryStateKey, queryState);
@@ -1183,7 +714,7 @@ window.swiftGrid = (function () {
       log("debug", "Searching all columns", {
         key: key,
         value: searchValue,
-        type: type,
+        type: filterType || DEFAULT_FILTER_TYPE,
         columns: fieldNames.length,
       });
     } catch (error) {
@@ -1192,17 +723,11 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
   // History Functions
-  // ============================================
 
-  /**
-   * 마지막 편집을 취소합니다 (Undo).
-   * @param {Element} element - 테이블 DOM 요소
-   */
+  /** Undo */
   function undo(element) {
     const { table } = getTableWithValidation(element, "undo", "undo");
-
     try {
       log("debug", "Undoing last edit", { key: getKey(element) });
       table.undo();
@@ -1212,13 +737,9 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 마지막 취소한 편집을 다시 실행합니다 (Redo).
-   * @param {Element} element - 테이블 DOM 요소
-   */
+  /** Redo */
   function redo(element) {
     const { table } = getTableWithValidation(element, "redo", "redo");
-
     try {
       log("debug", "Redoing last undone edit", { key: getKey(element) });
       table.redo();
@@ -1228,72 +749,35 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * Undo 가능한 히스토리 항목 수를 반환합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @returns {number} Undo 가능한 항목 수
-   */
+  /** Undo 가능한 히스토리 항목 수 반환 */
   function getHistoryUndoSize(element) {
     const result = getTable(element);
-    if (!result) {
-      return 0;
-    }
-
-    const { table } = result;
-
-    if (typeof table.getHistoryUndoSize !== "function") {
-      return 0;
-    }
-
+    if (!result || typeof result.table.getHistoryUndoSize !== "function") return 0;
     try {
-      return table.getHistoryUndoSize() || 0;
+      return result.table.getHistoryUndoSize() || 0;
     } catch (error) {
       log("error", "Error getting undo size", error);
       return 0;
     }
   }
 
-  /**
-   * Redo 가능한 히스토리 항목 수를 반환합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @returns {number} Redo 가능한 항목 수
-   */
+  /** Redo 가능한 히스토리 항목 수 반환 */
   function getHistoryRedoSize(element) {
     const result = getTable(element);
-    if (!result) {
-      return 0;
-    }
-
-    const { table } = result;
-
-    if (typeof table.getHistoryRedoSize !== "function") {
-      return 0;
-    }
-
+    if (!result || typeof result.table.getHistoryRedoSize !== "function") return 0;
     try {
-      return table.getHistoryRedoSize() || 0;
+      return result.table.getHistoryRedoSize() || 0;
     } catch (error) {
       log("error", "Error getting redo size", error);
       return 0;
     }
   }
 
-  // ============================================
   // Clipboard Functions
-  // ============================================
 
-  /**
-   * 선택된 행의 데이터를 클립보드로 복사합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {string} rowRange - 복사 범위 ("selected", "active", "visible", "all")
-   */
+  /** 클립보드로 복사 */
   function copyToClipboard(element, rowRange) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "copy to clipboard",
-      "copyToClipboard"
-    );
-
+    const { table, key } = getTableWithValidation(element, "copy to clipboard", "copyToClipboard");
     try {
       const range = rowRange || DEFAULT_CLIPBOARD_ROW_RANGE;
       log("debug", "Copying to clipboard", { key: key, rowRange: range });
@@ -1304,33 +788,19 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
   // Row Selection Functions
-  // ============================================
 
-  /**
-   * 선택된 행의 데이터를 가져옵니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @returns {Array} 선택된 행의 데이터 배열
-   */
+  /** 선택된 행의 데이터 가져오기 */
   function getSelectedData(element) {
     const result = getTable(element);
     if (!result) {
-      const key = getKey(element);
-      log(
-        "warn",
-        `Table with key '${key}' not found. Cannot get selected data.`
-      );
+      log("warn", `Table with key '${getKey(element)}' not found. Cannot get selected data.`);
       return [];
     }
 
     const { table } = result;
-
     if (typeof table.getSelectedData !== "function") {
-      log(
-        "warn",
-        "getSelectedData method not available. Make sure Tabulator selectRow module is loaded."
-      );
+      log("warn", "getSelectedData method not available. Make sure Tabulator selectRow module is loaded.");
       return [];
     }
 
@@ -1342,35 +812,22 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 선택된 행 객체를 가져옵니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @returns {Array} 선택된 행 객체 배열
-   */
+  /** 선택된 행 객체 가져오기 */
   function getSelectedRows(element) {
     const result = getTable(element);
     if (!result) {
-      const key = getKey(element);
-      log(
-        "warn",
-        `Table with key '${key}' not found. Cannot get selected rows.`
-      );
+      log("warn", `Table with key '${getKey(element)}' not found. Cannot get selected rows.`);
       return [];
     }
 
     const { table } = result;
-
     if (typeof table.getSelectedRows !== "function") {
-      log(
-        "warn",
-        "getSelectedRows method not available. Make sure Tabulator selectRow module is loaded."
-      );
+      log("warn", "getSelectedRows method not available. Make sure Tabulator selectRow module is loaded.");
       return [];
     }
 
     try {
       const rows = table.getSelectedRows() || [];
-      // 행 객체를 데이터로 변환 (직렬화 가능하도록)
       return rows.map((row) => row.getData());
     } catch (error) {
       log("error", "Error getting selected rows", error);
@@ -1378,18 +835,9 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 행을 선택합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {number|string|Array|Function} rowFilter - 선택할 행 필터 (인덱스, ID, 배열, 또는 함수)
-   */
+  /** 행 선택 */
   function selectRow(element, rowFilter) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "select row",
-      "selectRow"
-    );
-
+    const { table, key } = getTableWithValidation(element, "select row", "selectRow");
     try {
       log("debug", "Selecting row", { key: key, rowFilter: rowFilter });
       table.selectRow(rowFilter);
@@ -1399,18 +847,9 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 행 선택을 해제합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {number|string|Array|Function} rowFilter - 선택 해제할 행 필터 (인덱스, ID, 배열, 또는 함수)
-   */
+  /** 행 선택 해제 */
   function deselectRow(element, rowFilter) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "deselect row",
-      "deselectRow"
-    );
-
+    const { table, key } = getTableWithValidation(element, "deselect row", "deselectRow");
     try {
       log("debug", "Deselecting row", { key: key, rowFilter: rowFilter });
       table.deselectRow(rowFilter);
@@ -1420,23 +859,11 @@ window.swiftGrid = (function () {
     }
   }
 
-  /**
-   * 행 선택 상태를 토글합니다.
-   * @param {Element} element - 테이블 DOM 요소
-   * @param {number|string|Array|Function} rowFilter - 토글할 행 필터 (인덱스, ID, 배열, 또는 함수)
-   */
+  /** 행 선택 토글 */
   function toggleSelectRow(element, rowFilter) {
-    const { table, key } = getTableWithValidation(
-      element,
-      "toggle row selection",
-      "toggleSelectRow"
-    );
-
+    const { table, key } = getTableWithValidation(element, "toggle row selection", "toggleSelectRow");
     try {
-      log("debug", "Toggling row selection", {
-        key: key,
-        rowFilter: rowFilter,
-      });
+      log("debug", "Toggling row selection", { key: key, rowFilter: rowFilter });
       table.toggleSelectRow(rowFilter);
     } catch (error) {
       log("error", "Error toggling row selection", error);
@@ -1444,10 +871,21 @@ window.swiftGrid = (function () {
     }
   }
 
-  // ============================================
-  // Public API
-  // ============================================
+  // Row Management Functions
 
+  /** 행 삭제 */
+  function deleteRow(element, rowFilter) {
+    const { table, key } = getTableWithValidation(element, "delete row", "deleteRow");
+    try {
+      log("debug", "Deleting row", { key: key, rowFilter: rowFilter });
+      table.deleteRow(rowFilter);
+    } catch (error) {
+      log("error", "Error deleting row", error);
+      throw error;
+    }
+  }
+
+  // Public API
   return {
     initTable,
     setData,
@@ -1468,5 +906,6 @@ window.swiftGrid = (function () {
     selectRow,
     deselectRow,
     toggleSelectRow,
+    deleteRow,
   };
 })();

@@ -1923,23 +1923,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\eunseok\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\SwiftGrid.Demo.csproj",
+      "projectUniqueName": "C:\\Users\\eunseok\\Documents\\GitHub\\SwiftGrid\\SwiftGrid.Demo\\SwiftGrid.Demo.csproj",
       "projectName": "SwiftGrid.Demo",
-      "projectPath": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\SwiftGrid.Demo.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid.Demo\\obj\\",
+      "projectPath": "C:\\Users\\eunseok\\Documents\\GitHub\\SwiftGrid\\SwiftGrid.Demo\\SwiftGrid.Demo.csproj",
+      "packagesPath": "C:\\Users\\eunseok\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eunseok\\Documents\\GitHub\\SwiftGrid\\SwiftGrid.Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eunseok\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1955,8 +1955,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\SwiftGrid.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\SwiftGrid\\SwiftGrid\\SwiftGrid.csproj"
+            "C:\\Users\\eunseok\\Documents\\GitHub\\SwiftGrid\\SwiftGrid\\SwiftGrid.csproj": {
+              "projectPath": "C:\\Users\\eunseok\\Documents\\GitHub\\SwiftGrid\\SwiftGrid\\SwiftGrid.csproj"
             }
           }
         }
@@ -1971,7 +1971,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -2001,6 +2001,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.11, 9.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[9.0.11, 9.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.11, 9.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.11, 9.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2009,7 +2027,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

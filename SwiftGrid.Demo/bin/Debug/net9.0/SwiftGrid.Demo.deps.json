@@ -85,8 +85,7 @@
       },
       "Microsoft.AspNetCore.Components/9.0.11": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "9.0.11",
-          "Microsoft.AspNetCore.Components.Analyzers": "9.0.11"
+          "Microsoft.AspNetCore.Authorization": "9.0.11"
         },
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.Components.dll": {
@@ -95,7 +94,6 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/9.0.11": {},
       "Microsoft.AspNetCore.Components.Forms/9.0.11": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "9.0.11"
@@ -314,8 +312,7 @@
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Http": "9.0.9",
-          "System.Text.Json": "7.0.4"
+          "Microsoft.Extensions.Http": "9.0.9"
         },
         "runtime": {
           "lib/net7.0/Microsoft.Fast.Components.FluentUI.dll": {
@@ -397,12 +394,6 @@
           }
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {},
-      "System.Text.Json/7.0.4": {
-        "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0"
-        }
-      },
       "SwiftGrid/1.0.0": {
         "dependencies": {
           "ClosedXML": "0.105.0",
@@ -471,13 +462,6 @@
       "sha512": "sha512-HIMOsBnuhcTNWBnCyugRHVgrh4iYfIM2Hl+8+8SQ6wrEIk+I2fUKa8USwV8XaMvZsjyJD7fPHaldAPoR9BNAVA==",
       "path": "microsoft.aspnetcore.components/9.0.11",
       "hashPath": "microsoft.aspnetcore.components.9.0.11.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Components.Analyzers/9.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7345cqEUev15rfdBeoBmYtUFrdHyYP/FVUbva3Q66eFTT0UuaykqWPtHmnv8R8GJZ9xntMxKhmqhySZTnth7sQ==",
-      "path": "microsoft.aspnetcore.components.analyzers/9.0.11",
-      "hashPath": "microsoft.aspnetcore.components.analyzers.9.0.11.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.Forms/9.0.11": {
       "type": "package",
@@ -653,20 +637,6 @@
       "sha512": "sha512-KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw==",
       "path": "system.io.packaging/8.0.1",
       "hashPath": "system.io.packaging.8.0.1.nupkg.sha512"
-    },
-    "System.Text.Encodings.Web/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "path": "system.text.encodings.web/7.0.0",
-      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
-    },
-    "System.Text.Json/7.0.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-30Qbrv661XW3zWfSgwgk54KPEBbM9eXYs3fRDjWfAxPp3oogHTUvsVFiUK20lyUDmJskho9SEZvUfsmcU8x16g==",
-      "path": "system.text.json/7.0.4",
-      "hashPath": "system.text.json.7.0.4.nupkg.sha512"
     },
     "SwiftGrid/1.0.0": {
       "type": "project",

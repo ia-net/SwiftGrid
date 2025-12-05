@@ -1,7 +1,7 @@
 @import '_content/Microsoft.Fast.Components.FluentUI/Microsoft.Fast.Components.FluentUI.bundle.scp.css';
 @import '_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.ewdlgswx1m.bundle.scp.css';
 
-/* _content/SwiftGrid.Demo/Components/Layout/MainLayout.razor.rz.scp.css */
+/* /Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-snlvb4dygo] {
     position: relative;
     display: flex;
@@ -101,7 +101,7 @@ main[b-snlvb4dygo] {
         right: 0.75rem;
         top: 0.5rem;
     }
-/* _content/SwiftGrid.Demo/Components/Layout/NavMenu.razor.rz.scp.css */
+/* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-ic7sswxbe8] {
     appearance: none;
     cursor: pointer;
