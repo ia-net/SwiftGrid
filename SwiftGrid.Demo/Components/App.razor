@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
     <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="_content/Microsoft.FluentUI.AspNetCore.Components/css/fluent-blazor.css" rel="stylesheet" />
     <link rel="stylesheet" href="@Assets["app.css"]" />
     <link rel="stylesheet" href="@Assets["SwiftGrid.Demo.styles.css"]" />
+    <link rel="stylesheet" href="css/docs-styles.css" />
     <link rel="stylesheet" href="_content/SwiftGrid/lib/tabulator/css/tabulator.min.css" />
     <ImportMap />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -15,7 +18,9 @@
 </head>
 
 <body>
-    <Routes />
+    <FluentDesignThemeProvider>
+        <Routes />
+    </FluentDesignThemeProvider>
     <!-- Excel export를 위한 XLSX 라이브러리 (Tabulator보다 먼저 로드) -->
     <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
     <script src="_content/SwiftGrid/lib/tabulator/js/tabulator.min.js"></script>

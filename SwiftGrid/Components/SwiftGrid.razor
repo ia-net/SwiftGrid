@@ -1,4 +1,26 @@
-﻿@typeparam TItem
+﻿@* 
+    SwiftGrid 컴포넌트
+    
+    Tabulator 기반의 Blazor 그리드 컴포넌트입니다.
+    데이터 표시, 정렬, 필터링, 페이지네이션, 편집 등의 기능을 제공합니다.
+    
+    기본 사용 예시:
+    <SwiftGrid TItem="Person" Data="@people" Options="@gridOptions">
+        <SwiftGridColumn TItem="Person" Field="Name" Title="이름" Sortable="true" />
+        <SwiftGridColumn TItem="Person" Field="Age" Title="나이" Sortable="true" />
+    </SwiftGrid>
+    
+    이벤트 처리 예시:
+    <SwiftGrid TItem="Person" 
+               Data="@people" 
+               OnRowClicked="HandleRowClick"
+               OnCellEdited="HandleCellEdit"
+               OnQueryChanged="HandleQueryChange">
+        ...
+    </SwiftGrid>
+*@
+
+@typeparam TItem
 @using Microsoft.JSInterop
 @using System.Text.Json
 @using System.Linq
@@ -15,39 +37,134 @@
 
     /// <summary>
     /// 그리드에 표시할 데이터 목록
+    /// 
+    /// IEnumerable&lt;TItem&gt; 타입의 데이터를 전달합니다.
+    /// TItem은 데이터 모델 타입입니다 (예: Person, Product 등).
+    /// 
+    /// 예시:
+    /// <code>
+    /// Data="@people"  // List&lt;Person&gt; people
+    /// </code>
     /// </summary>
     [Parameter]
     public IEnumerable<TItem> Data { get; set; } = Array.Empty<TItem>();
 
     /// <summary>
     /// 컬럼 정의를 포함하는 자식 콘텐츠
+    /// 
+    /// SwiftGridColumn 컴포넌트들을 이 속성에 포함시킵니다.
+    /// 일반적으로 직접 설정하지 않고, 컴포넌트 태그 사이에 자동으로 포함됩니다.
     /// </summary>
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
 
     /// <summary>
     /// 그리드 옵션
+    /// 
+    /// 그리드의 동작 방식을 제어하는 설정입니다.
+    /// 레이아웃, 페이지네이션, 선택 모드 등을 설정할 수 있습니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// var options = new SwiftGridOptions
+    /// {
+    ///     Layout = "fitColumns",
+    ///     Height = "400px",
+    ///     Pagination = true,
+    ///     PaginationSize = 10
+    /// };
+    /// </code>
     /// </summary>
     [Parameter]
     public SwiftGridOptions Options { get; set; } = new();
 
     /// <summary>
     /// 행 클릭 이벤트 콜백
+    /// 
+    /// 사용자가 그리드의 행을 클릭했을 때 호출되는 이벤트 핸들러입니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// private async Task HandleRowClick(Person person)
+    /// {
+    ///     Console.WriteLine($"선택된 사람: {person.Name}");
+    ///     // 선택된 행의 데이터로 작업 수행
+    /// }
+    /// </code>
     /// </summary>
     [Parameter]
     public EventCallback<TItem> OnRowClicked { get; set; }
 
     /// <summary>
     /// 셀 편집 완료 이벤트 콜백
+    /// 
+    /// 사용자가 셀을 편집하고 완료했을 때 호출되는 이벤트 핸들러입니다.
+    /// 편집된 필드, 이전 값, 새 값, 전체 행 데이터를 제공합니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// private async Task HandleCellEdit(CellEditedEventArgs&lt;Person&gt; args)
+    /// {
+    ///     Console.WriteLine($"{args.Field}: {args.OldValue} → {args.Value}");
+    ///     // 데이터베이스에 저장하는 로직 등
+    /// }
+    /// </code>
     /// </summary>
     [Parameter]
     public EventCallback<CellEditedEventArgs<TItem>> OnCellEdited { get; set; }
 
     /// <summary>
     /// 행 선택 변경 이벤트 콜백
+    /// 
+    /// 사용자가 행을 선택하거나 선택을 해제했을 때 호출되는 이벤트 핸들러입니다.
+    /// 현재 선택된 행의 개수를 전달합니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// private Task HandleSelectionChanged(int selectedCount)
+    /// {
+    ///     Console.WriteLine($"선택된 행: {selectedCount}개");
+    ///     return Task.CompletedTask;
+    /// }
+    /// </code>
     /// </summary>
     [Parameter]
     public EventCallback<int> OnRowSelectionChanged { get; set; }
+
+    /// <summary>
+    /// 전체 데이터 개수 (서버 사이드 페이지네이션 사용 시 필요)
+    /// 
+    /// PaginationMode가 "remote"일 때 필수입니다.
+    /// 클라이언트에 표시된 데이터만이 아닌, 서버의 전체 데이터 개수를 지정합니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// TotalCount="@totalCount"  // 서버에서 가져온 전체 데이터 개수
+    /// </code>
+    /// </summary>
+    [Parameter]
+    public int? TotalCount { get; set; }
+
+    /// <summary>
+    /// 쿼리 상태 변경 이벤트 콜백
+    /// 
+    /// 페이지네이션, 정렬, 필터, 검색 등의 상태가 변경될 때 호출되는 이벤트 핸들러입니다.
+    /// 서버 사이드 페이지네이션을 구현할 때 사용합니다.
+    /// 
+    /// 예시:
+    /// <code>
+    /// private async Task HandleQueryChange(SwiftGridQuery query)
+    /// {
+    ///     // 서버에 쿼리 전송
+    ///     var result = await apiService.GetDataAsync(query);
+    ///     // 결과를 Data에 할당
+    ///     people = result.Items;
+    ///     totalCount = result.TotalCount;
+    /// }
+    /// </code>
+    /// </summary>
+    [Parameter]
+    public EventCallback<SwiftGridQuery> OnQueryChanged { get; set; }
 
     #endregion
 
@@ -73,11 +190,18 @@
 
     /// <summary>
     /// 컬럼을 그리드에 등록합니다. (내부 사용)
+    /// 
+    /// SwiftGridColumn 컴포넌트가 초기화될 때 자동으로 호출됩니다.
+    /// - 이 메서드는 내부적으로만 사용되며, 직접 호출할 필요가 없습니다.
+    /// - SwiftGridColumn 컴포넌트를 사용하면 자동으로 호출됩니다.
     /// </summary>
+    /// <param name="column">등록할 컬럼 정의</param>
+    /// <exception cref="ArgumentNullException">column이 null인 경우</exception>
+    /// <exception cref="ArgumentException">컬럼 정의가 유효하지 않은 경우</exception>
     internal void RegisterColumn(SwiftGridColumnDefinition column)
     {
         if (column == null)
-            throw new ArgumentNullException(nameof(column));
+            throw new ArgumentNullException(nameof(column), "컬럼 정의는 null일 수 없습니다.");
 
         column.Validate();
         _columns.Add(column);
@@ -144,12 +268,19 @@
         catch (JSException ex)
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to initialize table - {ex.Message}");
-            throw new InvalidOperationException("Failed to initialize SwiftGrid. Make sure Tabulator library is loaded.", ex);
+            throw new InvalidOperationException(
+                "SwiftGrid 초기화에 실패했습니다. " +
+                "Tabulator 라이브러리가 로드되어 있는지 확인하세요. " +
+                "App.razor에 다음 스크립트가 포함되어 있는지 확인하세요: " +
+                "<script src=\"_content/SwiftGrid/lib/tabulator/js/tabulator.min.js\"></script>", ex);
         }
     }
 
     /// <summary>
-    /// 테이블 데이터를 업데이트합니다.
+    /// 테이블의 데이터를 업데이트합니다.
+    /// 
+    /// Data 속성이 변경되었을 때 호출되어
+    /// JavaScript의 swiftGrid.setData 함수를 통해 Tabulator 테이블의 데이터를 갱신합니다.
     /// </summary>
     private async Task UpdateDataAsync()
     {
@@ -160,13 +291,22 @@
         catch (JSException ex)
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to update data - {ex.Message}");
-            throw;
+            throw new InvalidOperationException(
+                "데이터 업데이트에 실패했습니다. " +
+                "그리드가 올바르게 초기화되었는지 확인하세요.", ex);
         }
     }
 
     /// <summary>
     /// 두 데이터 집합이 같은지 비교합니다.
+    /// 
+    /// 데이터가 실제로 변경되었는지 확인하여 불필요한 업데이트를 방지합니다.
+    /// - 이 메서드는 내부적으로만 사용됩니다.
+    /// - 참조 비교와 요소 비교를 모두 수행합니다.
     /// </summary>
+    /// <param name="previous">이전 데이터 집합</param>
+    /// <param name="current">현재 데이터 집합</param>
+    /// <returns>두 데이터 집합이 같으면 true, 다르면 false</returns>
     private static bool AreDataEqual(IEnumerable<TItem>? previous, IEnumerable<TItem>? current)
     {
         if (ReferenceEquals(previous, current))
@@ -186,6 +326,10 @@
 
     /// <summary>
     /// 행 클릭 이벤트를 처리합니다. (JavaScript에서 호출됨)
+    /// 
+    /// Tabulator에서 행이 클릭되었을 때 JavaScript가 이 메서드를 호출합니다.
+    /// - 이 메서드는 자동으로 호출되므로 직접 호출할 필요가 없습니다.
+    /// - OnRowClicked 이벤트 핸들러가 설정되어 있으면 해당 핸들러를 호출합니다.
     /// </summary>
     [JSInvokable]
     public Task HandleRowClicked(JsonElement row)
@@ -208,6 +352,11 @@
 
     /// <summary>
     /// 셀 편집 완료 이벤트를 처리합니다. (JavaScript에서 호출됨)
+    /// 
+    /// Tabulator에서 셀 편집이 완료되었을 때 JavaScript가 이 메서드를 호출합니다.
+    /// - 이 메서드는 자동으로 호출되므로 직접 호출할 필요가 없습니다.
+    /// - OnCellEdited 이벤트 핸들러가 설정되어 있으면 해당 핸들러를 호출합니다.
+    /// - 편집된 필드, 이전 값, 새 값, 전체 행 데이터를 포함합니다.
     /// </summary>
     [JSInvokable]
     public Task HandleCellEdited(JsonElement cellData)
@@ -243,6 +392,11 @@
 
     /// <summary>
     /// 행 선택 변경 이벤트를 처리합니다. (JavaScript에서 호출됨)
+    /// 
+    /// 사용자가 행을 선택하거나 선택을 해제했을 때 JavaScript가 이 메서드를 호출합니다.
+    /// - 이 메서드는 자동으로 호출되므로 직접 호출할 필요가 없습니다.
+    /// - OnRowSelectionChanged 이벤트 핸들러가 설정되어 있으면 해당 핸들러를 호출합니다.
+    /// - selectedCount는 현재 선택된 행의 개수입니다.
     /// </summary>
     [JSInvokable]
     public Task HandleRowSelectionChanged(int selectedCount)
@@ -263,14 +417,86 @@
     }
 
     /// <summary>
-    /// 그리드가 초기화되었는지 확인합니다.
+    /// 쿼리 상태 변경 이벤트를 처리합니다. (JavaScript에서 호출됨)
+    /// 
+    /// JavaScript에서 전달된 쿼리 JSON을 C# 객체로 변환하고,
+    /// enum 속성(Operator, Direction)을 올바르게 변환합니다.
     /// </summary>
+    [JSInvokable]
+    public Task HandleQueryChanged(JsonElement queryJson)
+    {
+        try
+        {
+            if (OnQueryChanged.HasDelegate)
+            {
+                // JSON 옵션 설정 (PascalCase 속성명 지원)
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+                
+                var query = queryJson.Deserialize<SwiftGridQuery>(options);
+                if (query != null)
+                {
+                    // 레거시 호환성: Op/Dir 문자열을 enum으로 변환
+                    ConvertLegacyQueryProperties(query);
+                    
+                    Console.WriteLine($"SwiftGrid: Query changed received - Page={query.Page}, PageSize={query.PageSize}, Sorts={query.Sorts?.Count ?? 0}, Filters={query.Filters?.Count ?? 0}");
+                    return OnQueryChanged.InvokeAsync(query);
+                }
+                else
+                {
+                    Console.Error.WriteLine("SwiftGrid: Failed to deserialize query - query is null");
+                }
+            }
+            else
+            {
+                Console.WriteLine("SwiftGrid: OnQueryChanged has no delegate");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"SwiftGrid: Error handling query changed - {ex.Message}");
+            Console.Error.WriteLine($"SwiftGrid: Stack trace - {ex.StackTrace}");
+        }
+
+        return Task.CompletedTask;
+    }
+
+    /// <summary>
+    /// 레거시 호환성을 위해 Op/Dir 문자열 속성을 enum으로 변환합니다.
+    /// 
+    /// JavaScript에서 전달된 JSON이 Op/Dir 문자열 형식인 경우,
+    /// Operator/Direction enum으로 자동 변환합니다.
+    /// </summary>
+    private static void ConvertLegacyQueryProperties(SwiftGridQuery query)
+    {
+        // 필터의 Op 문자열을 Operator enum으로 변환
+        // JSON deserializer가 자동으로 Op 속성을 Operator로 변환하므로
+        // 여기서는 추가 변환이 필요 없습니다.
+        // (SwiftGridFilter의 Op 속성 getter/setter가 자동 변환 처리)
+        
+        // 정렬의 Dir 문자열을 Direction enum으로 변환
+        // 마찬가지로 JSON deserializer가 자동으로 Dir 속성을 Direction으로 변환합니다.
+        // (SwiftGridSort의 Dir 속성 getter/setter가 자동 변환 처리)
+    }
+
+    /// <summary>
+    /// 그리드가 초기화되었는지 확인합니다.
+    /// - 이 메서드는 내부적으로만 사용됩니다.
+    /// - 그리드가 아직 렌더링되지 않았을 때 메서드를 호출하면 예외가 발생합니다.
+    /// - 해결 방법: 메서드를 호출하기 전에 그리드가 완전히 렌더링될 때까지 기다리세요.
+    /// </summary>
+    /// <exception cref="InvalidOperationException">
+    /// 그리드가 아직 초기화되지 않은 경우
+    /// </exception>
     private void EnsureInitialized()
     {
         if (!_initialized)
             throw new InvalidOperationException(
-                "SwiftGrid is not initialized. " +
-                "Wait until the table is rendered before calling this method."
+                "SwiftGrid가 아직 초기화되지 않았습니다. " +
+                "그리드가 완전히 렌더링된 후에 이 메서드를 호출하세요. " +
+                "일반적으로 OnAfterRenderAsync 이후에 호출해야 합니다."
             );
     }
 
@@ -291,11 +517,17 @@
         EnsureInitialized();
 
         if (string.IsNullOrWhiteSpace(type))
-            throw new ArgumentException("Download type cannot be null or empty.", nameof(type));
+            throw new ArgumentException(
+                "다운로드 형식을 지정해야 합니다. " +
+                "지원하는 형식: csv, json, xlsx, pdf, html", 
+                nameof(type));
 
         var supportedTypes = new[] { "csv", "json", "xlsx", "pdf", "html" };
         if (!supportedTypes.Contains(type.ToLowerInvariant()))
-            throw new ArgumentException($"Unsupported download type: {type}. Supported types: {string.Join(", ", supportedTypes)}", nameof(type));
+            throw new ArgumentException(
+                $"지원하지 않는 다운로드 형식입니다: '{type}'. " +
+                $"지원하는 형식: {string.Join(", ", supportedTypes)}", 
+                nameof(type));
 
         try
         {
@@ -304,15 +536,27 @@
         catch (JSException ex)
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to download {type} - {ex.Message}");
-            throw new InvalidOperationException($"Failed to download file as {type}. Make sure the required libraries are loaded.", ex);
+            throw new InvalidOperationException(
+                $"{type.ToUpperInvariant()} 형식으로 다운로드하는데 실패했습니다. " +
+                $"필요한 라이브러리가 로드되어 있는지 확인하세요. " +
+                $"예: Excel 다운로드는 XLSX 라이브러리가 필요합니다.", ex);
         }
     }
 
     /// <summary>
     /// 테이블을 CSV 형식으로 다운로드합니다.
+    /// 
+    /// 사용 예시:
+    /// <code>
+    /// // 전체 데이터 다운로드
+    /// await gridRef.DownloadCsvAsync("people.csv");
+    /// 
+    /// // 선택된 행만 다운로드
+    /// await gridRef.DownloadCsvAsync("selected.csv", selectedOnly: true);
+    /// </code>
     /// </summary>
     /// <param name="filename">파일명 (기본값: "export.csv")</param>
-    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부</param>
+    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부 (기본값: false)</param>
     public Task DownloadCsvAsync(string? filename = null, bool selectedOnly = false)
     {
         var options = selectedOnly ? new { rows = "selected" } : null;
@@ -321,9 +565,15 @@
 
     /// <summary>
     /// 테이블을 JSON 형식으로 다운로드합니다.
+    /// 
+    /// 사용 예시:
+    /// <code>
+    /// await gridRef.DownloadJsonAsync("data.json");
+    /// await gridRef.DownloadJsonAsync("selected.json", selectedOnly: true);
+    /// </code>
     /// </summary>
     /// <param name="filename">파일명 (기본값: "export.json")</param>
-    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부</param>
+    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부 (기본값: false)</param>
     public Task DownloadJsonAsync(string? filename = null, bool selectedOnly = false)
     {
         var options = selectedOnly ? new { rows = "selected" } : null;
@@ -332,12 +582,20 @@
 
     /// <summary>
     /// 테이블을 Excel 형식으로 다운로드합니다.
+    /// 
+    /// 사용 예시:
+    /// <code>
+    /// await gridRef.DownloadExcelAsync("data.xlsx");
+    /// await gridRef.DownloadExcelAsync("selected.xlsx", selectedOnly: true);
+    /// </code>
+    /// 
+    /// 주의사항:
+    /// - Excel 다운로드를 사용하려면 XLSX 라이브러리가 로드되어 있어야 합니다.
+    /// - App.razor에 다음 스크립트를 추가하세요:
+    ///   &lt;script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"&gt;&lt;/script&gt;
     /// </summary>
     /// <param name="filename">파일명 (기본값: "export.xlsx")</param>
-    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부</param>
-    /// <remarks>
-    /// Excel 다운로드를 사용하려면 XLSX 라이브러리가 로드되어 있어야 합니다.
-    /// </remarks>
+    /// <param name="selectedOnly">선택된 행만 다운로드할지 여부 (기본값: false)</param>
     public Task DownloadExcelAsync(string? filename = null, bool selectedOnly = false)
     {
         var options = selectedOnly ? new { rows = "selected" } : null;
@@ -416,8 +674,19 @@
 
     /// <summary>
     /// 마지막 편집을 취소합니다 (Undo).
+    /// 
+    /// 사용 예시:
+    /// <code>
+    /// await gridRef.UndoAsync();
+    /// </code>
+    /// 
+    /// 주의사항:
+    /// - SwiftGridOptions의 History 속성이 true로 설정되어 있어야 합니다.
+    /// - 단축키: Ctrl+Z
     /// </summary>
-    /// <exception cref="InvalidOperationException">그리드가 초기화되지 않았거나 히스토리가 활성화되지 않은 경우</exception>
+    /// <exception cref="InvalidOperationException">
+    /// 그리드가 초기화되지 않았거나 히스토리가 활성화되지 않은 경우
+    /// </exception>
     public async Task UndoAsync()
     {
         EnsureInitialized();
@@ -429,14 +698,28 @@
         catch (JSException ex)
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to undo - {ex.Message}");
-            throw new InvalidOperationException("Failed to undo. Make sure Tabulator history module is loaded and history is enabled.", ex);
+            throw new InvalidOperationException(
+                "Undo 작업에 실패했습니다. " +
+                "SwiftGridOptions의 History 속성을 true로 설정했는지 확인하세요. " +
+                "또한 Tabulator history 모듈이 로드되어 있는지 확인하세요.", ex);
         }
     }
 
     /// <summary>
     /// 마지막 취소한 편집을 다시 실행합니다 (Redo).
+    /// 
+    /// 사용 예시:
+    /// <code>
+    /// await gridRef.RedoAsync();
+    /// </code>
+    /// 
+    /// 주의사항:
+    /// - SwiftGridOptions의 History 속성이 true로 설정되어 있어야 합니다.
+    /// - 단축키: Ctrl+Y
     /// </summary>
-    /// <exception cref="InvalidOperationException">그리드가 초기화되지 않았거나 히스토리가 활성화되지 않은 경우</exception>
+    /// <exception cref="InvalidOperationException">
+    /// 그리드가 초기화되지 않았거나 히스토리가 활성화되지 않은 경우
+    /// </exception>
     public async Task RedoAsync()
     {
         EnsureInitialized();
@@ -448,7 +731,10 @@
         catch (JSException ex)
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to redo - {ex.Message}");
-            throw new InvalidOperationException("Failed to redo. Make sure Tabulator history module is loaded and history is enabled.", ex);
+            throw new InvalidOperationException(
+                "Redo 작업에 실패했습니다. " +
+                "SwiftGridOptions의 History 속성을 true로 설정했는지 확인하세요. " +
+                "또한 Tabulator history 모듈이 로드되어 있는지 확인하세요.", ex);
         }
     }
 
@@ -619,6 +905,31 @@
         {
             Console.Error.WriteLine($"SwiftGrid: Failed to copy to clipboard - {ex.Message}");
             throw new InvalidOperationException("Failed to copy to clipboard. Make sure Tabulator clipboard module is loaded and clipboard option is enabled.", ex);
+        }
+    }
+
+    #endregion
+
+    #region Search and Filter Methods
+
+    /// <summary>
+    /// 모든 컬럼에서 전역 검색을 수행합니다.
+    /// </summary>
+    /// <param name="searchValue">검색할 값</param>
+    /// <param name="filterType">필터 타입 (기본값: "like")</param>
+    /// <exception cref="InvalidOperationException">그리드가 초기화되지 않은 경우</exception>
+    public async Task SearchAllAsync(string? searchValue, string? filterType = null)
+    {
+        EnsureInitialized();
+
+        try
+        {
+            await JS.InvokeVoidAsync("swiftGrid.searchAll", _tableRef, searchValue ?? "", filterType);
+        }
+        catch (JSException ex)
+        {
+            Console.Error.WriteLine($"SwiftGrid: Failed to search - {ex.Message}");
+            throw new InvalidOperationException("Failed to perform search.", ex);
         }
     }
 

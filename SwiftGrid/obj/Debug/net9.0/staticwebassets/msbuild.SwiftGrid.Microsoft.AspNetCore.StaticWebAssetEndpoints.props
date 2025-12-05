@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Dec 2025 05:20:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.duqtnshnmz.js">
+    <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.epby9nauil.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"duqtnshnmz"},{"Name":"integrity","Value":"sha256-25tpNumSQCyZRgvPnPKJRIU1EUUtC7D//pHhanlib7I="},{"Name":"label","Value":"_content/SwiftGrid/js/swiftgrid.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37384"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002225tpNumSQCyZRgvPnPKJRIU1EUUtC7D//pHhanlib7I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 07:49:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"epby9nauil"},{"Name":"integrity","Value":"sha256-Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY="},{"Name":"label","Value":"_content/SwiftGrid/js/swiftgrid.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"44145"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Dec 2025 05:46:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/js/swiftgrid.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-25tpNumSQCyZRgvPnPKJRIU1EUUtC7D//pHhanlib7I="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"37384"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002225tpNumSQCyZRgvPnPKJRIU1EUUtC7D//pHhanlib7I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 07:49:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"44145"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Dec 2025 05:46:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SwiftGrid/lib/tabulator/css/tabulator.a3yw2zezsd.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))</AssetFile>

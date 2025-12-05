@@ -3,63 +3,180 @@
 @using SwiftGrid.Components
 @using SwiftGrid.Entities
 
-<h3>SwiftGrid / Tabulator Demo</h3>
+<div class="docs-container">
+    <PageHeader Title="SwiftGrid 기능 데모" 
+                Subtitle="편집, 선택, 내보내기 등 SwiftGrid의 주요 기능을 체험해보세요"
+                Badges="@(new List<PageHeader.BadgeInfo> 
+                { 
+                    new() { Text = "편집" },
+                    new() { Text = "선택" },
+                    new() { Text = "내보내기" }
+                })" />
 
-<p>행 개수: @People.Count</p>
+    <div class="docs-content">
+        <div class="docs-section">
+            <p class="docs-intro">
+                셀 편집, 행 선택, Undo/Redo, 다양한 형식으로 내보내기 등 Tabulator의 강력한 기능을 체험해보세요.
+            </p>
+        </div>
 
-<div style="margin-bottom: 10px;">
-    <button class="btn btn-success me-2" @onclick="Undo" disabled="@(!canUndo)">Undo (Ctrl+Z)</button>
-    <button class="btn btn-success me-2" @onclick="Redo" disabled="@(!canRedo)">Redo (Ctrl+Y)</button>
-    <span class="me-3"></span>
-    <button class="btn btn-info me-2" @onclick="CopySelectedToClipboard" disabled="@(selectedCount == 0)">클립보드 복사
-        (@selectedCount)</button>
-    <span class="me-3"></span>
-    <button class="btn btn-primary me-2" @onclick="ExportToCsv">전체 CSV</button>
-    <button class="btn btn-primary me-2" @onclick="ExportSelectedToCsv" disabled="@(selectedCount == 0)">선택 CSV
-        (@selectedCount)</button>
-    <button class="btn btn-primary me-2" @onclick="ExportToExcel">전체 Excel</button>
-    <button class="btn btn-primary me-2" @onclick="ExportSelectedToExcel" disabled="@(selectedCount == 0)">선택
-        Excel</button>
-    <button class="btn btn-primary me-2" @onclick="ExportToJson">JSON 다운로드</button>
-    <button class="btn btn-secondary me-2" @onclick="PrintTable">인쇄</button>
+        <!-- 통계 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">통계</h2>
+            <div class="docs-stats">
+                <StatsCard IconClass="bi bi-list-ul" Value="@People.Count.ToString()" Label="전체 행 수" />
+                <StatsCard IconClass="bi bi-check-square" Value="@selectedCount.ToString()" Label="선택된 행" />
+                <StatsCard IconClass="bi bi-clock-history" Value="@(canUndo ? "가능" : "불가")" Label="Undo 가능" />
+                <StatsCard IconClass="bi bi-person-check" Value="@(SelectedPerson?.Name ?? "-")" Label="선택된 행" />
+            </div>
+        </div>
+
+        <!-- 도구 모음 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">도구 모음</h2>
+            <div class="docs-tool-group">
+                <h3 class="docs-tool-group-title">실행 취소 / 다시 실행</h3>
+                <div class="docs-button-group">
+                    <button class="docs-button docs-button-primary" @onclick="Undo" disabled="@(!canUndo)">
+                        <i class="bi bi-arrow-counterclockwise"></i> Undo (Ctrl+Z)
+                    </button>
+                    <button class="docs-button docs-button-primary" @onclick="Redo" disabled="@(!canRedo)">
+                        <i class="bi bi-arrow-clockwise"></i> Redo (Ctrl+Y)
+                    </button>
+                </div>
+            </div>
+            <div class="docs-tool-group">
+                <h3 class="docs-tool-group-title">클립보드</h3>
+                <div class="docs-button-group">
+                    <button class="docs-button docs-button-primary" @onclick="CopySelectedToClipboard" disabled="@(selectedCount == 0)">
+                        <i class="bi bi-clipboard"></i> 선택 항목 복사 (@selectedCount)
+                    </button>
+                </div>
+            </div>
+            <div class="docs-tool-group">
+                <h3 class="docs-tool-group-title">데이터 내보내기</h3>
+                <div class="docs-button-group">
+                    <button class="docs-button docs-button-primary" @onclick="ExportToCsv">
+                        <i class="bi bi-filetype-csv"></i> 전체 CSV
+                    </button>
+                    <button class="docs-button docs-button-primary" @onclick="ExportSelectedToCsv" disabled="@(selectedCount == 0)">
+                        <i class="bi bi-filetype-csv"></i> 선택 CSV (@selectedCount)
+                    </button>
+                    <button class="docs-button docs-button-primary" @onclick="ExportToExcel">
+                        <i class="bi bi-file-earmark-excel"></i> 전체 Excel
+                    </button>
+                    <button class="docs-button docs-button-primary" @onclick="ExportSelectedToExcel" disabled="@(selectedCount == 0)">
+                        <i class="bi bi-file-earmark-excel"></i> 선택 Excel (@selectedCount)
+                    </button>
+                    <button class="docs-button docs-button-primary" @onclick="ExportToJson">
+                        <i class="bi bi-filetype-json"></i> JSON 다운로드
+                    </button>
+                    <button class="docs-button docs-button-secondary" @onclick="PrintTable">
+                        <i class="bi bi-printer"></i> 인쇄
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 데이터 그리드 -->
+        <div class="docs-section">
+            <div class="docs-section-header">
+                <h2 class="docs-section-title">데이터 그리드</h2>
+                <div class="docs-badges">
+                    <span class="docs-badge">@People.Count 행</span>
+                    @if (selectedCount > 0)
+                    {
+                        <span class="docs-badge docs-badge-success">@selectedCount 선택됨</span>
+                    }
+                </div>
+            </div>
+            <div class="docs-grid-container">
+                <SwiftGrid @ref="gridRef" TItem="Person" Data="@People" Options="@GridOptions" OnRowClicked="RowClicked"
+                    OnCellEdited="HandleCellEdited" OnRowSelectionChanged="HandleRowSelectionChanged" OnQueryChanged="HandleQueryChanged">
+                    <SwiftGridColumn TItem="Person" Field="Id" Title="ID" Sortable="true" Width="80" HeaderFilter="true"
+                        HeaderFilterPlaceholder="ID 검색..." Editable="false" />
+                    <SwiftGridColumn TItem="Person" Field="Name" Title="이름" Sortable="true" HeaderFilter="true"
+                        HeaderFilterPlaceholder="이름 검색..." Editable="true" Editor="input" />
+                    <SwiftGridColumn TItem="Person" Field="Age" Title="나이" Sortable="true" HeaderFilter="true"
+                        HeaderFilterPlaceholder="나이 검색..." Editable="true" Editor="number" />
+                    <SwiftGridColumn TItem="Person" Field="Email" Title="Email" HeaderFilter="true"
+                        HeaderFilterPlaceholder="이메일 검색..." Editable="true" Editor="input" />
+                </SwiftGrid>
+            </div>
+        </div>
+
+        <!-- 쿼리 JSON -->
+        <QueryJsonDisplay Query="@currentQuery" />
+
+        <!-- 선택된 행 정보 -->
+        @if (SelectedPerson is not null)
+        {
+            <div class="docs-section">
+                <h2 class="docs-section-title">선택된 행 정보</h2>
+                <div class="docs-info-card">
+                    <div class="docs-info-row">
+                        <span class="docs-info-label">ID</span>
+                        <span class="docs-info-value">@SelectedPerson.Id</span>
+                    </div>
+                    <div class="docs-info-row">
+                        <span class="docs-info-label">이름</span>
+                        <span class="docs-info-value">@SelectedPerson.Name</span>
+                    </div>
+                    <div class="docs-info-row">
+                        <span class="docs-info-label">나이</span>
+                        <span class="docs-info-value">@SelectedPerson.Age</span>
+                    </div>
+                    <div class="docs-info-row">
+                        <span class="docs-info-label">이메일</span>
+                        <span class="docs-info-value">@SelectedPerson.Email</span>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- 사용 팁 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">사용 팁</h2>
+            <div class="docs-tips">
+                <div class="docs-tip">
+                    <i class="bi bi-pencil-square"></i>
+                    <div>
+                        <strong>셀 편집:</strong> 셀을 더블클릭하여 편집
+                    </div>
+                </div>
+                <div class="docs-tip">
+                    <i class="bi bi-check-square"></i>
+                    <div>
+                        <strong>행 선택:</strong> 행 클릭 또는 체크박스로 선택
+                    </div>
+                </div>
+                <div class="docs-tip">
+                    <i class="bi bi-keyboard"></i>
+                    <div>
+                        <strong>단축키:</strong> Ctrl+Z (Undo), Ctrl+Y (Redo)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<SwiftGrid @ref="gridRef" TItem="Person" Data="@People" Options="@GridOptions" OnRowClicked="RowClicked"
-    OnCellEdited="HandleCellEdited" OnRowSelectionChanged="HandleRowSelectionChanged">
-    <SwiftGridColumn TItem="Person" Field="Id" Title="ID" Sortable="true" Width="80" HeaderFilter="true"
-        HeaderFilterPlaceholder="ID 검색..." Editable="false" />
-    <SwiftGridColumn TItem="Person" Field="Name" Title="이름" Sortable="true" HeaderFilter="true"
-        HeaderFilterPlaceholder="이름 검색..." Editable="true" Editor="input" />
-    <SwiftGridColumn TItem="Person" Field="Age" Title="나이" Sortable="true" HeaderFilter="true"
-        HeaderFilterPlaceholder="나이 검색..." Editable="true" Editor="number" />
-    <SwiftGridColumn TItem="Person" Field="Email" Title="Email" HeaderFilter="true" HeaderFilterPlaceholder="이메일 검색..."
-        Editable="true" Editor="input" />
-</SwiftGrid>
-
-@if (SelectedPerson is not null)
-{
-    <p>
-        선택된 행: @SelectedPerson.Id / @SelectedPerson.Name (@SelectedPerson.Age) |
-        선택된 행 수: <strong>@selectedCount</strong>
-    </p>
-}
 
 @code {
     private List<Person> People = new()
-{
-new Person { Id = 1, Name = "홍길동", Age = 24, Email = "hong@test.com" },
-new Person { Id = 2, Name = "김철수", Age = 31, Email = "kim@test.com" },
-new Person { Id = 3, Name = "이영희", Age = 28, Email = "lee@test.com" },
-new Person { Id = 4, Name = "박민수", Age = 35, Email = "park@test.com" },
-new Person { Id = 5, Name = "최지영", Age = 27, Email = "choi@test.com" },
-new Person { Id = 6, Name = "정수진", Age = 32, Email = "jung@test.com" },
-new Person { Id = 7, Name = "강동원", Age = 29, Email = "kang@test.com" },
-new Person { Id = 8, Name = "윤서연", Age = 26, Email = "yoon@test.com" },
-new Person { Id = 9, Name = "임태현", Age = 33, Email = "lim@test.com" },
-new Person { Id = 10, Name = "한소희", Age = 25, Email = "han@test.com" },
-new Person { Id = 11, Name = "송혜교", Age = 30, Email = "song@test.com" },
-new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
-};
+    {
+        new Person { Id = 1, Name = "홍길동", Age = 24, Email = "hong@test.com" },
+        new Person { Id = 2, Name = "김철수", Age = 31, Email = "kim@test.com" },
+        new Person { Id = 3, Name = "이영희", Age = 28, Email = "lee@test.com" },
+        new Person { Id = 4, Name = "박민수", Age = 35, Email = "park@test.com" },
+        new Person { Id = 5, Name = "최지영", Age = 27, Email = "choi@test.com" },
+        new Person { Id = 6, Name = "정수진", Age = 32, Email = "jung@test.com" },
+        new Person { Id = 7, Name = "강동원", Age = 29, Email = "kang@test.com" },
+        new Person { Id = 8, Name = "윤서연", Age = 26, Email = "yoon@test.com" },
+        new Person { Id = 9, Name = "임태현", Age = 33, Email = "lim@test.com" },
+        new Person { Id = 10, Name = "한소희", Age = 25, Email = "han@test.com" },
+        new Person { Id = 11, Name = "송혜교", Age = 30, Email = "song@test.com" },
+        new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
+    };
 
     private SwiftGridOptions GridOptions = new()
     {
@@ -74,7 +191,7 @@ new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
         Clipboard = true, // 클립보드 복사 활성화
         EnableRowSelectionCheckbox = true, // 체크박스를 통한 행 선택 활성화
         RowSelectionRange = "active", // 전체 선택 체크박스 클릭 시 선택 범위
-        EnableRowContextMenu = true, // 행 컨텍스트 메뉴 활성화 
+        EnableRowContextMenu = true, // 행 컨텍스트 메뉴 활성화
     };
 
     private Person? SelectedPerson;
@@ -82,6 +199,7 @@ new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
     private bool canUndo = false;
     private bool canRedo = false;
     private int selectedCount = 0;
+    private SwiftGridQuery? currentQuery;
 
     private async Task RowClicked(Person person)
     {
@@ -227,11 +345,23 @@ new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com" }
         return Task.CompletedTask;
     }
 
-    public class Person
+    private async Task HandleQueryChanged(SwiftGridQuery query)
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = "";
-        public int Age { get; set; }
-        public string Email { get; set; } = "";
+        Console.WriteLine($"Counter: HandleQueryChanged called - Page={query?.Page}, PageSize={query?.PageSize}");
+        
+        if (query == null)
+        {
+            Console.Error.WriteLine("Counter: Query is null!");
+            return;
+        }
+        
+        currentQuery = query;
+
+        // StateHasChanged를 InvokeAsync로 감싸서 UI 업데이트 보장
+        await InvokeAsync(StateHasChanged);
+        
+        Console.WriteLine($"Counter: Query processed - Page={query.Page}, PageSize={query.PageSize}, " +
+                         $"Sorts={query.Sorts?.Count ?? 0}, Filters={query.Filters?.Count ?? 0}, " +
+                         $"GlobalSearch={query.GlobalSearch}");
     }
 }

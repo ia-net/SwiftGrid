@@ -54,6 +54,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Fast.Components.FluentUI": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Microsoft.FluentUI.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[4.13.2, )"
+            },
+            "Microsoft.FluentUI.AspNetCore.Components.Icons": {
+              "target": "Package",
+              "version": "[4.13.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

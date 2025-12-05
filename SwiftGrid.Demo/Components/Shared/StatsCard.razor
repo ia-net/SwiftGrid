@@ -1,0 +1,19 @@
+<div class="docs-stat">
+    <div class="docs-stat-icon">
+        <i class="@IconClass"></i>
+    </div>
+    <div class="docs-stat-value">@Value</div>
+    <div class="docs-stat-label">@Label</div>
+</div>
+
+@code {
+    [Parameter]
+    public string IconClass { get; set; } = "";
+
+    [Parameter]
+    public string Value { get; set; } = "";
+
+    [Parameter]
+    public string Label { get; set; } = "";
+}
+

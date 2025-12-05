@@ -13,4 +13,8 @@
     <SourceRoot Include="C:\Users\user\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.fluentui.aspnetcore.components\4.13.2\buildTransitive\Microsoft.FluentUI.AspNetCore.Components.props" Condition="Exists('$(NuGetPackageRoot)microsoft.fluentui.aspnetcore.components\4.13.2\buildTransitive\Microsoft.FluentUI.AspNetCore.Components.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.fast.components.fluentui\3.8.0\buildTransitive\Microsoft.Fast.Components.FluentUI.props" Condition="Exists('$(NuGetPackageRoot)microsoft.fast.components.fluentui\3.8.0\buildTransitive\Microsoft.Fast.Components.FluentUI.props')" />
+  </ImportGroup>
 </Project>

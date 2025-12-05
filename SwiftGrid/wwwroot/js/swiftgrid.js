@@ -31,6 +31,30 @@ window.swiftGrid = (function () {
   // 이벤트 키 코드
   const KEY_CODE_C = 67;
 
+  // 쿼리 상태 업데이트 지연 시간 (ms)
+  const QUERY_CHANGE_NOTIFICATION_DELAY = 50;
+  const INITIAL_QUERY_NOTIFICATION_DELAY = 100;
+
+  // 기본 페이지네이션 값
+  const DEFAULT_PAGE = 1;
+  const DEFAULT_PAGE_SIZE = 10;
+
+  // 필터 타입 매핑 (Tabulator -> SwiftGrid)
+  const FILTER_TYPE_MAP = {
+    "=": "eq",
+    "==": "eq",
+    "!=": "neq",
+    "!==": "neq",
+    "like": "like",
+    "regex": "like",
+    ">": "gt",
+    ">=": "gte",
+    "<": "lt",
+    "<=": "lte",
+    "in": "in",
+    "nin": "nin",
+  };
+
   // ============================================
   // Module State
   // ============================================
@@ -616,6 +640,167 @@ window.swiftGrid = (function () {
     });
   }
 
+  /**
+   * 테이블의 현재 쿼리 상태를 수집합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @param {string} globalSearch - 전역 검색어 (있는 경우)
+   * @returns {object} 쿼리 상태 객체
+   */
+  /**
+   * Tabulator 필터 타입을 SwiftGrid 필터 연산자로 변환합니다.
+   * @param {string} tabulatorType - Tabulator 필터 타입
+   * @returns {string} SwiftGrid 필터 연산자
+   */
+  function mapFilterTypeToOperator(tabulatorType) {
+    return FILTER_TYPE_MAP[tabulatorType] || tabulatorType || "eq";
+  }
+
+  /**
+   * 테이블의 페이지네이션 정보를 수집합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @returns {{Page: number, PageSize: number}} 페이지네이션 정보
+   */
+  function getPaginationInfo(table) {
+    const result = {
+      Page: DEFAULT_PAGE,
+      PageSize: DEFAULT_PAGE_SIZE,
+    };
+
+    if (!table.modExists("page")) {
+      return result;
+    }
+
+    const page = table.getPage();
+    const pageSize = table.getPageSize();
+
+    if (page !== false && typeof page === "number") {
+      result.Page = page;
+    }
+
+    if (pageSize !== false && typeof pageSize === "number") {
+      result.PageSize = pageSize;
+    }
+
+    return result;
+  }
+
+  /**
+   * 테이블의 정렬 정보를 수집합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @returns {Array<{Field: string, Dir: string}>} 정렬 정보 배열
+   */
+  function getSortInfo(table) {
+    const sorters = table.getSorters();
+    if (!Array.isArray(sorters)) {
+      return [];
+    }
+
+    return sorters.map((sorter) => ({
+      Field: sorter.field || "",
+      Dir: sorter.dir === "desc" ? "desc" : "asc",
+    }));
+  }
+
+  /**
+   * 테이블의 필터 정보를 수집합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @returns {Array<{Field: string, Op: string, Value: any}>} 필터 정보 배열
+   */
+  function getFilterInfo(table) {
+    const filters = table.getFilters(true); // true = 헤더 필터 포함
+    if (!Array.isArray(filters)) {
+      return [];
+    }
+
+    return filters
+      .filter((filter) => filter.field && filter.type !== undefined)
+      .map((filter) => ({
+        Field: filter.field || "",
+        Op: mapFilterTypeToOperator(filter.type),
+        Value: filter.value,
+      }));
+  }
+
+  /**
+   * 테이블의 현재 쿼리 상태를 수집합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @param {string} globalSearch - 전역 검색어 (있는 경우)
+   * @returns {object} 쿼리 상태 객체
+   */
+  function getQueryState(table, globalSearch) {
+    const pagination = getPaginationInfo(table);
+    const sorts = getSortInfo(table);
+    const filters = getFilterInfo(table);
+
+    return {
+      Page: pagination.Page,
+      PageSize: pagination.PageSize,
+      Sorts: sorts,
+      Filters: filters,
+      GlobalSearch: globalSearch || null,
+    };
+  }
+
+  /**
+   * 쿼리 상태 변경 이벤트 핸들러를 설정합니다.
+   * @param {Tabulator} table - Tabulator 테이블 인스턴스
+   * @param {DotNetObjectReference} dotNetRef - .NET 객체 참조
+   * @param {object} queryState - 쿼리 상태 추적 객체 (globalSearch 저장용)
+   */
+  function setupQueryChangedHandler(table, dotNetRef, queryState) {
+    if (!dotNetRef) {
+      return;
+    }
+
+    // 쿼리 상태를 C#으로 전달하는 함수
+    const notifyQueryChanged = function () {
+      if (!dotNetRef) {
+        log("warn", "DotNetRef is null, cannot notify query changed");
+        return;
+      }
+
+      try {
+        const query = getQueryState(table, queryState.globalSearch);
+        log("debug", "Notifying query changed", query);
+        dotNetRef
+          .invokeMethodAsync("HandleQueryChanged", query)
+          .then(() => {
+            log("debug", "Query changed notification sent successfully");
+          })
+          .catch((err) => {
+            log("error", "Error invoking query changed callback", err);
+          });
+      } catch (error) {
+        log("error", "Error in query changed handler", error);
+      }
+    };
+
+    // 페이지네이션 변경 감지
+    if (table.modExists("page")) {
+      table.on("pageLoaded", notifyQueryChanged);
+      table.on("pageSizeChanged", notifyQueryChanged);
+    }
+
+    // 정렬 변경 감지
+    table.on("dataSorted", notifyQueryChanged);
+
+    // 필터 변경 감지
+    table.on("dataFiltered", notifyQueryChanged);
+    
+    // 헤더 필터 변경 감지 (실시간 업데이트)
+    table.on("headerFilterChanged", function(column, value) {
+      log("debug", "Header filter changed", {
+        column: column?.getField(),
+        value: value,
+      });
+      // 약간의 지연을 두어 필터가 완전히 적용된 후 알림
+      setTimeout(notifyQueryChanged, QUERY_CHANGE_NOTIFICATION_DELAY);
+    });
+
+    // 초기 로드 시에도 한 번 쿼리 상태 전달
+    setTimeout(notifyQueryChanged, INITIAL_QUERY_NOTIFICATION_DELAY);
+  }
+
   // ============================================
   // Table Initialization
   // ============================================
@@ -695,22 +880,33 @@ window.swiftGrid = (function () {
 
       const table = new Tabulator(element, tabulatorOptions);
 
+      // 쿼리 상태 추적 객체 (전역 검색어 저장용)
+      const queryState = { globalSearch: null };
+
       // 테이블이 완전히 초기화된 후 이벤트 리스너 추가
       table.on("tableBuilt", function () {
         setupClipboardFallbackHandler(table);
+        
+        // 행 선택 변경 이벤트 핸들러 등록
+        if (enableCheckbox) {
+          setupRowSelectionChangedHandler(table, dotNetRef);
+        }
+
+        // 쿼리 상태 변경 이벤트 핸들러 등록 (tableBuilt 이후에 등록)
+        setupQueryChangedHandler(table, dotNetRef, queryState);
       });
 
-      // 행 선택 변경 이벤트 핸들러 등록
-      if (enableCheckbox) {
-        setupRowSelectionChangedHandler(table, dotNetRef);
-      }
-
-      // 테이블 인스턴스 저장
+      // 테이블 인스턴스와 쿼리 상태 저장
       if (key) {
         tables.set(key, table);
+        // 쿼리 상태도 함께 저장 (searchAll에서 사용)
+        if (!tables.has(key + "_queryState")) {
+          tables.set(key + "_queryState", queryState);
+        }
       } else {
         // ID가 없는 경우 임시 키 사용
         tables.set(element, table);
+        tables.set(element + "_queryState", queryState);
       }
 
       log("info", "Table initialized successfully", { key: key });
@@ -770,6 +966,8 @@ window.swiftGrid = (function () {
       log("error", "Error destroying table", error);
     } finally {
       tables.delete(key);
+      // 쿼리 상태도 함께 삭제
+      tables.delete(key + "_queryState");
     }
   }
 
@@ -923,6 +1121,10 @@ window.swiftGrid = (function () {
     try {
       const type = filterType || DEFAULT_FILTER_TYPE;
 
+      // 쿼리 상태 객체 가져오기
+      const queryStateKey = key + "_queryState";
+      const queryState = tables.get(queryStateKey) || { globalSearch: null };
+
       if (!searchValue || searchValue.trim() === "") {
         // 빈 검색어면 필터 제거
         if (typeof table.clearFilter === "function") {
@@ -930,6 +1132,7 @@ window.swiftGrid = (function () {
         } else {
           table.setFilter(false);
         }
+        queryState.globalSearch = null;
         log("debug", "Search cleared (empty value)", { key: key });
         return;
       }
@@ -970,6 +1173,12 @@ window.swiftGrid = (function () {
         }
         return false;
       });
+
+      // 전역 검색어 저장
+      queryState.globalSearch = searchValue;
+      if (!tables.has(queryStateKey)) {
+        tables.set(queryStateKey, queryState);
+      }
 
       log("debug", "Searching all columns", {
         key: key,

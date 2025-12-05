@@ -3,26 +3,290 @@
 
 <PageTitle>Error</PageTitle>
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<div class="docs-container">
+    <div class="docs-error-content">
+        <!-- 에러 헤더 -->
+        <div class="docs-error-header">
+            <div class="docs-error-icon">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+            <h1 class="docs-title docs-title-error">오류가 발생했습니다</h1>
+            <p class="docs-subtitle">
+                요청을 처리하는 중에 오류가 발생했습니다.
+            </p>
+        </div>
 
-@if (ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@RequestId</code>
-    </p>
-}
+        <!-- 에러 정보 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">오류 정보</h2>
+            <div class="docs-error-card">
+                @if (ShowRequestId)
+                {
+                    <div class="docs-error-info-item">
+                        <div class="docs-error-info-label">
+                            <i class="bi bi-hash"></i> Request ID
+                        </div>
+                        <div class="docs-error-info-value">
+                            <code class="docs-code-inline">@RequestId</code>
+                        </div>
+                    </div>
+                }
+                <div class="docs-error-warning">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <div>
+                        <strong>문제가 지속되나요?</strong> Request ID를 기록하여 관리자에게 문의하세요.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<h3>Development Mode</h3>
-<p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
-<p>
-    <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
-    It can result in displaying sensitive information from exceptions to end users.
-    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
-    and restarting the app.
-</p>
+        <!-- 개발 모드 안내 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">개발 모드</h2>
+            <div class="docs-error-card">
+                <p>
+                    <strong>Development</strong> 환경으로 전환하면 오류에 대한 더 자세한 정보를 확인할 수 있습니다.
+                </p>
+                <div class="docs-error-warning">
+                    <i class="bi bi-shield-exclamation"></i>
+                    <div>
+                        <strong>주의:</strong> 배포된 애플리케이션에서는 Development 환경을 활성화하지 마세요.
+                        예외에 대한 민감한 정보가 최종 사용자에게 표시될 수 있습니다.
+                    </div>
+                </div>
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span class="docs-code-label">개발 모드 활성화 방법</span>
+                    </div>
+                    <div class="docs-code-content">
+                        <pre><code>ASPNETCORE_ENVIRONMENT 환경 변수를 Development로 설정하고 애플리케이션을 재시작하세요.</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 홈으로 돌아가기 -->
+        <div class="docs-error-actions">
+            <a href="/" class="docs-button docs-button-primary docs-button-large">
+                <i class="bi bi-house-door"></i> 홈으로 돌아가기
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .docs-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .docs-error-content {
+        text-align: center;
+    }
+
+    .docs-error-header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e1dfdd;
+    }
+
+    .docs-error-icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d13438;
+        color: white;
+        border-radius: 50%;
+        margin: 0 auto 1.5rem;
+        font-size: 3rem;
+    }
+
+    .docs-title {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #323130;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.2;
+    }
+
+    .docs-title-error {
+        color: #d13438;
+    }
+
+    .docs-subtitle {
+        font-size: 1.25rem;
+        color: #605e5c;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .docs-section {
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .docs-section-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #323130;
+        margin: 0 0 1.5rem 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e1dfdd;
+    }
+
+    .docs-error-card {
+        padding: 1.5rem;
+        background-color: #faf9f8;
+        border: 1px solid #e1dfdd;
+        border-radius: 4px;
+        text-align: left;
+    }
+
+    .docs-error-info-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .docs-error-info-label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #605e5c;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .docs-error-info-value {
+        margin-top: 0.5rem;
+    }
+
+    .docs-code-inline {
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        background-color: white;
+        border: 1px solid #e1dfdd;
+        border-radius: 2px;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 0.875rem;
+        color: #323130;
+    }
+
+    .docs-error-warning {
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #fff4e5;
+        border: 1px solid #ffaa44;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+
+    .docs-error-warning i {
+        font-size: 1.25rem;
+        color: #ffaa44;
+        flex-shrink: 0;
+    }
+
+    .docs-error-warning div {
+        color: #323130;
+        line-height: 1.6;
+    }
+
+    .docs-code-block {
+        margin-top: 1.5rem;
+        border: 1px solid #e1dfdd;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .docs-code-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background-color: #faf9f8;
+        border-bottom: 1px solid #e1dfdd;
+    }
+
+    .docs-code-label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #323130;
+    }
+
+    .docs-code-content {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+    }
+
+    .docs-code-content pre {
+        margin: 0;
+        padding: 1.5rem;
+        overflow-x: auto;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+
+    .docs-code-content code {
+        color: #d4d4d4;
+    }
+
+    .docs-error-actions {
+        margin-top: 3rem;
+    }
+
+    .docs-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+    }
+
+    .docs-button-primary {
+        background-color: #0078d4;
+        color: white;
+    }
+
+    .docs-button-primary:hover {
+        background-color: #106ebe;
+        color: white;
+    }
+
+    .docs-button-large {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+
+    @@media (max-width: 768px) {
+        .docs-container {
+            padding: 1.5rem 1rem;
+        }
+
+        .docs-title {
+            font-size: 2rem;
+        }
+
+        .docs-subtitle {
+            font-size: 1.125rem;
+        }
+
+        .docs-error-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 2rem;
+        }
+    }
+</style>
 
 @code{
     [CascadingParameter]

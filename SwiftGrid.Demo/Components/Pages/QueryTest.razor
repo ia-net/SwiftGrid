@@ -1,0 +1,368 @@
+@page "/querytest"
+@rendermode InteractiveServer
+@using SwiftGrid.Components
+@using SwiftGrid.Entities
+@using SwiftGrid.Demo.Components.Pages
+
+<div class="docs-container">
+    <PageHeader Title="SwiftGrid Query State 테스트" 
+                Subtitle="OnQueryChanged 이벤트를 통한 실시간 쿼리 상태 모니터링"
+                Badges="@(new List<PageHeader.BadgeInfo> 
+                { 
+                    new() { Text = "OnQueryChanged" },
+                    new() { Text = "실시간 모니터링" }
+                })" />
+
+    <div class="docs-content">
+        <div class="docs-section">
+            <p class="docs-intro">
+                페이지네이션, 정렬, 필터, 검색을 변경하면 쿼리 상태가 자동으로 업데이트됩니다.
+            </p>
+        </div>
+
+        <!-- 전역 검색 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">전역 검색</h2>
+            <div class="docs-search-box">
+                <div class="docs-search-input-group">
+                    <i class="bi bi-search docs-search-icon"></i>
+                    <input type="text" 
+                           class="docs-input" 
+                           @bind="searchText" 
+                           @oninput="OnSearchChanged" 
+                           placeholder="모든 컬럼에서 검색..." />
+                    @if (!string.IsNullOrWhiteSpace(searchText))
+                    {
+                        <button class="docs-button-icon" type="button" @onclick="ClearSearch">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    }
+                </div>
+                <div class="docs-search-stats">
+                    <span class="docs-badge">전체: @allPeople.Count</span>
+                    <span class="docs-badge docs-badge-primary">표시: @filteredPeople.Count</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 쿼리 상태 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">쿼리 상태</h2>
+            <div class="docs-query-status-grid">
+                <div class="docs-query-status-card">
+                    <h3 class="docs-query-status-title">현재 쿼리 상태</h3>
+                    <div class="docs-query-status-content">
+                        <div class="docs-query-status-item">
+                            <div class="docs-query-status-label">
+                                <i class="bi bi-file-earmark-text"></i> 페이지
+                            </div>
+                            <div class="docs-query-status-value">
+                                <span class="docs-badge">@(currentQuery?.Page ?? 1)</span>
+                                <span style="margin: 0 0.5rem; color: #605e5c;">/</span>
+                                <span class="docs-badge">@(currentQuery?.PageSize ?? 10)개</span>
+                            </div>
+                        </div>
+                        <div class="docs-query-status-item">
+                            <div class="docs-query-status-label">
+                                <i class="bi bi-funnel"></i> 필터
+                            </div>
+                            <div class="docs-query-status-value">
+                                <span class="docs-badge">@(currentQuery?.Filters?.Count ?? 0)개</span>
+                            </div>
+                        </div>
+                        <div class="docs-query-status-item">
+                            <div class="docs-query-status-label">
+                                <i class="bi bi-sort-down"></i> 정렬
+                            </div>
+                            <div class="docs-query-status-value">
+                                @if (currentQuery?.Sorts?.Any() == true)
+                                {
+                                    @foreach (var sort in currentQuery.Sorts)
+                                    {
+                                        <span class="docs-badge docs-badge-success">
+                                            @sort.Field 
+                                            <i class="bi bi-arrow-@(sort.Dir == "desc" ? "down" : "up")"></i>
+                                        </span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span style="color: #605e5c;">없음</span>
+                                }
+                            </div>
+                        </div>
+                        <div class="docs-query-status-item">
+                            <div class="docs-query-status-label">
+                                <i class="bi bi-search"></i> 검색어
+                            </div>
+                            <div class="docs-query-status-value">
+                                @if (!string.IsNullOrWhiteSpace(currentQuery?.GlobalSearch))
+                                {
+                                    <span class="docs-badge">@currentQuery.GlobalSearch</span>
+                                }
+                                else
+                                {
+                                    <span style="color: #605e5c;">없음</span>
+                                }
+                            </div>
+                        </div>
+                        @if (currentQuery?.Filters?.Any() == true)
+                        {
+                            <div class="docs-query-status-filters">
+                                <div class="docs-query-status-label">
+                                    <i class="bi bi-list-ul"></i> 필터 상세
+                                </div>
+                                <div class="docs-filter-tags">
+                                    @foreach (var filter in currentQuery.Filters)
+                                    {
+                                        <span class="docs-filter-tag">
+                                            <strong>@filter.Field</strong> 
+                                            <span style="margin: 0 0.25rem; color: #605e5c;">@filter.Op</span> 
+                                            <strong>@filter.Value</strong>
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="docs-query-status-card">
+                    <QueryJsonDisplay Query="@currentQuery" />
+                </div>
+            </div>
+        </div>
+
+        <!-- 데이터 그리드 -->
+        <div class="docs-section">
+            <div class="docs-section-header">
+                <h2 class="docs-section-title">데이터 그리드</h2>
+                <span class="docs-badge">@filteredPeople.Count() / @allPeople.Count</span>
+            </div>
+            <div class="docs-grid-container">
+            <SwiftGrid @ref="gridRef" 
+                       TItem="Person" 
+                       Data="@filteredPeople" 
+                       TotalCount="@totalCount"
+                       Options="@GridOptions" 
+                       OnQueryChanged="HandleQueryChanged">
+                <SwiftGridColumn TItem="Person" Field="Id" Title="ID" Sortable="true" Width="80" HeaderFilter="true"
+                    HeaderFilterPlaceholder="ID 검색..." />
+                <SwiftGridColumn TItem="Person" Field="Name" Title="이름" Sortable="true" HeaderFilter="true"
+                    HeaderFilterPlaceholder="이름 검색..." />
+                <SwiftGridColumn TItem="Person" Field="Age" Title="나이" Sortable="true" HeaderFilter="true"
+                    HeaderFilterPlaceholder="나이 검색..." />
+                <SwiftGridColumn TItem="Person" Field="Email" Title="Email" HeaderFilter="true" 
+                    HeaderFilterPlaceholder="이메일 검색..." />
+                <SwiftGridColumn TItem="Person" Field="Department" Title="부서" Sortable="true" HeaderFilter="true"
+                    HeaderFilterPlaceholder="부서 검색..." />
+            </SwiftGrid>
+            </div>
+        </div>
+
+        <!-- 사용 팁 -->
+        <div class="docs-section">
+            <h2 class="docs-section-title">사용 팁</h2>
+            <div class="docs-tips">
+                <div class="docs-tip">
+                    <i class="bi bi-arrow-up-down"></i>
+                    <div>
+                        <strong>정렬:</strong> 컬럼 헤더를 클릭하여 정렬
+                    </div>
+                </div>
+                <div class="docs-tip">
+                    <i class="bi bi-funnel"></i>
+                    <div>
+                        <strong>필터:</strong> 헤더 필터 입력란에 값 입력
+                    </div>
+                </div>
+                <div class="docs-tip">
+                    <i class="bi bi-123"></i>
+                    <div>
+                        <strong>페이지:</strong> 하단 페이지네이션 컨트롤 사용
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Person> allPeople = new()
+    {
+        new Person { Id = 1, Name = "홍길동", Age = 24, Email = "hong@test.com", Department = "개발팀" },
+        new Person { Id = 2, Name = "김철수", Age = 31, Email = "kim@test.com", Department = "마케팅팀" },
+        new Person { Id = 3, Name = "이영희", Age = 28, Email = "lee@test.com", Department = "개발팀" },
+        new Person { Id = 4, Name = "박민수", Age = 35, Email = "park@test.com", Department = "인사팀" },
+        new Person { Id = 5, Name = "최지영", Age = 27, Email = "choi@test.com", Department = "개발팀" },
+        new Person { Id = 6, Name = "정수진", Age = 32, Email = "jung@test.com", Department = "마케팅팀" },
+        new Person { Id = 7, Name = "강동원", Age = 29, Email = "kang@test.com", Department = "인사팀" },
+        new Person { Id = 8, Name = "윤서연", Age = 26, Email = "yoon@test.com", Department = "개발팀" },
+        new Person { Id = 9, Name = "임태현", Age = 33, Email = "lim@test.com", Department = "마케팅팀" },
+        new Person { Id = 10, Name = "한소희", Age = 25, Email = "han@test.com", Department = "개발팀" },
+        new Person { Id = 11, Name = "송혜교", Age = 30, Email = "song@test.com", Department = "인사팀" },
+        new Person { Id = 12, Name = "이민호", Age = 28, Email = "lee2@test.com", Department = "마케팅팀" },
+        new Person { Id = 13, Name = "장동건", Age = 31, Email = "jang@test.com", Department = "개발팀" },
+        new Person { Id = 14, Name = "전지현", Age = 29, Email = "jeon@test.com", Department = "인사팀" },
+        new Person { Id = 15, Name = "원빈", Age = 27, Email = "won@test.com", Department = "마케팅팀" },
+        new Person { Id = 16, Name = "김태희", Age = 26, Email = "kim2@test.com", Department = "개발팀" },
+        new Person { Id = 17, Name = "현빈", Age = 34, Email = "hyun@test.com", Department = "인사팀" },
+        new Person { Id = 18, Name = "손예진", Age = 28, Email = "son@test.com", Department = "마케팅팀" },
+        new Person { Id = 19, Name = "조인성", Age = 32, Email = "cho@test.com", Department = "개발팀" },
+        new Person { Id = 20, Name = "김하늘", Age = 30, Email = "kim3@test.com", Department = "인사팀" }
+    };
+
+    private List<Person> filteredPeople = new();
+    private int totalCount = 0;
+    private SwiftGridQuery? currentQuery;
+    private string searchText = "";
+    private SwiftGrid<Person>? gridRef;
+
+    private SwiftGridOptions GridOptions = new()
+    {
+        Layout = "fitColumns",
+        Height = "400px",
+        Pagination = true,
+        PaginationSize = 5,
+        PaginationMode = "local", // 로컬 모드 (데이터는 서버에서 가져온 것처럼 처리)
+        PaginationCounter = true,
+        PaginationSizeSelector = true,
+    };
+
+    protected override void OnInitialized()
+    {
+        filteredPeople = allPeople.ToList();
+        totalCount = allPeople.Count;
+    }
+
+    private async Task HandleQueryChanged(SwiftGridQuery query)
+    {
+        Console.WriteLine($"QueryTest: HandleQueryChanged called - Page={query?.Page}, PageSize={query?.PageSize}");
+        
+        if (query == null)
+        {
+            Console.Error.WriteLine("QueryTest: Query is null!");
+            return;
+        }
+        
+        currentQuery = query;
+
+        // 실제 서버 호출 시뮬레이션
+        // 로컬 모드에서는 전체 필터링/정렬된 데이터를 제공하고
+        // Tabulator가 자동으로 페이지네이션을 처리하도록 함
+        var result = ApplyQueryToLocalData(query);
+        
+        // 로컬 모드: 전체 필터링된 데이터를 제공 (페이지네이션은 Tabulator가 처리)
+        // 서버 모드: 페이지네이션된 데이터만 제공
+        if (GridOptions.PaginationMode == "local")
+        {
+            // 전체 필터링/정렬된 데이터 제공 (페이지네이션 제외)
+            filteredPeople = allPeople.ToList();
+            totalCount = result.TotalCount;
+        }
+        else
+        {
+            // 서버 모드: 페이지네이션된 데이터만 제공
+            filteredPeople = result.Items;
+            totalCount = result.TotalCount;
+        }
+
+        // StateHasChanged를 InvokeAsync로 감싸서 UI 업데이트 보장
+        await InvokeAsync(StateHasChanged);
+        
+        Console.WriteLine($"QueryTest: Query processed - Page={query.Page}, PageSize={query.PageSize}, " +
+                         $"Sorts={query.Sorts?.Count ?? 0}, Filters={query.Filters?.Count ?? 0}, " +
+                         $"GlobalSearch={query.GlobalSearch}, ResultCount={filteredPeople.Count}");
+    }
+
+    private Task OnSearchChanged(ChangeEventArgs e)
+    {
+        searchText = e.Value?.ToString() ?? "";
+        
+        if (gridRef != null)
+        {
+            return gridRef.SearchAllAsync(searchText);
+        }
+        
+        return Task.CompletedTask;
+    }
+
+    private Task ClearSearch()
+    {
+        searchText = "";
+        return OnSearchChanged(new ChangeEventArgs { Value = "" });
+    }
+
+
+    // 로컬 데이터에 쿼리 적용 (서버 호출 시뮬레이션)
+    private (List<Person> Items, List<Person> AllItems, int TotalCount) ApplyQueryToLocalData(SwiftGridQuery query)
+    {
+        var queryable = allPeople.AsQueryable();
+
+        // 전역 검색 적용
+        if (!string.IsNullOrWhiteSpace(query.GlobalSearch))
+        {
+            queryable = QueryTestHelper.ApplyGlobalSearch(
+                queryable,
+                query.GlobalSearch,
+                "Name", "Email", "Department", "Id", "Age");
+        }
+
+        // 필터 적용
+        foreach (var filter in query.Filters)
+        {
+            queryable = QueryTestHelper.ApplyFilter(queryable, filter.Field, filter.Op, filter.Value);
+        }
+
+        // 정렬 적용
+        queryable = ApplySorting(queryable, query.Sorts);
+
+        var totalCount = queryable.Count();
+
+        // 전체 필터링/정렬된 데이터 (로컬 모드용)
+        var allItems = queryable.ToList();
+
+        // 페이지네이션 적용된 데이터 (서버 모드용)
+        var items = allItems
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
+            .ToList();
+
+        return (items, allItems, totalCount);
+    }
+
+    /// <summary>
+    /// 정렬을 쿼리에 적용합니다.
+    /// </summary>
+    private IQueryable<Person> ApplySorting(IQueryable<Person> queryable, List<SwiftGridSort> sorts)
+    {
+        if (sorts == null || !sorts.Any())
+        {
+            return queryable;
+        }
+
+        IOrderedQueryable<Person>? orderedQuery = null;
+        bool isFirst = true;
+
+        foreach (var sort in sorts)
+        {
+            var sortExpression = QueryTestHelper.GetSortExpression<Person>(sort.Field);
+
+            if (isFirst)
+            {
+                orderedQuery = sort.Dir == "desc"
+                    ? queryable.OrderByDescending(sortExpression)
+                    : queryable.OrderBy(sortExpression);
+                isFirst = false;
+            }
+            else if (orderedQuery != null)
+            {
+                orderedQuery = sort.Dir == "desc"
+                    ? orderedQuery.ThenByDescending(sortExpression)
+                    : orderedQuery.ThenBy(sortExpression);
+            }
+        }
+
+        return orderedQuery ?? queryable;
+    }
+}
+

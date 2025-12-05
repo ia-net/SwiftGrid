@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>duqtnshnmz</Fingerprint>
-      <Integrity>25tpNumSQCyZRgvPnPKJRIU1EUUtC7D//pHhanlib7I=</Integrity>
+      <Fingerprint>epby9nauil</Fingerprint>
+      <Integrity>Pgu0qMrN/ZD9/BeTzBwA7su2jLCEkpBPnvfnyC4d2fY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>37384</FileLength>
-      <LastWriteTime>Wed, 03 Dec 2025 07:49:32 GMT</LastWriteTime>
+      <FileLength>44145</FileLength>
+      <LastWriteTime>Fri, 05 Dec 2025 05:46:20 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\swiftgrid.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\tabulator\css\tabulator.css'))">

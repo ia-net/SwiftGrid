@@ -1,3 +1,211 @@
 ﻿@page "/"
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
 
-<h3>SwiftGrid / Tabulator Demo</h3>
+<div style="max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem;">
+    <!-- 헤더 -->
+    <div style="padding-bottom: 2rem; border-bottom: 1px solid var(--neutral-stroke-divider); margin-bottom: 3rem;">
+        <h1 style="font-size: 3rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0 0 0.5rem 0;">SwiftGrid</h1>
+        <p style="font-size: 1.25rem; color: var(--neutral-foreground-rest); margin: 0 0 1.5rem 0;">
+            Tabulator 기반의 강력하고 가벼운 Blazor 그리드 컴포넌트
+        </p>
+        <FluentStack Horizontal="true" Gap="12px" Wrap="true">
+            <FluentBadge>Blazor</FluentBadge>
+            <FluentBadge>Tabulator 6.x</FluentBadge>
+            <FluentBadge>가볍고 빠름</FluentBadge>
+        </FluentStack>
+    </div>
+
+    <!-- 소개 -->
+    <div style="max-width: 900px; margin-bottom: 3rem;">
+        <p style="font-size: 1.125rem; color: var(--neutral-foreground-rest); line-height: 1.75; margin: 0;">
+            SwiftGrid는 Tabulator의 강력한 기능을 그대로 활용하면서, C#과 Razor만으로 가볍게 그리드를 구성할 수 있도록 만든 컴포넌트입니다.
+        </p>
+    </div>
+
+    <!-- 주요 기능 -->
+    <div style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0 0 1.5rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--neutral-stroke-divider);">주요 기능</h2>
+        <FluentGrid Columns="repeat(auto-fit, minmax(280px, 1fr))" Gap="32px">
+            <FluentCard>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <i class="bi bi-table" style="font-size: 2rem; color: var(--color-brand-foreground1);"></i>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0;">데이터 그리드</h3>
+                    <p style="font-size: 1rem; color: var(--neutral-foreground-rest); line-height: 1.6; margin: 0;">
+                        정렬, 필터링, 페이지네이션 등 기본적인 그리드 기능을 모두 지원합니다.
+                    </p>
+                </div>
+            </FluentCard>
+            <FluentCard>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <i class="bi bi-pencil-square" style="font-size: 2rem; color: var(--color-brand-foreground1);"></i>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0;">셀 편집</h3>
+                    <p style="font-size: 1rem; color: var(--neutral-foreground-rest); line-height: 1.6; margin: 0;">
+                        인라인 셀 편집, Undo/Redo 기능으로 데이터를 쉽게 수정할 수 있습니다.
+                    </p>
+                </div>
+            </FluentCard>
+            <FluentCard>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <i class="bi bi-download" style="font-size: 2rem; color: var(--color-brand-foreground1);"></i>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0;">데이터 내보내기</h3>
+                    <p style="font-size: 1rem; color: var(--neutral-foreground-rest); line-height: 1.6; margin: 0;">
+                        CSV, Excel, JSON 형식으로 데이터를 내보낼 수 있습니다.
+                    </p>
+                </div>
+            </FluentCard>
+        </FluentGrid>
+    </div>
+
+    <!-- 데모 페이지 -->
+    <div style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0 0 1.5rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--neutral-stroke-divider);">데모 페이지</h2>
+        <FluentGrid Columns="repeat(auto-fit, minmax(300px, 1fr))" Gap="24px">
+            <FluentCard>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0;">기능 데모</h3>
+                    <p style="font-size: 0.9375rem; color: var(--neutral-foreground-rest); line-height: 1.6; margin: 0;">
+                        편집, 선택, 내보내기 등 SwiftGrid의 주요 기능을 체험해보세요.
+                    </p>
+                    <FluentAnchor Href="/counter">
+                        <FluentButton Appearance="Appearance.Accent">
+                            데모 보기
+                            <i class="bi bi-arrow-right"></i>
+                        </FluentButton>
+                    </FluentAnchor>
+                </div>
+            </FluentCard>
+            <FluentCard>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0;">쿼리 테스트</h3>
+                    <p style="font-size: 0.9375rem; color: var(--neutral-foreground-rest); line-height: 1.6; margin: 0;">
+                        실시간 쿼리 상태 모니터링과 필터링 기능을 테스트해보세요.
+                    </p>
+                    <FluentAnchor Href="/querytest">
+                        <FluentButton Appearance="Appearance.Accent">
+                            테스트 보기
+                            <i class="bi bi-arrow-right"></i>
+                        </FluentButton>
+                    </FluentAnchor>
+                </div>
+            </FluentCard>
+        </FluentGrid>
+    </div>
+
+    <!-- 빠른 시작 -->
+    <div style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 600; color: var(--neutral-foreground-rest); margin: 0 0 1.5rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--neutral-stroke-divider);">빠른 시작</h2>
+        <FluentCard>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong style="font-size: 0.875rem; font-weight: 600; color: var(--neutral-foreground-rest);">예제 코드</strong>
+                    <FluentButton Appearance="Appearance.Neutral" @onclick="CopyCodeToClipboard" Title="코드 복사">
+                        <i class="bi bi-clipboard"></i>
+                        복사
+                    </FluentButton>
+                </div>
+                <div style="position: relative;">
+                    @if (showCopyMessage)
+                    {
+                        <FluentMessageBar Intent="MessageIntent.Success" Style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+                            클립보드에 복사되었습니다!
+                        </FluentMessageBar>
+                    }
+                    <pre style="margin: 0; padding: 1.5rem; background-color: #1e1e1e; color: #d4d4d4; border-radius: 4px; overflow-x: auto; font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 0.875rem; line-height: 1.6;"><code>@codeExampleDisplay</code></pre>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--neutral-foreground-rest); margin: 0;">
+                    <i class="bi bi-info-circle" style="margin-right: 0.5rem;"></i>
+                    위 코드를 복사하여 바로 사용할 수 있습니다.
+                </p>
+            </div>
+        </FluentCard>
+    </div>
+</div>
+
+@code {
+    private bool showCopyMessage = false;
+    
+    private string codeExampleDisplay = @"@using SwiftGrid.Components
+@using SwiftGrid.Entities
+
+@* 데이터 모델 *@
+public class Person
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = """";
+    public string Email { get; set; } = """";
+}
+
+@* Razor 페이지 *@
+&lt;SwiftGrid Data=&quot;@people&quot; Options=&quot;@gridOptions&quot;&gt;
+    &lt;SwiftGridColumn Field=&quot;Id&quot; Title=&quot;ID&quot; Sortable=&quot;true&quot; /&gt;
+    &lt;SwiftGridColumn Field=&quot;Name&quot; Title=&quot;이름&quot; Sortable=&quot;true&quot; /&gt;
+    &lt;SwiftGridColumn Field=&quot;Email&quot; Title=&quot;이메일&quot; /&gt;
+&lt;/SwiftGrid&gt;
+
+@code {
+    private List&lt;Person&gt; people = new()
+    {
+        new Person { Id = 1, Name = &quot;홍길동&quot;, Email = &quot;hong@test.com&quot; },
+        new Person { Id = 2, Name = &quot;김철수&quot;, Email = &quot;kim@test.com&quot; }
+    };
+
+    private SwiftGridOptions gridOptions = new()
+    {
+        Layout = &quot;fitColumns&quot;,
+        Height = &quot;400px&quot;,
+        Pagination = true,
+        PaginationSize = 10
+    };
+}";
+    
+    private string codeExample = @"@using SwiftGrid.Components
+@using SwiftGrid.Entities
+
+@* 데이터 모델 *@
+public class Person
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = """";
+    public string Email { get; set; } = """";
+}
+
+@* Razor 페이지 *@
+<SwiftGrid Data=""@people"" Options=""@gridOptions"">
+    <SwiftGridColumn Field=""Id"" Title=""ID"" Sortable=""true"" />
+    <SwiftGridColumn Field=""Name"" Title=""이름"" Sortable=""true"" />
+    <SwiftGridColumn Field=""Email"" Title=""이메일"" />
+</SwiftGrid>
+
+@code {
+    private List<Person> people = new()
+    {
+        new Person { Id = 1, Name = ""홍길동"", Email = ""hong@test.com"" },
+        new Person { Id = 2, Name = ""김철수"", Email = ""kim@test.com"" }
+    };
+
+    private SwiftGridOptions gridOptions = new()
+    {
+        Layout = ""fitColumns"",
+        Height = ""400px"",
+        Pagination = true,
+        PaginationSize = 10
+    };
+}";
+
+    private async Task CopyCodeToClipboard()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", codeExample);
+            showCopyMessage = true;
+            await Task.Delay(2000);
+            showCopyMessage = false;
+            StateHasChanged();
+        }
+        catch
+        {
+            // 클립보드 복사 실패 시 무시
+        }
+    }
+}
